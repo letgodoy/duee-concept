@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import './assets/sass/main.scss'
+import './sass/main.scss'
 import Pic1 from './images/pic01.jpg'
 import Pic2 from './images/pic02.jpg'
 
@@ -13,52 +13,53 @@ const SomosLeoes = () => (
         <SEO title="Somos leões" />
         <div class="is-preload">
             {/* <!-- Header --> */}
-            <section id="header" className="dark">
-                <header>
-                    <h1>DUEE BRASIL</h1>
+            <section id="header">
+                <div className="inner">
+                    <span className="icon solid major fa-cloud"></span>
+                    <h1><strong>DUEE</strong> BRASIL<br /></h1>
                     <p>bla bla bla agencia</p>
-                </header>
+                    <ul class="actions special">
+                        <li><a href="#one" className="button scrolly">Discover</a></li>
+                    </ul>
+                </div>
             </section>
 
             {/* <!-- First --> */}
-            <section id="first" className="main">
-                <div className="content style1">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-8 col-12-narrow">
-                                <section>
-                                    <h3>A GENTE FAZ.</h3>
-                                    <p>A Duee é uma agência full service, que preza pela comunicação integrada, porque sabe que o mundo não se divide em on e off. Não criamos apenas conteúdos e campanhas,
+            <section id="one" className="main style1">
+                <div className="container gtr-150">
+                    <div className="row">
+                        <div className="col-8 col-12-medium">
+                            <section>
+                                <header class="major">
+                                    <h2>A GENTE FAZ.</h2>
+                                </header>
+                                <p>A Duee é uma agência full service, que preza pela comunicação integrada, porque sabe que o mundo não se divide em on e off. Não criamos apenas conteúdos e campanhas,
                                         nós geramos ideias e conexões.</p>
-                                    <p>Nós somos uma agência que acredita que o trabalho está em constante movimento. Por isso, estamos sempre atentos às novidades, ao público,
+                                <p>Nós somos uma agência que acredita que o trabalho está em constante movimento. Por isso, estamos sempre atentos às novidades, ao público,
                                         às revoluções e novas ideias.</p>
-                                    <p>É por meio de nossa paixão, criatividade e estratégias que ajudamos marcas a terem retornos eficientes, se tornarem relevantes e atingirem grandes resultados.</p>
-                                    <p>O conceito A Gente Faz traduz  a nossa experiência de 11 anos, nosso espírito de equipe e de proatividade. É o reflexo do nosso posicionamento como agência 360 graus.
+                                <p>É por meio de nossa paixão, criatividade e estratégias que ajudamos marcas a terem retornos eficientes, se tornarem relevantes e atingirem grandes resultados.</p>
+                                <p>O conceito A Gente Faz traduz  a nossa experiência de 11 anos, nosso espírito de equipe e de proatividade. É o reflexo do nosso posicionamento como agência 360 graus.
                                             A gente faz criativo. A gente faz diferente. A gente faz inteligente.</p>
-                                    <p>Eventos? A gente faz.</p>
-                                    <p>Digital? A gente faz.</p>
-                                    <p>Branding? A gente faz.</p>
-                                </section>
-                            </div>
-                            <div className="col-4 col-12-narrow">
-                                <div className="row">
-                                    <div className="col-12 image fit"><img src={Pic1} alt="" /></div>
-                                    <div className="col-12 image fit"><img src={Pic2} alt="" /></div>
-                                </div>
+                                <p>Eventos? A gente faz.</p>
+                                <p>Digital? A gente faz.</p>
+                                <p>Branding? A gente faz.</p>
+                            </section>
+                        </div>
+                        <div className="col-4 col-12-medium imp-medium">
+                            <div className="row">
+                                <div className="col-12 image fit"><img src={Pic1} alt="" /></div>
+                                <div className="col-12 image fit"><img src={Pic2} alt="" /></div>
+                                <div className="col-12 image fit"><img src={Pic1} alt="" /></div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
             </section>
 
             {/* <!-- Second --> */}
-            <section id="second" className="main">
-                <div className="content dark style2">
+            <section id="two" className="main style2">
                     <div className="container">
-                        <div className="row">
+                        <div className="row gtr-150">
                             <div className="col-12">
                                 <section className="text-center">
                                     <h3>SOMOS LEÕES</h3>
@@ -71,7 +72,6 @@ const SomosLeoes = () => (
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
 
             {/* <!-- Third --> */}
@@ -168,20 +168,18 @@ const SomosLeoes = () => (
             </section>
 
             {/* <!-- Fourth --> */}
-            <section id="fourth" class="main">
-                <div class="content featured">
-                    <div class="container medium">
-                        <ul className="icons">
-                            <li>lista das redes</li>
-                            <li>sociais</li>
-                            {/* <li><a href="https://twitter.com" className="icon brands fa-twitter"><span className="label">Twitter</span></a></li>
-                            <li><a href="https://twitter.com" className="icon brands fa-facebook-f"><span className="label">Facebook</span></a></li>
-                            <li><a href="https://twitter.com" className="icon brands fa-instagram"><span className="label">Instagram</span></a></li> */}
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
+            <section id="footer">
+				<ul class="icons">
+					<li><a href="google.com" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="google.com" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="google.com" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="google.com" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="google.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</section>
         </div>
         <Link to="/">Go back to the homepage</Link>
     </Layout>
