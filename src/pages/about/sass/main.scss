@@ -1349,13 +1349,16 @@ body.is-preload {
 /* Footer */
 
 #footer {
-	@include padding(6em, 0, (0, 0, _size(element-margin), 0));
-	@include dark(#24a1dc);
-	background-attachment: fixed;
-	background-image  :		linear-gradient(45deg, _palette(accent5-alt), _palette(accent3-alt) 50%, _palette(accent4-alt) 95%);
-	background-position  : center center;
-	background-size      : cover;
+	// @include padding(6em, 0, (0, 0, _size(element-margin), 0));
+	// @include dark(#24a1dc);
+	// background-attachment: fixed;
+	// background-image  :		linear-gradient(45deg, _palette(accent5-alt), _palette(accent3-alt) 50%, _palette(accent4-alt) 95%);
+	// background-position  : center center;
+	// background-size      : cover;
 	text-align           : center;
+	padding: 30px;
+	font-size: 1.3em;
+	line-height: 1.2em;
 
 	.icons {
 		margin: 0;

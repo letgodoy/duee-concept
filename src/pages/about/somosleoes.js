@@ -5,7 +5,6 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import './sass/main.scss'
 import Pic1 from './images/pic01.jpg'
-import Pic2 from './images/pic02.jpg'
 
 
 const SomosLeoes = () => (
@@ -15,20 +14,20 @@ const SomosLeoes = () => (
             {/* <!-- Header --> */}
             <section id="header">
                 <div className="inner">
-                    <span className="icon solid major fa-cloud"></span>
+                    <span className="icon solid major"><i class="fab fa-linux"></i></span>
                     <h1><strong>DUEE</strong> BRASIL<br /></h1>
                     <p>bla bla bla agencia</p>
                     <ul class="actions special">
-                        <li><a href="#one" className="button scrolly">Discover</a></li>
+                        <li><a href="#one" className="button scrolly">Descubra?</a></li>
                     </ul>
                 </div>
             </section>
 
             {/* <!-- First --> */}
             <section id="one" className="main style1">
-                <div className="container gtr-150">
-                    <div className="row">
-                        <div className="col-8 col-12-medium">
+                <div className="container">
+                    <div className="row gtr-150">
+                        <div className="col-7 col-12-medium">
                             <section>
                                 <header class="major">
                                     <h2>A GENTE FAZ.</h2>
@@ -45,10 +44,8 @@ const SomosLeoes = () => (
                                 <p>Branding? A gente faz.</p>
                             </section>
                         </div>
-                        <div className="col-4 col-12-medium imp-medium">
+                        <div className="col-5 col-12-medium imp-medium">
                             <div className="row">
-                                <div className="col-12 image fit"><img src={Pic1} alt="" /></div>
-                                <div className="col-12 image fit"><img src={Pic2} alt="" /></div>
                                 <div className="col-12 image fit"><img src={Pic1} alt="" /></div>
                             </div>
                         </div>
@@ -75,20 +72,29 @@ const SomosLeoes = () => (
             </section>
 
             {/* <!-- Third --> */}
-            <section id="third" className="main">
-                <div className="content style3 featured">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12">
-                                <h3>NOSSO TRABALHO</h3>
-                            </div>
-                            <div className="col-4 col-12-narrow">
+            <section id="three" className="main style1 special">
+            <div class="container">
+					<div class="row gtr-150">
+                    <iframe src="https://player.vimeo.com/video/251860230" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="apresentacao"></iframe>
+					</div>
+				</div>
+                    
+            </section>
+
+            {/* <!-- Fourth --> */}
+            <section id="four" class="main style2 special">
+            <div className="container">
+                    <header class="major">
+						<h2>NOSSO TRABALHO</h2>
+					</header>
+                        <div className="row gtr-150">
+                            <div className="col-4 col-12-medium">
                                 <section>
-                                    <span className="feature-icon"><span className="icon fa-clock"></span></span>
+                                    <span className="major icon"></span>
                                     <header>
                                         <h3>LIVE MKT</h3>
                                     </header>
-                                    <ul class="default">
+                                    <ul className="actions stacked">
                                         <li>Ativações de marca</li>
                                         <li>Eventos</li>
                                         <li>Feiras e estandes</li>
@@ -98,13 +104,13 @@ const SomosLeoes = () => (
                                     </ul>
                                 </section>
                             </div>
-                            <div className="col-4 col-12-narrow">
+                            <div className="col-4 col-12-medium">
                                 <section>
-                                    <span className="feature-icon"><span className="icon solid fa-bolt"></span></span>
+                                <span className="major icon"></span>
                                     <header>
                                         <h3>PROMOÇÕES e TRADE</h3>
                                     </header>
-                                    <ul class="default">
+                                    <ul className="actions stacked">
                                         <li>Ativações</li>
                                         <li>Degustação</li>
                                         <li>Ações PDV</li>
@@ -114,13 +120,13 @@ const SomosLeoes = () => (
                                     </ul>
                                 </section>
                             </div>
-                            <div className="col-4 col-12-narrow">
+                            <div className="col-4 col-12-medium">
                                 <section>
-                                    <span className="feature-icon"><span className="icon solid fa-cloud"></span></span>
+                                <span className="major icon"></span>
                                     <header>
                                         <h3>BRANDING</h3>
                                     </header>
-                                    <ul class="default">
+                                    <ul className="actions stacked">
                                         <li>Planejamento Estratégico</li>
                                         <li>Posicionamento de marca</li>
                                         <li>Identidade visual</li>
@@ -130,13 +136,13 @@ const SomosLeoes = () => (
                                     </ul>
                                 </section>
                             </div>
-                            <div className="col-4 col-12-narrow">
+                            <div className="col-4 col-12-medium">
                                 <section>
-                                    <span className="feature-icon"><span className="icon solid fa-cloud"></span></span>
+                                <span className="major icon"></span>
                                     <header>
                                         <h3>DIGITAL</h3>
                                     </header>
-                                    <ul class="default">
+                                    <ul className="actions stacked">
                                         <li>Ativações online</li>
                                         <li>SEO & SEM</li>
                                         <li>Criação e conteúdos digitais</li>
@@ -146,13 +152,13 @@ const SomosLeoes = () => (
                                     </ul>
                                 </section>
                             </div>
-                            <div className="col-4 col-12-narrow">
+                            <div className="col-4 col-12-medium">
                                 <section>
-                                    <span className="feature-icon"><span className="icon solid fa-cloud"></span></span>
+                                <span className="major icon"></span>
                                     <header>
                                         <h3>DESENVOLVIMENTO</h3>
                                     </header>
-                                    <ul class="default">
+                                    <ul className="actions stacked">
                                         <li>Desenvolvimento Sites e Hotsites</li>
                                         <li>Criação Aplicativos</li>
                                         <li>Desenvolvimento Mobile</li>
@@ -164,20 +170,16 @@ const SomosLeoes = () => (
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+			</section>
 
-            {/* <!-- Fourth --> */}
+            {/* Footer */}
             <section id="footer">
 				<ul class="icons">
-					<li><a href="google.com" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="google.com" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="google.com" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="google.com" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="google.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li><a href="google.com" className="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="google.com" className="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="google.com" className="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="google.com" className="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="google.com" className="icon"><i class="far fa-envelope"></i></a></li>
 				</ul>
 			</section>
         </div>
