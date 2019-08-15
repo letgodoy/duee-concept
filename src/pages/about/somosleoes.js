@@ -22,7 +22,7 @@ const SomosLeoes = () => (
 
             {/* <!-- First --> */}
             <section id="first" className="main">
-                <div className="content dark style1">
+                <div className="content style1">
                     <div className="container">
                         <div className="row">
                             <div className="col-8 col-12-narrow">
@@ -42,8 +42,8 @@ const SomosLeoes = () => (
                             </div>
                             <div className="col-4 col-12-narrow">
                                 <div className="row">
-                                    <div className="col-12"><img src={Pic1} alt="" /></div>
-                                    <div className="col-12"><img src={Pic2} alt="" /></div>
+                                    <div className="col-12 image fit"><img src={Pic1} alt="" /></div>
+                                    <div className="col-12 image fit"><img src={Pic2} alt="" /></div>
                                 </div>
                             </div>
                         </div>
@@ -60,13 +60,13 @@ const SomosLeoes = () => (
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
-                                <section>
+                                <section className="text-center">
                                     <h3>SOMOS LEÕES</h3>
-                                    <p>Rugimos bem alto para que todos possam nos ouvir.</p>
-                                    <p>Defendemos nossas ideias, não temos medo de nos aventurar.</p>
-                                    <p>Somos ágeis, valentes, estrategistas e inquietos.</p>
-                                    <p>Estamos sempre nos desafiando e caçando oportunidades de fazer diferente.</p>
-                                    <p><h3>Somos leões.</h3></p>
+                                    <h3>Rugimos bem alto para que todos possam nos ouvir.</h3>
+                                    <h3>Defendemos nossas ideias, não temos medo de nos aventurar.</h3>
+                                    <h3>Somos ágeis, valentes, estrategistas e inquietos.</h3>
+                                    <h3>Estamos sempre nos desafiando e caçando oportunidades de fazer diferente.</h3>
+                                    <h3>Somos leões.</h3>
                                 </section>
                             </div>
                         </div>
@@ -76,7 +76,7 @@ const SomosLeoes = () => (
 
             {/* <!-- Third --> */}
             <section id="third" className="main">
-                <div className="content dark style3 featured">
+                <div className="content style3 featured">
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
