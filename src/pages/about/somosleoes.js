@@ -1,10 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../../components/layout"
+import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
-import './sass/main.scss'
-import Pic1 from './images/pic01.jpg'
+
 
 
 const SomosLeoes = () => (
@@ -46,7 +45,7 @@ const SomosLeoes = () => (
                         </div>
                         <div className="col-5 col-12-medium imp-medium">
                             <div className="row">
-                                <div className="col-12 image fit"><img src={Pic1} alt="" /></div>
+                                <div className="col-12 image fit"><img src="url('https://letgodoy.com/wp-content/uploads/2018/03/photo-1515285768613-9efbec9fe26b-1.jpg')" alt="" /></div>
                             </div>
                         </div>
                     </div>

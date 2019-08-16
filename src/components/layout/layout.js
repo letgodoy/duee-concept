@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 // import { useStaticQuery, graphql } from "gatsby"
 
 // import Header from "./header"
-import "./layout.css"
+import './sass/main.scss'
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
