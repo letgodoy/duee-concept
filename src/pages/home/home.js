@@ -1,10 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 import ReactPageScroller from "react-page-scroller";
 
 import  './home.scss'
 import Layout from "../../components/layout/layout"
-//import Image from "../../components/image"
 import SEO from "../../components/seo"
 
 export default class HomePage extends React.Component {
@@ -41,7 +39,6 @@ export default class HomePage extends React.Component {
           <h1>Contato</h1>
         </div>
       </ReactPageScroller>
-      {/*<Link to="/about/somosleoes">Go to page 2</Link>*/}
     </Layout>
   }
 }

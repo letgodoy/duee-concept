@@ -6,7 +6,9 @@ import './card_case.scss'
 const Header = ({title, img}) => (
   <div className="col-4 card_case">
     <img src={img} />
+    <div class="overlay">
       <span>{title}</span>
+      </div>
   </div>
 )
 

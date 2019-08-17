@@ -11,10 +11,9 @@ import './portifolio.scss'
 
 const Portifolio = () => (
     <Layout>
-        <SEO title="Contato" />
-        <div class="is-preload">
+        <SEO title="Portifolio" />
             {/* <!-- First --> */}
-            <section id="one" className="main style3">
+            <section id="one" className="main style1">
                 <div className="container">
                     <div className="row gtr-150">
                         <section>
@@ -52,7 +51,6 @@ const Portifolio = () => (
                 </div>
                 </div>
             </section>
-        </div>
     <Link to="/">Go back to the homepage</Link>
     </Layout >
                                                                             )
