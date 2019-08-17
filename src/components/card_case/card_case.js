@@ -3,13 +3,13 @@
 import React from "react"
 import './card_case.scss'
 
-const Header = ({title, img}) => (
+const CardCase = ({ title, img }) => (
   <div className="col-4 card_case">
     <img src={img} />
     <div class="overlay">
       <span>{title}</span>
-      </div>
+    </div>
   </div>
 )
 
-export default Header
+export default CardCase
