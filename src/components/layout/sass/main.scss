@@ -1253,9 +1253,10 @@ button,
 	&.style3 {
 		@include dark(#333);
 		background-attachment: fixed;
-		background-image     : url('../../../images/Paulista.png');
+		background-image     : url('../../../images/Paulista-1900x800.png');
 		background-blend-mode:  overlay;
 		background-size      : cover;
+		background-position:  bottom center;
 	}
 }
 
