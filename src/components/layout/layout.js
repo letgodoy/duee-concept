@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
     <Helmet><script src="https://kit.fontawesome.com/67a84c91e8.js"></script></Helmet>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div>
-        <main>{children}</main>
+        <main className="is-preload">{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
