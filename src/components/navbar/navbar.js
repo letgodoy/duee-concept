@@ -1,30 +1,22 @@
 import React from "react"
-import './card_case.scss'
-import Layout from "../layout/layout"
-import SEO from "../seo"
-import ReactPageScroller from "react-page-scroller"
+import './navbar.scss'
 
-export default class HomePage extends React.Component {
+export default class Navbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {currentPage: 1};
     this._pageScroller = null;
   }
 
-  goToPage = (eventKey) => {
-    this._pageScroller.goToPage(eventKey);
-  };
-
-  pageOnChange = (number) => {
-    this.setState({currentPage: number});
-  };
-
   render() {
 
-    //const pagesNumbers = this.getPagesNumbers();
-
-    return <Layout>
-
-    </Layout>
+    return <nav id="navbar">
+      <div className="logo">
+        <img src={this.props.urlImg} alt=""/>
+      </div>
+      <div className="menuButton">
+        <i className="fas fa-bars"></i>
+      </div>
+    </nav>
   }
 }

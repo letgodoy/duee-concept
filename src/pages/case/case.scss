@@ -1,3 +1,7 @@
+body {
+    overflow-y: scroll !important;
+}
+
 .masonry-with-columns {
     display               : -webkit-box;
     display               : -webkit-flex;
