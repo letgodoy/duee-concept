@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import Case from '../../components/card_case/card_case'
+import Cliente from '../../components/clientes/clientes'
 import Lazyload from 'react-lazyload'
 
 import './portifolio.scss'
@@ -16,6 +17,38 @@ const Portifolio = () => (
             <section id="one" className="main style1">
                 <div className="container">
                     <div className="row gtr-150">
+                    <section>
+                            <header>
+                                <h2>Clientes</h2>
+                            </header>
+                            <div className="col-12 row">
+                            <Lazyload>
+                                <Cliente img='https://dueebrasil.com.br/Site_2018/wp-content/uploads/2016/02/bbc.jpg' />
+                            </Lazyload>
+                            <Lazyload>
+                                <Cliente img='https://dueebrasil.com.br/Site_2018/wp-content/uploads/2016/02/bbc.jpg' />
+                            </Lazyload>
+                            <Lazyload>
+                                <Cliente img='https://dueebrasil.com.br/Site_2018/wp-content/uploads/2016/02/bbc.jpg' />
+                            </Lazyload>
+                            <Lazyload>
+                                <Cliente img='https://dueebrasil.com.br/Site_2018/wp-content/uploads/2016/02/bbc.jpg' />
+                            </Lazyload>
+                            <Lazyload>
+                                <Cliente img='https://dueebrasil.com.br/Site_2018/wp-content/uploads/2016/02/bbc.jpg' />
+                            </Lazyload>
+                            <Lazyload>
+                                <Cliente img='https://dueebrasil.com.br/Site_2018/wp-content/uploads/2016/02/bbc.jpg' />
+                            </Lazyload>
+                            <Lazyload>
+                                <Cliente img='https://dueebrasil.com.br/Site_2018/wp-content/uploads/2016/02/bbc.jpg' />
+                            </Lazyload>
+                            <Lazyload>
+                                <Cliente img='https://dueebrasil.com.br/Site_2018/wp-content/uploads/2016/02/bbc.jpg' />
+                            </Lazyload>
+                            </div>
+                        </section>
+
                         <section>
                             <header>
                                 <h2>Portifolio</h2>
