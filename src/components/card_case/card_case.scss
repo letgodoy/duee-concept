@@ -18,20 +18,24 @@
         opacity         : 0;
         transition      : .5s ease;
         background-color: rgb(0, 0, 0);
-        text-align      : center;
+        //text-align      : center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     >span {
-        position      : absolute;
-        top           : 50%;
-        left          : 50%;
+        //position      : absolute;
+        //top           : 50%;
+        //left          : 50%;
         transform     : translate(-50%, -50%);
         font-size     : 22px;
         -ms-transform : translate(-50%, -50%);
-        align-items   : center;
-        vertical-align: middle;
-        align-self    : center;
-        align-content : center;
+        //display: flex;
+        //align-items   : center;
+        //vertical-align: middle;
+        //align-self    : center;
+        //align-content : center;
     }
 
 }
