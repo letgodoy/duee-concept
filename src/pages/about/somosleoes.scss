@@ -12,10 +12,9 @@
 .genteFaz {
     height: 100ch;
     background-color: #24a0dc;
-    display: flex;
-    align-content: end;
-    align-self: end;
-
+    display: flex !important;
+    justify-content: end;
+    align-items: flex-end;
 }
 
 .noPadding {

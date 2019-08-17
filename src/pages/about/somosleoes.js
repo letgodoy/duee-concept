@@ -44,7 +44,7 @@ const SomosLeoes = () => (
                         </section>
                     </div>
                     <div className="col-5 col-12-medium imp-medium noPadding">
-                        <div className="image fit genteFaz"><img src={Faz} alt="A Gente Faz." /></div>
+                        <div className="image fit genteFaz"><img src={Faz} style={{height: '400px'}} alt="A Gente Faz." /></div>
                     </div>
                 </div>
             </div>
