@@ -1,30 +1,49 @@
 import React from "react"
 import { Link } from "gatsby"
-// import ReactFullpage from '@fullpage/react-fullpage-umd';
+import ReactPageScroller from "react-page-scroller";
 
+import  './home.scss'
 import Layout from "../../components/layout/layout"
-// import Image from "../../components/image"
+//import Image from "../../components/image"
 import SEO from "../../components/seo"
 
+export default class HomePage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {currentPage: 1};
+    this._pageScroller = null;
+  }
 
-const HomePage = () => (
-  <Layout>
-    <SEO title="Home" />
-    {/* <script src="https://kit.fontawesome.com/67a84c91e8.js"></script> */}
-    {/* <ReactFullpage>
-      scrollingSpeed = {1000}
-      render={({ state, fullpageApi }) => {
-      return (
-        <ReactFullpage.Wrapper>
-          <div className="section active">Some section</div>
-          <div className="section">Some section</div>
-          <div className="section">Some section</div>
-          <div className="section">Some section</div>
-        </ReactFullpage.Wrapper>
-    )}}
-    </ReactFullpage> */}
-    <Link to="/leoes">Go to page 2</Link>
-  </Layout>
-)
+  goToPage = (eventKey) => {
+    this._pageScroller.goToPage(eventKey);
+  };
 
-export default HomePage
+  pageOnChange = (number) => {
+    this.setState({currentPage: number});
+  };
+
+  render() {
+
+    //const pagesNumbers = this.getPagesNumbers();
+
+    return <Layout>
+      <SEO title="Home"/>
+      <script src="https://kit.fontawesome.com/67a84c91e8.js"></script>
+
+      <ReactPageScroller ref={c => this.reactPageScroller = c}>
+        <div className="page-content home">
+          <h1>Duee Brasil</h1>
+        </div>
+        <div className="page-content portifolio">
+          <h1>Portifólio</h1>
+        </div>
+        <div className="page-content contato">
+          <h1>Contato</h1>
+        </div>
+      </ReactPageScroller>
+      {/*<Link to="/about/somosleoes">Go to page 2</Link>*/}
+    </Layout>
+  }
+}
+
+//export default HomePage
