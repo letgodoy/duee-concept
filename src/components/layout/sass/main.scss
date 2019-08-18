@@ -1246,7 +1246,7 @@ button,
 		@include dark(#333);
 		background-attachment: fixed;
 		background-image     : url('../../../images/Leão-1900x900.jpg');
-		background-blend-mode:  overlay;
+		background-blend-mode: overlay;
 		background-size      : cover;
 	}
 
@@ -1254,10 +1254,12 @@ button,
 		@include dark(#333);
 		background-attachment: fixed;
 		background-image     : url('../../../images/Paulista-1900x800.png');
-		background-blend-mode:  overlay;
+		background-blend-mode: multiply;
 		background-size      : cover;
-		background-position:  bottom center;
+		background-position  : bottom center;
+		// filter: blur(2px);
 	}
+
 }
 
 .text-center {
