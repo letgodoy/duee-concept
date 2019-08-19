@@ -13,6 +13,8 @@ import {db} from "../../components/layout/init-firebase";
 
 import './portifolio.scss'
 
+let portifolio = db.collection("portifolio");
+console.log(portifolio)
 
 
 const Portifolio = () => (
@@ -204,16 +206,16 @@ const Portifolio = () => (
                             </header>
                             <div className="col-12 row">
 {
-  db.collection('portifolio').get()
-  .then((snapshot) => {
-    // snapshot.forEach((doc) => {
-    //   console.log(doc.id, '=>', doc.data());
-    // });
-    console.log(snapshot)
-  })
-  .catch((err) => {
-    console.log('Error getting documents', err);
-  })
+  // db.collection('portifolio').get()
+  // .then((snapshot) => {
+  //   // snapshot.forEach((doc) => {
+  //   //   console.log(doc.id, '=>', doc.data());
+  //   // });
+  //   console.log(snapshot)
+  // })
+  // .catch((err) => {
+  //   console.log('Error getting documents', err);
+  // })
 
 }
 
