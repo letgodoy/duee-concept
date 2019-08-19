@@ -92,7 +92,7 @@ html, body {
 }
 
 #home{
-  @include pageContentPropMobile(right, white);
+  @include pageContentPropMobile(center, white);
 }
 
 #portifolio1{
