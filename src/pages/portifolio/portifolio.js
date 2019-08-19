@@ -10,6 +10,7 @@ import Lazyload from 'react-lazyload'
 import './portifolio.scss'
 
 
+
 const Portifolio = () => (
     <Layout>
         <SEO title="Portifolio" />

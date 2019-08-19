@@ -5,6 +5,11 @@ import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import './somosleoes.scss'
 import Faz from '../../images/a_gente_faz_400x400.jpg'
+import Brand from '../../images/Elementos Digitais Branding.svg'
+import Dev from '../../images/Elementos Digitais Desenvolvimento.svg'
+import Digital from '../../images/Elementos Digitais Digital.svg'
+import Eventos from '../../images/Elementos Digitais Eventos.svg'
+import Live from '../../images/Elementos Digitais Live Marketing.svg'
 
 
 const SomosLeoes = () => (
@@ -17,7 +22,7 @@ const SomosLeoes = () => (
                 <h1><strong>DUEE</strong> BRASIL<br /></h1>
                 <p>bla bla bla agencia</p>
                 <ul class="actions special">
-                    <li><a href="#one" className="button scrolly">Descubra?</a></li>
+                    <li><a href="#one" className="button scrolly">Descubra???????</a></li>
                 </ul>
             </div>
         </section>
@@ -87,7 +92,7 @@ const SomosLeoes = () => (
                 <div className="row gtr-150">
                     <div className="col-4 col-12-medium">
                         <section>
-                            <span className="major icon"></span>
+                            <img src={Live} className="segmento"/>
                             <header>
                                 <h3>LIVE MKT</h3>
                             </header>
@@ -103,7 +108,7 @@ const SomosLeoes = () => (
                     </div>
                     <div className="col-4 col-12-medium">
                         <section>
-                            <span className="major icon"></span>
+                            <img src={Eventos} className="segmento"/>
                             <header>
                                 <h3>PROMOÇÕES e TRADE</h3>
                             </header>
@@ -119,7 +124,7 @@ const SomosLeoes = () => (
                     </div>
                     <div className="col-4 col-12-medium">
                         <section>
-                            <span className="major icon"></span>
+                            <img src={Brand} className="segmento"/>
                             <header>
                                 <h3>BRANDING</h3>
                             </header>
@@ -135,7 +140,7 @@ const SomosLeoes = () => (
                     </div>
                     <div className="col-4 col-12-medium">
                         <section>
-                            <span className="major icon"></span>
+                            <img src={Digital} className="segmento"/>
                             <header>
                                 <h3>DIGITAL</h3>
                             </header>
@@ -151,7 +156,7 @@ const SomosLeoes = () => (
                     </div>
                     <div className="col-4 col-12-medium">
                         <section>
-                            <span className="major icon"></span>
+                            <img src={Dev} className="segmento"/>
                             <header>
                                 <h3>DESENVOLVIMENTO</h3>
                             </header>
