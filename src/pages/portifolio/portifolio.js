@@ -7,8 +7,8 @@ import Case from '../../components/card_case/card_case'
 import Cliente from '../../components/clientes/clientes'
 import Lazyload from 'react-lazyload'
 
-import * as firebase from "firebase/app";
-import "firebase/firestore"
+// import * as firebase from "firebase/app";
+// import "firebase/firestore"
 
 
 import './portifolio.scss'
@@ -25,7 +25,7 @@ var firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-  const db = firebase.firestore()
+  
 
 
 
@@ -218,7 +218,7 @@ const Portifolio = () => (
                             </header>
                             <div className="col-12 row">
 {
-    db.collection('portifolio').get()
+  firebase.firestore().collection('portifolio').get()
   .then((snapshot) => {
     // snapshot.forEach((doc) => {
     //   console.log(doc.id, '=>', doc.data());
