@@ -11,6 +11,7 @@ import Lion from '../../images/home/Leao_DUEE2.jpg'
 import Starbucks from '../../images/home/1920x1080-Starbucks.png'
 import Faxe from '../../images/home/1920x1080-Faxe.png'
 import Lolla from '../../images/home/1920x1080-Lolla.png'
+import Logoanimado from '../../images/home/VIDEO-DUEE-5-SEGUNDOS.gif'
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -39,7 +40,7 @@ export default class HomePage extends React.Component {
 
       <ReactPageScroller ref={c => this.reactPageScroller = c}>
         <div id="home" className="page-content">
-          <img src={Lion} alt=""/>
+          <img src={Logoanimado} alt=""/>
           <div className="content">
             <div className="title col-12 col-md-4">
               <h1>Duee</h1>

@@ -49,7 +49,7 @@ const SomosLeoes = () => (
                         </section>
                     </div>
                     <div className="col-5 col-12-medium imp-medium noPadding">
-                        <div className="image fit genteFaz"><img src={Faz} style={{height: '400px'}} alt="A Gente Faz." /></div>
+                        <div className="image fit genteFaz"><img src={Faz} style={{ height: '400px' }} alt="A Gente Faz." /></div>
                     </div>
                 </div>
             </div>
@@ -77,115 +77,117 @@ const SomosLeoes = () => (
         <section id="three" className="main style1 special">
             <div className="container">
                 <div className="row gtr-150">
-                    <iframe src="https://player.vimeo.com/video/251860230" className="video" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="apresentacao"></iframe>
+                    <video className="video" controls>
+                        <source src="https://firebasestorage.googleapis.com/v0/b/duee-site.appspot.com/o/portifolio%2FDUEE_COMPLETO.mp4?alt=media&token=551c33ba-9d03-495b-b040-90c15394e7d7" type="video/mp4" />
+                            Your browser does not support HTML5 video.
+</video>
                 </div>
-            </div>
+                </div>
 
         </section>
 
-        {/* <!-- Fourth --> */}
-        <section id="four" className="main style2 special">
-            <div className="container">
-                <header className="major">
-                    <h2>NOSSO TRABALHO</h2>
-                </header>
-                <div className="row gtr-150">
-                    <div className="col-4 col-12-medium">
-                        <section>
-                            <img src={Live} className="segmento"/>
-                            <header>
-                                <h3>LIVE MKT</h3>
-                            </header>
-                            <ul className="actions stacked">
-                                <li>Ativações de marca</li>
-                                <li>Eventos</li>
-                                <li>Feiras e estandes</li>
-                                <li>Lançamentos</li>
-                                <li>Workshops e Convenções</li>
-                                <li>Cenografia</li>
-                            </ul>
-                        </section>
-                    </div>
-                    <div className="col-4 col-12-medium">
-                        <section>
-                            <img src={Eventos} className="segmento"/>
-                            <header>
-                                <h3>PROMOÇÕES e TRADE</h3>
-                            </header>
-                            <ul className="actions stacked">
-                                <li>Ativações</li>
-                                <li>Degustação</li>
-                                <li>Ações PDV</li>
-                                <li>Promoções</li>
-                                <li>Campanhas de Incentivo e CRM</li>
-                                <li>Concursos culturais</li>
-                            </ul>
-                        </section>
-                    </div>
-                    <div className="col-4 col-12-medium">
-                        <section>
-                            <img src={Brand} className="segmento"/>
-                            <header>
-                                <h3>BRANDING</h3>
-                            </header>
-                            <ul className="actions stacked">
-                                <li>Planejamento Estratégico</li>
-                                <li>Posicionamento de marca</li>
-                                <li>Identidade visual</li>
-                                <li>Brand book</li>
-                                <li>Criação de conceitos</li>
-                                <li>Campanhas institucionais</li>
-                            </ul>
-                        </section>
-                    </div>
-                    <div className="col-4 col-12-medium">
-                        <section>
-                            <img src={Digital} className="segmento"/>
-                            <header>
-                                <h3>DIGITAL</h3>
-                            </header>
-                            <ul className="actions stacked">
-                                <li>Ativações online</li>
-                                <li>SEO & SEM</li>
-                                <li>Criação e conteúdos digitais</li>
-                                <li>Monitoramento e compra de mídia</li>
-                                <li>Estratégia em redes sociais e conteúdo</li>
-                                <li>Inbound Marketing</li>
-                            </ul>
-                        </section>
-                    </div>
-                    <div className="col-4 col-12-medium">
-                        <section>
-                            <img src={Dev} className="segmento"/>
-                            <header>
-                                <h3>DESENVOLVIMENTO</h3>
-                            </header>
-                            <ul className="actions stacked">
-                                <li>Desenvolvimento Sites e Hotsites</li>
-                                <li>Criação Aplicativos</li>
-                                <li>Desenvolvimento Mobile</li>
-                                <li>Sistema Web</li>
-                                <li>Aplicativos p/ redes sociais</li>
-                                <li>Sistemas CRM</li>
-                            </ul>
-                        </section>
+            {/* <!-- Fourth --> */}
+            <section id="four" className="main style2 special">
+                <div className="container">
+                    <header className="major">
+                        <h2>NOSSO TRABALHO</h2>
+                    </header>
+                    <div className="row gtr-150">
+                        <div className="col-4 col-12-medium">
+                            <section>
+                                <img src={Live} className="segmento" />
+                                <header>
+                                    <h3>LIVE MKT</h3>
+                                </header>
+                                <ul className="actions stacked">
+                                    <li>Ativações de marca</li>
+                                    <li>Eventos</li>
+                                    <li>Feiras e estandes</li>
+                                    <li>Lançamentos</li>
+                                    <li>Workshops e Convenções</li>
+                                    <li>Cenografia</li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div className="col-4 col-12-medium">
+                            <section>
+                                <img src={Eventos} className="segmento" />
+                                <header>
+                                    <h3>PROMOÇÕES e TRADE</h3>
+                                </header>
+                                <ul className="actions stacked">
+                                    <li>Ativações</li>
+                                    <li>Degustação</li>
+                                    <li>Ações PDV</li>
+                                    <li>Promoções</li>
+                                    <li>Campanhas de Incentivo e CRM</li>
+                                    <li>Concursos culturais</li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div className="col-4 col-12-medium">
+                            <section>
+                                <img src={Brand} className="segmento" />
+                                <header>
+                                    <h3>BRANDING</h3>
+                                </header>
+                                <ul className="actions stacked">
+                                    <li>Planejamento Estratégico</li>
+                                    <li>Posicionamento de marca</li>
+                                    <li>Identidade visual</li>
+                                    <li>Brand book</li>
+                                    <li>Criação de conceitos</li>
+                                    <li>Campanhas institucionais</li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div className="col-4 col-12-medium">
+                            <section>
+                                <img src={Digital} className="segmento" />
+                                <header>
+                                    <h3>DIGITAL</h3>
+                                </header>
+                                <ul className="actions stacked">
+                                    <li>Ativações online</li>
+                                    <li>SEO & SEM</li>
+                                    <li>Criação e conteúdos digitais</li>
+                                    <li>Monitoramento e compra de mídia</li>
+                                    <li>Estratégia em redes sociais e conteúdo</li>
+                                    <li>Inbound Marketing</li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div className="col-4 col-12-medium">
+                            <section>
+                                <img src={Dev} className="segmento" />
+                                <header>
+                                    <h3>DESENVOLVIMENTO</h3>
+                                </header>
+                                <ul className="actions stacked">
+                                    <li>Desenvolvimento Sites e Hotsites</li>
+                                    <li>Criação Aplicativos</li>
+                                    <li>Desenvolvimento Mobile</li>
+                                    <li>Sistema Web</li>
+                                    <li>Aplicativos p/ redes sociais</li>
+                                    <li>Sistemas CRM</li>
+                                </ul>
+                            </section>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        {/* Footer */}
-        <section id="footer">
-            <ul className="icons">
-                <li><a href="google.com" className="icon brands alt fa-twitter"><span className="label">Twitter</span></a></li>
-                <li><a href="google.com" className="icon brands alt fa-facebook-f"><span className="label">Facebook</span></a></li>
-                <li><a href="google.com" className="icon brands alt fa-instagram"><span className="label">Instagram</span></a></li>
-                <li><a href="google.com" className="icon brands alt fa-github"><span className="label">GitHub</span></a></li>
-                <li><a href="google.com" className="icon"><i className="far fa-envelope"></i></a></li>
-            </ul>
-        </section>
-        <Link to="/">Go back to the homepage</Link>
+            {/* Footer */}
+            <section id="footer">
+                <ul className="icons">
+                    <li><a href="google.com" className="icon brands alt fa-twitter"><span className="label">Twitter</span></a></li>
+                    <li><a href="google.com" className="icon brands alt fa-facebook-f"><span className="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/dueebrasil" className="icon brands alt fa-instagram"><span className="label">Instagram</span></a></li>
+                    <li><a href="mailto:monalisa@dueebrasil.com.br" className="icon"><i className="far fa-envelope"></i></a></li>
+                </ul>
+            </section>
+            <Link to="/">Go back to the homepage</Link>
     </Layout>
-)
-
+        )
+        
 export default SomosLeoes
