@@ -11,12 +11,15 @@ export default class Navbar extends React.Component {
   render() {
 
     return <nav id="navbar">
-      <div className="logo">
-        <img src={this.props.urlImg} alt=""/>
+      <div id="topbar">
+        <div className="logo">
+          <img src={this.props.urlImg} alt=""/>
+        </div>
+        <div className="menuButton">
+          <i className="fas fa-bars"></i>
+        </div>
       </div>
-      <div className="menuButton">
-        <i className="fas fa-bars"></i>
-      </div>
+      <div id="dropdown"></div>
     </nav>
   }
 }
