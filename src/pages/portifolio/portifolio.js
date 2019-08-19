@@ -13,8 +13,17 @@ import {db} from "../../components/layout/init-firebase";
 
 import './portifolio.scss'
 
-let portifolio = db.collection("portifolio");
-console.log(portifolio)
+let portifolio = db.collection("portifolio").get()
+  .then(function(querySnapshot) {
+    querySnapshot.forEach(function(doc) {
+      // doc.data() is never undefined for query doc snapshots
+      console.log(doc.id, " => ", doc.data());
+    });
+  })
+  .catch(function(error) {
+    console.log("Error getting documents: ", error);
+  });
+// console.log(portifolio)
 
 
 const Portifolio = () => (
