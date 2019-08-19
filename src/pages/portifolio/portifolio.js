@@ -6,26 +6,12 @@ import SEO from "../../components/seo"
 import Case from '../../components/card_case/card_case'
 import Cliente from '../../components/clientes/clientes'
 import Lazyload from 'react-lazyload'
+import {db} from "../../components/layout/init-firebase";
 
-// import * as firebase from "firebase/app";
 // import "firebase/firestore"
 
 
 import './portifolio.scss'
-
-var firebaseConfig = {
-    apiKey: "AIzaSyDAw2n2qtVLOuQOqLi3Lb8WDe36J46SANM",
-    authDomain: "duee-site.firebaseapp.com",
-    databaseURL: "https://duee-site.firebaseio.com",
-    projectId: "duee-site",
-    storageBucket: "",
-    messagingSenderId: "84661138996",
-    appId: "1:84661138996:web:dafd0359a41cb228"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-
-  
 
 
 
@@ -218,7 +204,7 @@ const Portifolio = () => (
                             </header>
                             <div className="col-12 row">
 {
-  firebase.firestore().collection('portifolio').get()
+  db.collection('portifolio').get()
   .then((snapshot) => {
     // snapshot.forEach((doc) => {
     //   console.log(doc.id, '=>', doc.data());

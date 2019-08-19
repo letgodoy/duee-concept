@@ -22,10 +22,10 @@ const Layout = ({ children }) => {
     <>
     <Helmet>
       <script src="https://kit.fontawesome.com/67a84c91e8.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
-      <script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
-      <script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
-      <script defer src="./init-firebase.js"></script>
+      {/*<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>*/}
+      {/*<script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>*/}
+      {/*<script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>*/}
+      {/*<script defer src="./init-firebase.js"></script>*/}
       </Helmet>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div>
