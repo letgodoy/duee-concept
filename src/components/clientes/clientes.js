@@ -3,9 +3,9 @@
 import React from "react"
 import './clientes.scss'
 
-const Clientes = ({ img }) => (
-  <div className="col-2 cliente">
-    <img src={img} />
+const Clientes = ({ img, title }) => (
+  <div className="col-1 cliente">
+    <img src={img} alt={title} />
   </div>
 )
 

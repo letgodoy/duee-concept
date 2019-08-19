@@ -1,5 +1,6 @@
 {
   "projects": {
-    "duee-site": "duee-site"
+    "duee-site": "duee-site",
+    "default": "duee-site"
   }
 }
