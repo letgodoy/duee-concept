@@ -18,12 +18,13 @@ const SomosLeoes = () => (
         {/* <!-- Header --> */}
         <section id="header">
             <div className="inner">
-                <span className="icon solid major"><i className="fab fa-linux"></i></span>
-                <h1><strong>DUEE</strong> BRASIL<br /></h1>
-                <p>bla bla bla agencia</p>
-                <ul className="actions special">
+                {/* <span className="icon solid major"><i className="fab fa-linux"></i></span> */}
+                <h1 className="hashtag">#SOMOS</h1>
+                <h1 className="hashtag2">LEOES</h1>
+                {/* <p>#somosleoes</p> */}
+                {/* <ul className="actions special">
                     <li><a href="#one" className="button scrolly">Descubra???????</a></li>
-                </ul>
+                </ul> */}
             </div>
         </section>
 
@@ -180,8 +181,7 @@ const SomosLeoes = () => (
             {/* Footer */}
             <section id="footer">
                 <ul className="icons">
-                    <li><a href="google.com" className="icon brands alt fa-twitter"><span className="label">Twitter</span></a></li>
-                    <li><a href="google.com" className="icon brands alt fa-facebook-f"><span className="label">Facebook</span></a></li>
+                    <li><a href="https://www.facebook.com/agenciadueebrasil" className="icon brands alt fa-facebook-f"><span className="label">Facebook</span></a></li>
                     <li><a href="https://www.instagram.com/dueebrasil" className="icon brands alt fa-instagram"><span className="label">Instagram</span></a></li>
                     <li><a href="mailto:monalisa@dueebrasil.com.br" className="icon"><i className="far fa-envelope"></i></a></li>
                 </ul>

@@ -21,7 +21,7 @@ module.exports = [
     component: path.resolve(`src/pages/portifolio/portifolio.js`)
   },
   {
-    path: '/jobs/:id',
+    path: '/jobs',
     component: path.resolve(`src/pages/case/case.js`)
   },
 ];

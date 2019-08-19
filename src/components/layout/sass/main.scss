@@ -1245,7 +1245,7 @@ button,
 	&.style2 {
 		@include dark(#333);
 		background-attachment: fixed;
-		background-image     : url('../../../images/Leão-1900x900.jpg');
+		background-image     : url('../../../images/home/Leao_DUEE2.jpg');
 		background-blend-mode: overlay;
 		background-size      : cover;
 	}
@@ -1272,7 +1272,7 @@ button,
 	// @include padding(9em, 0, (0, 0, _size(element-margin), 0));
 	@include dark(#4686a0);
 	background-attachment: fixed;
-	background-image     : url('../../../images/home/Leao_DUEE2.jpg');
+	background-image     : url('../../../images/Leão-1900x900.jpg');
 	background-position  : top center;
 	background-size      : cover;
 	overflow             : hidden;

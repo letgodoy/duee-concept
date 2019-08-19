@@ -13,13 +13,20 @@ export default class Case extends React.Component {
         this.state = {
             case: []
         }
+        // const module = typeof window !== `undefined` ? require("module") : null
     }
 
     componentWillMount() {
 
         const client = new GraphQLClient('https://api.graph.cool/simple/v1/cjwqu32en1d4501347fk27y1w')
 
-        const id = window.location.search.split('=')[(window.location.search.split('=').length) - 1]
+        let id = ""
+
+        if (typeof window !== 'undefined') {
+
+        id = window.location.search.split('=')[(window.location.search.split('=').length) - 1]
+
+        }
 
         client.request(`
         {
