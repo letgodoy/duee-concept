@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "letgodoy.com feat. jao",
   "dependencies": {
+    "firebase": "^6.4.0",
     "gatsby": "^2.13.63",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-manifest": "^2.2.5",
