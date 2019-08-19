@@ -22,18 +22,19 @@ const Layout = ({ children }) => {
     <>
     <Helmet>
       <script src="https://kit.fontawesome.com/67a84c91e8.js"></script>
-      <script src="/__/firebase/6.4.0/firebase-app.js"></script>
-      <script src="/__/firebase/init.js"></script>
-      <script src="/__/firebase/6.4.0/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+      <script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+      <script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+      <script defer src="./init-firebase.js"></script>
       </Helmet>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div>
         <main className="is-preload">{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        {/*<footer>*/}
+        {/*  © {new Date().getFullYear()}, Built with*/}
+        {/*  {` `}*/}
+        {/*  <a href="https://www.gatsbyjs.org">Gatsby</a>*/}
+        {/*</footer>*/}
       </div>
     </>
   )
