@@ -1,4 +1,15 @@
 @import "../../style/_colors";
+//.icon-menu{
+//  cursor: pointer;
+//  color: white;
+//  position: fixed;
+//  mix-blend-mode: difference;
+//  font-size: 40px;
+//  top: 20px;
+//  right: 25px;
+//  z-index: 100;
+//}
+
 #topbar{
   position: fixed;
   width: 100%;
@@ -8,6 +19,7 @@
   padding: 10px 30px;
   display: inline-flex;
   flex-wrap: nowrap;
+  mix-blend-mode: difference;
 
   >.logo{
     flex-basis: 0;
@@ -33,6 +45,11 @@
     color: white;
     font-size: xx-large;
     mix-blend-mode: difference;
+  }
+
+  >.menuButton >.area-menu-btn{
+    width: 60px;
+    height: 60px;
   }
 }
 
