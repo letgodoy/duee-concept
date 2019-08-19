@@ -20,18 +20,18 @@ const Contato = () => (
                         </header>
                         <div className="col-12 row">
                             <div className="col-4 local">
-                                <i class="fas fa-map-marker-alt"></i>
+                                <i className="fas fa-map-marker-alt"></i>
                                 <h3>São Paulo</h3>
                                 <p>Alameda Joaquim Eugênio de Lima, 696 - Jardins</p>
                                 <p>CEP 01403-000</p>
                             </div>
                             <div className="col-4 phone">
-                            <i class="fas fa-phone"></i>
+                            <i className="fas fa-phone"></i>
                                 <h3>Telefone</h3>
                                 <p>11 2532.7152</p>
                             </div>
                             <div className="col-4 mail">
-                            <i class="fas fa-mail-bulk"></i>
+                            <i className="fas fa-mail-bulk"></i>
                                 <h3>Novos negócios</h3>
                                 <p>Monalisa</p>
                                 <p><a href="mailto:monalisa@dueebrasil.com.br">monalisa@dueebrasil.com.br</a></p>

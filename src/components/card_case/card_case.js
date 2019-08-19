@@ -6,7 +6,7 @@ import './card_case.scss'
 const CardCase = ({ title, img }) => (
   <div className="col-4 card_case">
     <img src={img} />
-    <div class="overlay">
+    <div className="overlay">
       <span>{title}</span>
     </div>
   </div>
