@@ -18,10 +18,10 @@ const SomosLeoes = () => (
         {/* <!-- Header --> */}
         <section id="header">
             <div className="inner">
-                <span className="icon solid major"><i class="fab fa-linux"></i></span>
+                <span className="icon solid major"><i className="fab fa-linux"></i></span>
                 <h1><strong>DUEE</strong> BRASIL<br /></h1>
                 <p>bla bla bla agencia</p>
-                <ul class="actions special">
+                <ul className="actions special">
                     <li><a href="#one" className="button scrolly">Descubra???????</a></li>
                 </ul>
             </div>
@@ -33,7 +33,7 @@ const SomosLeoes = () => (
                 <div className="row gtr-150">
                     <div className="col-7 col-12-medium noPadding">
                         <section>
-                            <header class="major">
+                            <header className="major">
                                 <h2>A GENTE FAZ.</h2>
                             </header>
                             <p>A Duee é uma agência full service, que preza pela comunicação integrada, porque sabe que o mundo não se divide em on e off. Não criamos apenas conteúdos e campanhas,
@@ -75,8 +75,8 @@ const SomosLeoes = () => (
 
         {/* <!-- Third --> */}
         <section id="three" className="main style1 special">
-            <div class="container">
-                <div class="row gtr-150">
+            <div className="container">
+                <div className="row gtr-150">
                     <iframe src="https://player.vimeo.com/video/251860230" className="video" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="apresentacao"></iframe>
                 </div>
             </div>
@@ -84,9 +84,9 @@ const SomosLeoes = () => (
         </section>
 
         {/* <!-- Fourth --> */}
-        <section id="four" class="main style2 special">
+        <section id="four" className="main style2 special">
             <div className="container">
-                <header class="major">
+                <header className="major">
                     <h2>NOSSO TRABALHO</h2>
                 </header>
                 <div className="row gtr-150">
@@ -176,12 +176,12 @@ const SomosLeoes = () => (
 
         {/* Footer */}
         <section id="footer">
-            <ul class="icons">
-                <li><a href="google.com" className="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="google.com" className="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="google.com" className="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="google.com" className="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="google.com" className="icon"><i class="far fa-envelope"></i></a></li>
+            <ul className="icons">
+                <li><a href="google.com" className="icon brands alt fa-twitter"><span className="label">Twitter</span></a></li>
+                <li><a href="google.com" className="icon brands alt fa-facebook-f"><span className="label">Facebook</span></a></li>
+                <li><a href="google.com" className="icon brands alt fa-instagram"><span className="label">Instagram</span></a></li>
+                <li><a href="google.com" className="icon brands alt fa-github"><span className="label">GitHub</span></a></li>
+                <li><a href="google.com" className="icon"><i className="far fa-envelope"></i></a></li>
             </ul>
         </section>
         <Link to="/">Go back to the homepage</Link>

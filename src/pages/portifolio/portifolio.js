@@ -7,23 +7,23 @@ import Case from '../../components/card_case/card_case'
 import Cliente from '../../components/clientes/clientes'
 import Lazyload from 'react-lazyload'
 
-// import * as firebase from "firebase/app";
-// import "firebase/firestore"
+import * as firebase from "firebase/app";
+import "firebase/firestore"
 
 
 import './portifolio.scss'
 
-var firebaseConfig = {
-    apiKey: "AIzaSyDAw2n2qtVLOuQOqLi3Lb8WDe36J46SANM",
-    authDomain: "duee-site.firebaseapp.com",
-    databaseURL: "https://duee-site.firebaseio.com",
-    projectId: "duee-site",
-    storageBucket: "",
-    messagingSenderId: "84661138996",
-    appId: "1:84661138996:web:dafd0359a41cb228"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+// var firebaseConfig = {
+//     apiKey: "AIzaSyDAw2n2qtVLOuQOqLi3Lb8WDe36J46SANM",
+//     authDomain: "duee-site.firebaseapp.com",
+//     databaseURL: "https://duee-site.firebaseio.com",
+//     projectId: "duee-site",
+//     storageBucket: "",
+//     messagingSenderId: "84661138996",
+//     appId: "1:84661138996:web:dafd0359a41cb228"
+//   };
+//   // Initialize Firebase
+//   firebase.initializeApp(firebaseConfig);
 
   
 
