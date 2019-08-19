@@ -13,21 +13,38 @@ import {db} from "../../components/layout/init-firebase";
 
 import './portifolio.scss'
 
-let portifolio = db.collection("portifolio").get()
-  .then(function(querySnapshot) {
-    querySnapshot.forEach(function(doc) {
-      // doc.data() is never undefined for query doc snapshots
-      console.log(doc.id, " => ", doc.data());
-    });
-  })
-  .catch(function(error) {
-    console.log("Error getting documents: ", error);
-  });
-// console.log(portifolio)
+export default class Portifolio extends React.Component {
 
+    constructor (props){
+        super(props)
+        this.state = {
+            cases: []
+        }
+        this.cases=[]
+    }
 
-const Portifolio = () => (
-    <Layout>
+    
+
+    componentWillMount(){
+        let array = []
+        db.collection("portifolio").get()
+        .then(function(querySnapshot) {
+          querySnapshot.forEach(function(doc) {
+        //     // doc.data() is never undefined for query doc snapshots
+        //     console.log(doc.data());
+            array.push(doc.data())
+            
+          })
+        })
+        .catch(function(error) {
+          console.log("Error getting documents: ", error);
+        })
+        this.setState({ cases: array})
+    }
+
+    render() {
+        return (
+<Layout>
         <SEO title="Portifolio" />
             {/* <!-- First --> */}
             <section id="one" className="main style1">
@@ -215,20 +232,20 @@ const Portifolio = () => (
                             </header>
                             <div className="col-12 row">
 {
-  // db.collection('portifolio').get()
-  // .then((snapshot) => {
-  //   // snapshot.forEach((doc) => {
-  //   //   console.log(doc.id, '=>', doc.data());
-  //   // });
-  //   console.log(snapshot)
-  // })
-  // .catch((err) => {
-  //   console.log('Error getting documents', err);
-  // })
+    // console.log(this.state.cases)
+    //  cases = []
+
+
+
+    this.state.cases.map((data, i) => {
+    <Lazyload key={i}>
+    <Case title={data.title} img={data.capa} />
+</Lazyload>
+ })
 
 }
 
-                            <Lazyload>
+                            {/* <Lazyload>
                                 <Case title="case 01" img='https://letgodoy.com/wp-content/uploads/2018/03/photo-1515285768613-9efbec9fe26b-1.jpg' />
                             </Lazyload>
                             <Lazyload>
@@ -251,7 +268,7 @@ const Portifolio = () => (
                             </Lazyload>
                             <Lazyload throttle={200} height={300}>
                                 <Case title="case 08" img='https://letgodoy.com/wp-content/uploads/2018/03/photo-1515285768613-9efbec9fe26b-1.jpg' />
-                            </Lazyload>
+                            </Lazyload> */}
                             </div>
                             
                         </section>
@@ -260,6 +277,7 @@ const Portifolio = () => (
             </section>
     <Link to="/">Go back to the homepage</Link>
     </Layout >
-                                                                            )
+        )
+    }
 
-export default Portifolio
+}
