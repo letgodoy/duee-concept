@@ -32,7 +32,9 @@ export default class Navbar extends React.Component {
           <img src={this.props.urlImg} alt=""/>
         </div>
         <div className="menuButton">
-          <i className="fas fa-bars" onClick={this.activeDropdown}></i>
+          {this.state.dropdownActive ?
+          <i className="fas fa-times" onClick={this.activeDropdown}></i> :
+          <i className="fas fa-bars" onClick={this.activeDropdown}></i>}
         </div>
       </div>
       {this.state.dropdownActive ?

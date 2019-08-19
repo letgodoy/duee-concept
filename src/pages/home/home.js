@@ -6,8 +6,11 @@ import Layout from "../../components/layout/layout"
 import Navbar from '../../components/navbar/navbar'
 import SEO from "../../components/seo"
 
-import Lion from '../../images/Leao_DUEE2.jpg'
 import Logo from '../../images/gatsby-icon.png'
+import Lion from '../../images/home/Leao_DUEE2.jpg'
+import Starbucks from '../../images/home/1920x1080-Starbucks.png'
+import Faxe from '../../images/home/1920x1080-Faxe.png'
+import Lolla from '../../images/home/1920x1080-Lolla.png'
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -47,8 +50,41 @@ export default class HomePage extends React.Component {
             <div className="col-md-4"></div>
           </div>
         </div>
-        <div id="portifolio" className="page-content">
-          <h1>Portifólio</h1>
+
+        <div id="portifolio1" className="page-content">
+          <img src={Starbucks} alt=""/>
+          <div className="content">
+            <div className="title col-12 col-md-4">
+              <h1>Portifólio</h1>
+              <a>Saiba mais sobre o projeto</a>
+            </div>
+            <div className="col-md-4"></div>
+            <div className="col-md-4"></div>
+          </div>
+        </div>
+
+        <div id="portifolio2" className="page-content">
+          <img src={Faxe} alt=""/>
+          <div className="content">
+            <div className="title col-12 col-md-4">
+              <h1>Portifólio</h1>
+              <a>Saiba mais sobre o projeto</a>
+            </div>
+            <div className="col-md-4"></div>
+            <div className="col-md-4"></div>
+          </div>
+        </div>
+
+        <div id="portifolio2" className="page-content">
+          <img src={Lolla} alt=""/>
+          <div className="content">
+            <div className="title col-12 col-md-4">
+              <h1>Portifólio</h1>
+              <a>Saiba mais sobre o projeto</a>
+            </div>
+            <div className="col-md-4"></div>
+            <div className="col-md-4"></div>
+          </div>
         </div>
         <div id="contato" className="page-content">
           <h1>Contato</h1>
