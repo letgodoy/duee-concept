@@ -2,46 +2,58 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from 'react-helmet'
+import ScrollOut from "scroll-out";
 // import { useStaticQuery, graphql } from "gatsby"
 
 // import Header from "./header"
 import './sass/main.scss'
 
-const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
+export default class Layout extends React.Component {
 
-  return (
-    <>
-    <Helmet>
-      <script src="https://kit.fontawesome.com/67a84c91e8.js"></script>
-      {/*<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>*/}
-      {/*<script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>*/}
-      {/*<script defer src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>*/}
-      {/*<script defer src="./init-firebase.js"></script>*/}
-      </Helmet>
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      <div>
-        <main className="is-preload">{children}</main>
-        {/*<footer>*/}
-        {/*  © {new Date().getFullYear()}, Built with*/}
-        {/*  {` `}*/}
-        {/*  <a href="https://www.gatsbyjs.org">Gatsby</a>*/}
-        {/*</footer>*/}
-      </div>
-    </>
-  )
-}
+  constructor(props) {
+    super(props)
+    this.state = {
+      cases: []
+    }
+    this.cases = []
+  }
+
+  componentWillMount() {
+    ScrollOut({
+      onShown: function(el) {
+        // use the web animation API
+        el.animate([{ opacity: 0 }, { opacity: 1 }], 1000);
+      },
+      onHidden: function(el) {
+        // hide the element initially
+        el.style.opacity = 0;
+      }
+    })
+    }
+
+    render() {
+      return (
+        <>
+          <Helmet>
+            <script src="https://kit.fontawesome.com/67a84c91e8.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" ></link>
+            <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+          </Helmet>
+          {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+          <div>
+
+            <main data-scroll className="container">{this.props.children}</main>
+            {/*<footer>*/}
+            {/*  © {new Date().getFullYear()}, Built with*/}
+            {/*  {` `}*/}
+            {/*  <a href="https://www.gatsbyjs.org">Gatsby</a>*/}
+            {/*</footer>*/}
+          </div>
+        </>
+      )
+    }
+  }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
-
-export default Layout
