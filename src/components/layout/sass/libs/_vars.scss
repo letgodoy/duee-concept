@@ -1,58 +1,77 @@
-// Misc.
-	$misc: (
-		z-index-base:		10000
-	);
+$claro: #d0d0d0;
+$medio : #6d6e70;
+$escuro: #424242;
+$rosa  : #d82f5a;
+$azul  : #24a1dc;
 
-// Duration.
-	$duration: (
-		transition:			0.2s
-	);
+$claro-drk : desaturate(darken(#d0d0d0, 15), 20);
+$medio-drk : desaturate(darken(#6d6e70, 15), 20);
+$escuro-drk: desaturate(darken(#424242, 15), 20);
+$rosa-drk  : desaturate(darken(#d82f5a, 15), 20);
+$azul-drk  : desaturate(darken(#24a1dc, 15), 20);
 
-// Size.
-	$size: (
-		border-radius:		4px,
-		element-height:		2.75em,
-		element-margin:		2em,
-		container-width:	60em
-	);
+.gradiente-drk-ani {
+	background     : linear-gradient(139deg, #000000, #303030);
+	background-size: 400% 400%;
 
-// Font.
-	$font: (
-		family:				('Source Sans Pro', Helvetica, sans-serif),
-		family-fixed:		('Courier New', monospace),
-		weight:				300,
-		weight-bold:		400
-	);
+	-webkit-animation: AnimationName 10s ease infinite;
+	-moz-animation   : AnimationName 10s ease infinite;
+	-o-animation     : AnimationName 10s ease infinite;
+	animation        : AnimationName 10s ease infinite;
 
-// Palette.
-	$palette: (
-		bg:					#fff,
-		fg:					#666,
-		fg-bold:			#555,
-		fg-light: 			#999,
-		border:				rgba(144,144,144,0.5),
-		border-bg:			rgba(144,144,144,0.075),
-		border2:			rgba(144,144,144,0.75),
-		border2-bg:			rgba(144,144,144,0.2),
-		accent1:			#d0d0d0,
-		accent2:			#6d6e70,
-		accent3:			#424242,
-		accent4:			#d82f5a,
-		accent5:			#24a1dc,
-		accent1-alt:		desaturate(darken(#d0d0d0, 15), 20),
-		accent2-alt:		desaturate(darken(#6d6e70, 15), 20),
-		accent3-alt:		desaturate(darken(#424242, 15), 20),
-		accent4-alt:		desaturate(darken(#d82f5a, 15), 20),
-		accent5-alt:		desaturate(darken(#24a1dc, 15), 20),
+	@-webkit-keyframes AnimationName {
+		0% {
+			background-position: 4% 0%
+		}
 
-		dark: (
-			bg:				#666666,
-			fg-bold:		#ffffff,
-			fg:				rgba(255,255,255,0.75),
-			fg-light:		rgba(255,255,255,0.5),
-			border:			#ffffff,
-			border-bg:		rgba(255,255,255,0.125),
-			border2:		rgba(255,255,255,0.75),
-			border2-bg:		rgba(255,255,255,0.25)
-		)
-	);
+		50% {
+			background-position: 97% 100%
+		}
+
+		100% {
+			background-position: 4% 0%
+		}
+	}
+
+	@-moz-keyframes AnimationName {
+		0% {
+			background-position: 4% 0%
+		}
+
+		50% {
+			background-position: 97% 100%
+		}
+
+		100% {
+			background-position: 4% 0%
+		}
+	}
+
+	@-o-keyframes AnimationName {
+		0% {
+			background-position: 4% 0%
+		}
+
+		50% {
+			background-position: 97% 100%
+		}
+
+		100% {
+			background-position: 4% 0%
+		}
+	}
+
+	@keyframes AnimationName {
+		0% {
+			background-position: 4% 0%
+		}
+
+		50% {
+			background-position: 97% 100%
+		}
+
+		100% {
+			background-position: 4% 0%
+		}
+	}
+}
