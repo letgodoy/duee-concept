@@ -42,7 +42,7 @@ export default class Layout extends React.Component {
           {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
           <div>
 
-            <main data-scroll className="container">{this.props.children}</main>
+            <main data-scroll className="">{this.props.children}</main>
             {/*<footer>*/}
             {/*  © {new Date().getFullYear()}, Built with*/}
             {/*  {` `}*/}
