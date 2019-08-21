@@ -20,6 +20,8 @@ body {
 	color: $claro;
 	background     : linear-gradient(139deg, #000000, #303030);
 	font-family: 'Raleway';
+	min-height: 100%;
+	
 }
 
 a {
@@ -42,6 +44,9 @@ h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 3px;
 }
 
-section {
-    height: 100vmin;
+main {
+	min-height: 100vh;
+	height: 100vmin;
+	overflow-y:  auto;
+	overflow-x:  hidden;
 }
