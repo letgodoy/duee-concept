@@ -1,6 +1,7 @@
 .local {
     text-align:  center;
     width: 100%;
+    height: 100%;
 
     > i {
         font-size: 2.5em;
@@ -16,6 +17,7 @@
 .phone {
     text-align:  center;
     width: 100%;
+    height: 100%;
 
     > i {
         font-size: 2.5em;
@@ -31,6 +33,7 @@
 .mail {
     text-align:  center;
     width: 100%;
+    height: 100%;
 
     > i {
         font-size: 2.5em;
@@ -47,6 +50,7 @@
     border: 0;
      width: 100%;
      height: 100%;
+     
 }
 
 .background {
@@ -55,21 +59,15 @@
     background-blend-mode:  overlay;
     background-position:  top center;
     background-size:  cover;
-    padding: 5%;
-
+    padding: 3% 5%;
+    height: 100%;
 }
 
-
 header >h1 {
-	font-size: 4.5em;
-    // font-family: Arial, Helvetica, sans-serif;
-    // margin-bottom: 1.5em;
+    font-size: 4.5em;
+    height: fit-content;
 }
 
 h4 {
 	font-size: 1.5em;
-}
-
-.conteudo {
-    height: 100%;
 }

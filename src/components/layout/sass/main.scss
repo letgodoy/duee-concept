@@ -19,7 +19,6 @@ ul {
 body {
 	color: $claro;
 	background     : linear-gradient(139deg, #000000, #303030);
-	height: 300vh;
 	font-family: 'Raleway';
 }
 
@@ -38,11 +37,11 @@ a {
 	opacity: 0;
   }
 
-main {
-	height: 100%;
-}
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Julius Sans One';
 	letter-spacing: 3px;
+}
+
+section {
+    height: 100vmin;
 }

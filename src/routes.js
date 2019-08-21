@@ -16,12 +16,4 @@ module.exports = [
     path: '/contato',
     component: path.resolve(`src/pages/contact/contact.js`)
   },
-  {
-    path: '/portifolio',
-    component: path.resolve(`src/pages/portifolio/portifolio.js`)
-  },
-  {
-    path: '/jobs',
-    component: path.resolve(`src/pages/case/case.js`)
-  },
 ];
