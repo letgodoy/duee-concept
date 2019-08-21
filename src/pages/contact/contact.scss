@@ -51,7 +51,7 @@
 }
 
 .background {
-    background-image: url("../../images/Paulista-filtro2.png");
+    background-image: url("../../images/Paulista-filtro3.png");
     background-attachment:  fixed;
     background-blend-mode:  overlay;
     background-position:  bottom center;
@@ -61,6 +61,10 @@
     // align-self:  stretch;
 }
 
+
+#contato {
+    font-size: 1.3em;
+    
 header >h1 {
     font-size: 4.5em;
     height: fit-content;
@@ -68,4 +72,6 @@ header >h1 {
 
 h4 {
 	font-size: 1.5em;
+}
+
 }

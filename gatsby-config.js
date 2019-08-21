@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Duee Brasil`,
+        short_name: `live agency`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -35,14 +35,6 @@ module.exports = {
         path: `${__dirname}/src/routes.js`,
       },
     },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          family: ['Raleway', 'Share Tech']
-        }
-      }
-    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

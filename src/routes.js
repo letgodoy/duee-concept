@@ -16,4 +16,8 @@ module.exports = [
     path: '/contato',
     component: path.resolve(`src/pages/contact/contact.js`)
   },
+  {
+    path: '/fazemos',
+    component: path.resolve(`src/pages/nosso-trabalho/nossotrabalho.js`)
+  },
 ];

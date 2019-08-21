@@ -12,7 +12,7 @@ const Contato = () => (
 
         {/* <!-- First --> */}
         {/* <section id="contato"> */}
-            <div className="row background">
+            <div className="row background middle-xs" id="contato">
                 <header className="col-xs-12">
                     <h1 className="stretchRight">VAMOS CONVERSAR?</h1>
                 </header>
@@ -20,6 +20,12 @@ const Contato = () => (
                     <div className="col-md-3 col-xs-12 col-sm-6 local slideUp middle-xs">
                         <i className="fas fa-map-marker-alt hatch"></i>
                         <h4>São Paulo</h4>
+                        <p>Alameda Joaquim Eugênio de Lima, 696 - Jardins</p>
+                        <p>CEP 01403-000</p>
+                    </div>
+                    <div className="col-md-3 col-xs-12 col-sm-6 local slideUp middle-xs">
+                        <i className="fas fa-map-marker-alt hatch"></i>
+                        <h4>Madrid</h4>
                         <p>Alameda Joaquim Eugênio de Lima, 696 - Jardins</p>
                         <p>CEP 01403-000</p>
                     </div>

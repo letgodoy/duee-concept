@@ -17,7 +17,7 @@ const SomosLeoes = () => (
         <SEO title="Somos leões" />
         {/* <!-- Header --> */}
         <section id="header">
-            <div className="inner">
+            <div>
                 {/* <span className="icon solid major"><i className="fab fa-linux"></i></span> */}
                 <h1 className="hashtag">#SOMOS</h1>
                 <h1 className="hashtag2">LEOES</h1>
@@ -29,12 +29,10 @@ const SomosLeoes = () => (
         </section>
 
         {/* <!-- First --> */}
-        <section id="one" className="main style1">
-            <div className="container">
-                <div className="row gtr-150">
-                    <div className="col-7 col-12-medium noPadding">
-                        <section>
-                            <header className="major">
+        <section id="gentefaz" className="">
+                <div className="row">
+                    <div className="col-md-7 col-sm-12 noPadding">
+                            <header className="">
                                 <h2>A GENTE FAZ.</h2>
                             </header>
                             <p>A Duee é uma agência full service, que preza pela comunicação integrada, porque sabe que o mundo não se divide em on e off. Não criamos apenas conteúdos e campanhas,
@@ -47,13 +45,11 @@ const SomosLeoes = () => (
                             <p>Eventos? A gente faz.</p>
                             <p>Digital? A gente faz.</p>
                             <p>Branding? A gente faz.</p>
-                        </section>
                     </div>
-                    <div className="col-5 col-12-medium imp-medium noPadding">
-                        <div className="image fit genteFaz"><img src={Faz} style={{ height: '400px' }} alt="A Gente Faz." /></div>
+                    <div className="col-md-5 col-sm-12 noPadding">
+                        <div className="image fit genteFaz"><img src={Faz} alt="A Gente Faz." /></div>
                     </div>
                 </div>
-            </div>
         </section>
 
         {/* <!-- Second --> */}
