@@ -1,7 +1,7 @@
 .video {
-    width: 80%;
+    width: 100%;
     margin: auto;
-    height: 80vh;
+    height: 100vh;
 }
 
 // .genteFaz {
@@ -22,20 +22,20 @@
     border-radius: 50%;
 }
 
-.hashtag {
-    font-size: 6em;
-    font-weight:  700;
-    text-align:  right;
-    padding-right: 50px;
-    // text-shadow: 0 0 5px black;
-    line-height: 0.8em;
-}
+.headervideo {
+    background-image: url('../../images/home/TOPO_SEM_LETRA.gif');
+    background-position:  center right;
+    background-size:  cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 
-.hashtag2 {
-    font-size: 8em;
-    font-weight:  700;
-    text-align:  right;
-    padding-right: 50px;
-    // text-shadow: 0 0 5px black;
-    line-height: 0.8em;
+    >div {
+        background-image: url('../../images/SOMOSLEOES.png');
+        background-position:  center right;
+        background-size:  cover;
+        height: 100%;
+        margin: 0;
+    padding: 0;
+    }
 }
