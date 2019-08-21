@@ -14,10 +14,10 @@ const Contato = () => (
         <section id="contato">
             <div className="row middle-xs background">
                 <section className="col-sm-12 row">
-                    <header>
+                    <header className="stretchRight">
                         <h1>VAMOS CONVERSAR?</h1>
                     </header>
-                    <div className="col-xs-12 row center-xs">
+                    <div className="col-xs-12 row center-xs conteudo">
                         <div className="col-md-3 col-xs-12 local slideUp">
                             <i className="fas fa-map-marker-alt hatch"></i>
                             <h4>São Paulo</h4>
