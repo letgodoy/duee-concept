@@ -19,7 +19,7 @@ ul {
 body {
 	color: $claro;
 	background     : linear-gradient(139deg, #000000, #303030);
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
 	min-height: 100%;
 	
 }
@@ -40,7 +40,7 @@ a {
   }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Julius Sans One';
+	font-family: 'Julius Sans One', sans-serif;
 	letter-spacing: 3px;
 }
 

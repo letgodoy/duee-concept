@@ -15,7 +15,7 @@ const NossoTrabalho = () => (
         <SEO title="Somos leões" />
         {/* <!-- Fourth --> */}
         <div id="trabalho" className="row">
-            <header className="col-md-2 col-sm-12 title">
+            <header className="col-md-2 col-sm-12" id="titletrabalho">
                 <h2>NOSSO TRABALHO</h2>
             </header>
             <div className="col-md-2 col-sm-12 strech">

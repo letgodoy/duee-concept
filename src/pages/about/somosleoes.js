@@ -26,21 +26,28 @@ const SomosLeoes = () => (
 </video>
 
         {/* <!-- First --> */}
-        <div className="row" id="gentefaz">
-            <div className="col-md-5 col-sm-12 noPadding">
-                <div className="image fit genteFaz"><img src={Faz} alt="A Gente Faz." /></div>
-            </div>
-            <div className="col-md-7 col-sm-12 noPadding">
-                <p>A Duee é uma agência full service, que preza pela comunicação integrada, porque sabe que o mundo não se divide em on e off. Não criamos apenas conteúdos e campanhas,
+        <div id="gentefaz">
+            <div className="row">
+                <div className="col-md-5 col-sm-12 box" id="resumo">
+                    <h2>LIVE MKT</h2>
+                    <h2>PROMOÇÕES</h2>
+                    <h2>BRANDING</h2>
+                    <h2>DIGITAL</h2>
+                    <h2>DESENVOLVIMENTO</h2>
+                    <h1 className="glitchhover" value="A GENTE FAZ">A GENTE FAZ</h1>
+                </div>
+                <div className="col-md-7 col-sm-12" id="manifesto">
+                    <p>A Duee é uma agência full service, que preza pela comunicação integrada, porque sabe que o mundo não se divide em on e off. Não criamos apenas conteúdos e campanhas,
                                         nós geramos ideias e conexões.</p>
-                <p>Nós somos uma agência que acredita que o trabalho está em constante movimento. Por isso, estamos sempre atentos às novidades, ao público,
+                    <p>Nós somos uma agência que acredita que o trabalho está em constante movimento. Por isso, estamos sempre atentos às novidades, ao público,
                                         às revoluções e novas ideias.</p>
-                <p>É por meio de nossa paixão, criatividade e estratégias que ajudamos marcas a terem retornos eficientes, se tornarem relevantes e atingirem grandes resultados.</p>
-                <p>O conceito A Gente Faz traduz  a nossa experiência de 11 anos, nosso espírito de equipe e de proatividade. É o reflexo do nosso posicionamento como agência 360 graus.
+                    <p>É por meio de nossa paixão, criatividade e estratégias que ajudamos marcas a terem retornos eficientes, se tornarem relevantes e atingirem grandes resultados.</p>
+                    <p>O conceito A Gente Faz traduz  a nossa experiência de 11 anos, nosso espírito de equipe e de proatividade. É o reflexo do nosso posicionamento como agência 360 graus.
                                             A gente faz criativo. A gente faz diferente. A gente faz inteligente.</p>
-                <p>Eventos? A gente faz.</p>
-                <p>Digital? A gente faz.</p>
-                <p>Branding? A gente faz.</p>
+                    <p>Eventos? A gente faz.</p>
+                    <p>Digital? A gente faz.</p>
+                    <p>Branding? A gente faz.</p>
+                </div>
             </div>
         </div>
 

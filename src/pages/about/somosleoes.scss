@@ -1,15 +1,18 @@
+@import '../../components/layout/sass/libs/vars';
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
 .video {
-    width: 100%;
+    width : 100%;
     margin: auto;
     height: 100vh;
 }
 
 // .genteFaz {
-//     height: 100ch;
+//     height          : 100ch;
 //     background-color: #24a0dc;
-//     display: flex !important;
-//     justify-content: end;
-//     align-items: flex-end;
+//     display         : flex !important;
+//     justify-content : end;
+//     align-items     : flex-end;
 // }
 
 .noPadding {
@@ -17,25 +20,110 @@
 }
 
 .segmento {
-    width: 40%;
+    width        : 40%;
     // box-shadow: 1px 1px 10px black;
     border-radius: 50%;
 }
 
 .headervideo {
-    background-image: url('../../images/home/TOPO_SEM_LETRA.gif');
-    background-position:  center right;
-    background-size:  cover;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    background-image   : url('../../images/home/TOPO_SEM_LETRA.gif');
+    background-position: center right;
+    background-size    : cover;
+    height             : 100%;
+    margin             : 0;
+    padding            : 0;
 
     >div {
-        background-image: url('../../images/SOMOSLEOES.png');
-        background-position:  center right;
-        background-size:  cover;
-        height: 100%;
-        margin: 0;
-    padding: 0;
+        background-image   : url('../../images/SOMOSLEOES.png');
+        background-position: center right;
+        background-size    : cover;
+        height             : 100%;
+        margin             : 0;
+        padding            : 0;
+    }
+}
+
+#gentefaz {
+    background-color: white;
+    color           : $escuro-drk;
+    padding         : 5% 5% 5% 2%;
+    min-height      : 100%;
+    align-self      : stretch;
+
+
+    >div {
+        max-width: 1320px;
+        margin   : auto;
+
+        #manifesto {
+            // position: relative;
+            padding    : 3% 5%;
+            border     : 8px solid $medio;
+            z-index    : 0;
+        }
+
+        #resumo {
+            position        : relative;
+            text-align      : right;
+            align-self      : center;
+            z-index         : 1;
+            right           : -30px;
+            background-color: white;
+            height          : fit-content;
+
+            h2 {
+                position         : relative;
+                font-size        : 4em;
+                color            : $azul;
+                line-height      : 0.4em;
+                font-family      : 'Anton', sans-serif;
+                letter-spacing   : 5px;
+                // visibility    : hidden;
+                // display       : none;
+                -webkit-animation: blink 1s step-end infinite;
+                animation        : blink 1s step-end infinite;
+            }
+
+            h1 {
+                text-align       : right;
+                position         : relative;
+                font-size        : 9em;
+                color            : $rosa;
+                font-weight      : bold;
+                font-family      : 'Anton', sans-serif;
+                line-height      : 1em;
+                font-kerning     : 1.5em;
+                z-index          : 2;
+                letter-spacing   : 15px;
+                visibility    : hidden;
+                // display       : none;
+                -webkit-animation: blink2 1s step-end infinite;
+                animation        : blink2 1s step-end infinite;
+            }
+
+            @-webkit-keyframes blink {
+                50% {
+                    visibility: hidden;
+                }
+            }
+
+            @keyframes blink {
+                50% {
+                    visibility: hidden;
+                }
+            }
+
+            @-webkit-keyframes blink2 {
+                50% {
+                    visibility: visible;
+                }
+            }
+
+            @keyframes blink2 {
+                50% {
+                    visibility: visible;
+                }
+            }
+        }
     }
 }
