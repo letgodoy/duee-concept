@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Duee Brasil`,
+    description: `Branding, Live MKT, Promoções, Digital e Desenvolvimento. A Gente Faz.`,
+    author: `letgodoy.com feat. joao vidal`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,8 +21,8 @@ module.exports = {
         name: `Duee Brasil`,
         short_name: `live agency`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#424242`,
+        theme_color: `#424242`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
@@ -31,7 +31,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-routes`,
       options: {
-        // this is the path to your routes configuration file
         path: `${__dirname}/src/routes.js`,
       },
     },
