@@ -1,7 +1,7 @@
 @import '../../components/layout/sass/libs/vars';
 
 .img {
-    width : 100%;
+    width : 80%;
     position: relative;
     text-align:  right;
     // margin: auto;
@@ -84,11 +84,11 @@
             }
 
             &:hover + .item {
-                opacity: .05;
+                opacity: .02;
             }
 
             &:hover + .item:last-of-type {
-                opacity: .05;
+                opacity: .02;
                 background: $escuro-drk;
             }
 
@@ -123,7 +123,7 @@
             }
 
             &:hover:not(:last-of-type) > .icon {
-                transform: scaleX(0.5);
+                transform: scaleX(0.55);
             }
 
             &:hover:not(:last-of-type) > .title {
@@ -137,6 +137,7 @@
                 > .text {
                     transform: translateX(-50%);
                     left: 50%;
+                    margin-bottom: 2%;
                 }
             }
 
