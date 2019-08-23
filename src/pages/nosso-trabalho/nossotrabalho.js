@@ -8,7 +8,7 @@ import Dev from '../../images/desenvolvimento.svg'
 import Digital from '../../images/digital.svg'
 import Eventos from '../../images/eventospromo.svg'
 import Live from '../../images/livemarketing.svg'
-import Logo from '../../images/logo-gambi.png'
+import Logo from '../../images/Logo_duee_Claro.svg'
 
 
 const NossoTrabalho = () => (

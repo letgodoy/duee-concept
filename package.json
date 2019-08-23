@@ -26,6 +26,7 @@
     "react-lazyload": "^2.6.2",
     "react-masonry-component": "^6.2.1",
     "react-page-scroller": "^1.5.1",
+    "react-spring": "^8.0.27",
     "scroll-out": "^2.2.7"
   },
   "devDependencies": {

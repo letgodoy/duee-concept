@@ -50,10 +50,10 @@ const Contato = () => (
                     </div>
                 </div>
             </div>
-            <Link to="/fazemos">O que fazemos</Link><br/>
+            {/* <Link to="/fazemos">O que fazemos</Link><br/>
                 <Link to="/leoes">#somosleos</Link><br/>
                 <Link to="/contato">Clientes</Link><br/>
-                <Link to="/">Home</Link>
+                <Link to="/">Home</Link> */}
     </Layout>
 )
 

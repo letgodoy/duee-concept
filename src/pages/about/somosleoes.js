@@ -4,49 +4,24 @@ import { Link } from "gatsby"
 import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import './somosleoes.scss'
+import Img1 from '../../images/paralax/Ilustração_Prancheta 1.svg'
+import Img2 from '../../images/paralax/Ilustração_Prancheta 1 cópia.svg'
+import Img3 from '../../images/paralax/Ilustração_Prancheta 1 cópia 2.svg'
+import Img4 from '../../images/paralax/Ilustração_Prancheta 1 cópia 3.svg'
+import Img5 from '../../images/paralax/Ilustração_Prancheta 1 cópia 4.svg'
 
 export default class SomosLeoes extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            offsetX: '',
-            offsetY: '',
-            friction: 1 / 32
         }
-        this._mouseMove = this._mouseMove.bind(this);
     }
 
-    componentDidMount() {
-        document.addEventListener('mousemove', this._mouseMove);
-    }
-
-    componentWillUnmount() {
-        document.removeEventListener('mousemove', this._mouseMove);
-    }
-
-    _mouseMove(e) {
-        let followX = (window.innerWidth / 2 - e.clientX);
-        let followY = (window.innerHeight / 2 - e.clientY);
-
-        let x = 0,
-            y = 0;
-        x += ((-followX - x) * this.state.friction);
-        y += (followY - y) * this.state.friction;
-        this.setState({
-            offsetX: x,
-            offsetY: y
-        });
-    }
 
     render() {
-        let offset = {
-            transform: `translate(-50%, -50%) perspective(2000px)
-                      rotateY(${this.state.offsetX}deg)
-                      rotateX(${this.state.offsetY}deg)`
-        }
-
         return (
             <Layout>
+
                 <SEO title="Somos leões" />
                 {/* <!-- Header --> */}
                 <div id="header" className="headervideo">
@@ -86,20 +61,67 @@ export default class SomosLeoes extends React.Component {
                 </div>
 
                 {/* <!-- Second --> */}
-                <div className="row" id="versinho">
-                    <div className="col-xs-12 fadeIn wrapper" style={offset}>
-                        <h3>SOMOS LEÕES</h3>
-                        <h3>Rugimos bem alto para que todos possam nos ouvir.</h3>
-                        <h3>Defendemos nossas ideias, não temos medo de nos aventurar.</h3>
-                        <h3>Somos ágeis, valentes, estrategistas e inquietos.</h3>
-                        <h3>Estamos sempre nos desafiando e caçando oportunidades de fazer diferente.</h3>
-                        <h3>Somos leões.</h3>
+                <div className="" id="versinho">
+                    {/* <div className="parallax"> */}
+                    {/* <div className="parallax__layer parallax__layer__0">
+                            <img src={Img5} />
+                        </div> */}
+                    {/* <div className="parallax__layer parallax__layer__1">
+                            <img src={Img4} />
+                        </div>
+                        <div className="parallax__layer parallax__layer__2">
+                            <img src={Img3} />
+
+                            <div className="parallax__layer parallax__layer__3">
+                                <img src={Img2} />
+                            </div>
+                            <div className="parallax__layer parallax__layer__4">
+
+                                <div><h3>SOMOS LEÕES</h3>
+                                    <h3>Rugimos bem alto para que todos possam nos ouvir.</h3>
+                                    <h3>Defendemos nossas ideias, não temos medo de nos aventurar.</h3>
+                                    <h3>Somos ágeis, valentes, estrategistas e inquietos.</h3>
+                                    <h3>Estamos sempre nos desafiando e caçando oportunidades de fazer diferente.</h3>
+                                    <h3>Somos leões.</h3></div>
+                            </div>
+                        </div>
+                        <div className="parallax__layer parallax__layer__5">
+                            <img src={Img1} />
+                        </div>
+                        <div className="parallax__cover">
+                            <p>noticias</p>
+                            <p>noticias</p>
+                            <p>noticias</p>
+                            <p>noticias</p>
+                        </div>
+                    </div> */}
+
+                    <div className="wrapper">
+                        <section className="section">
+                            {/* <img src={Img5} className="text" /> */}
+                            <img src={Img4} className="text slideDown" />
+                            <img src={Img3} className="text slideDown" />
+                            <div className="text slideDown"><h3>SOMOS LEÕES</h3>
+                                <h3>Rugimos bem alto para que todos possam nos ouvir.</h3>
+                                <h3>Defendemos nossas ideias, não temos medo de nos aventurar.</h3>
+                                <h3>Somos ágeis, valentes, estrategistas e inquietos.</h3>
+                                <h3>Estamos sempre nos desafiando e caçando oportunidades de fazer diferente.</h3>
+                                <h3>Somos leões.</h3></div>
+                            <img src={Img2} className="text slideDown" />
+                            <img src={Img1} className="text slideDown" />
+
+                        </section>
                     </div>
+
+
                 </div>
-                <Link to="/fazemos">O que fazemos</Link><br/>
-                <Link to="/contato">Vamos conversar?</Link><br/>
-                <Link to="/contato">Clientes</Link><br/>
-                <Link to="/">Home</Link>
+{/* 
+
+                <Link to="/fazemos">O que fazemos</Link><br />
+                <Link to="/contato">Vamos conversar?</Link><br />
+                <Link to="/contato">Clientes</Link><br />
+                <Link to="/">Home</Link> */}
+
             </Layout>
         )
     }
