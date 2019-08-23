@@ -36,6 +36,24 @@ const NossoTrabalho = () => (
             </div>
             <div className="item">
                 <div className="icon">
+                    <img src={Digital} className="img" alt="DIGITAL" />
+                    </div>
+                <div className="title">
+                    <div className="text"><h3>DIGITAL</h3></div>
+                </div>
+                <div className="content">
+                    <ul className="lista">
+                        <li>Ativações online</li>
+                        <li>SEO & SEM</li>
+                        <li>Criação e conteúdos digitais</li>
+                        <li>Monitoramento e compra de mídia</li>
+                        <li>Estratégia em redes sociais e conteúdo</li>
+                        <li>Inbound Marketing</li>
+                    </ul>
+                </div>
+            </div>
+            <div className="item">
+                <div className="icon">
                     <img src={Eventos} className="img" alt="PROMOÇÕES e TRADE" />
                     </div>
                 <div className="title">
@@ -70,24 +88,7 @@ const NossoTrabalho = () => (
                     </ul>
                 </div>
             </div>
-            <div className="item">
-                <div className="icon">
-                    <img src={Digital} className="img" alt="DIGITAL" />
-                    </div>
-                <div className="title">
-                    <div className="text"><h3>DIGITAL</h3></div>
-                </div>
-                <div className="content">
-                    <ul className="lista">
-                        <li>Ativações online</li>
-                        <li>SEO & SEM</li>
-                        <li>Criação e conteúdos digitais</li>
-                        <li>Monitoramento e compra de mídia</li>
-                        <li>Estratégia em redes sociais e conteúdo</li>
-                        <li>Inbound Marketing</li>
-                    </ul>
-                </div>
-            </div>
+            
             <div className="item">
                 <div className="icon">
                     <img src={Dev} className="img" alt="DESENVOLVIMENTO" />
@@ -108,7 +109,7 @@ const NossoTrabalho = () => (
             </div>
             <div class="item">
                 {/* <div class="icon">7</div> */}
-                <div class="title">A GENTE FAZ</div>
+                <div class="title">#AGENTEFAZ</div>
                 <div class="content">
                     <div class="heart-icon"><img src={Logo} className="logo" alt="Duee Brasil" /></div>
                 </div>
