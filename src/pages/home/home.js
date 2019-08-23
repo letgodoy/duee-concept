@@ -1,5 +1,6 @@
 import React from "react"
 import ReactPageScroller from "react-page-scroller";
+import { Link } from "gatsby"
 
 import  './home.scss'
 import Layout from "../../components/layout/layout"
@@ -7,12 +8,12 @@ import Navbar from '../../components/navbar/navbar'
 import MouseIcon from '../../components/mouseIcon/mouseIcon'
 import SEO from "../../components/seo"
 
-import Logo from '../../images/gatsby-icon.png'
-import Lion from '../../images/home/Leao_DUEE2.jpg'
+import Logo from '../../images/duee.svg'
+// import Lion from '../../images/home/Leao_DUEE2.jpg'
 import Starbucks from '../../images/home/1920x1080-Starbucks.png'
 import Faxe from '../../images/home/1920x1080-Faxe.png'
 import Lolla from '../../images/home/1920x1080-Lolla.png'
-import Logoanimado from '../../images/home/VIDEO-DUEE-5-SEGUNDOS.gif'
+import Logoanimado from '../../images/home/VIDEO-DUEE.gif'
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -45,13 +46,15 @@ export default class HomePage extends React.Component {
         <div id="home" className="page-content">
           <img src={Logoanimado} alt=""/>
           <div className="content">
-            <div className="title col-12 col-md-4">
-              <h1>Duee</h1>
+            <Link to="/leoes">
+              <div className="title col-12 col-md-4">
+              {/* <h1>Duee</h1>
               <h1>Brasil</h1>
-              <a>Saiba mais sobre nós</a>
+              <a>Saiba mais sobre nós</a> */}
             </div>
             <div className="col-md-4"></div>
             <div className="col-md-4"></div>
+            </Link>
           </div>
         </div>
 
