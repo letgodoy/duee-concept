@@ -12,14 +12,20 @@
 
 #topbar{
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 82px;
   background-color: transparent;
   z-index: 100;
   padding: 10px 30px;
-  display: inline-flex;
+  display: flex;
   flex-wrap: nowrap;
   mix-blend-mode: difference;
+
+  >div{
+    flex: 0 0 50%;
+    max-width: 50%;
+    //padding: 0 30px;
+  }
 
   >.logo{
     flex-basis: 0;
@@ -35,6 +41,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 60px;
   }
 
   >.logo >img{
@@ -42,9 +49,15 @@
   }
 
   >.menuButton >i{
+    transition: .2s;
     color: white;
     font-size: xx-large;
     mix-blend-mode: difference;
+
+    &:hover{
+      cursor: pointer;
+      opacity: .6;
+    }
   }
 
   >.menuButton >.area-menu-btn{

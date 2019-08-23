@@ -4,6 +4,7 @@ import ReactPageScroller from "react-page-scroller";
 import  './home.scss'
 import Layout from "../../components/layout/layout"
 import Navbar from '../../components/navbar/navbar'
+import MouseIcon from '../../components/mouseIcon/mouseIcon'
 import SEO from "../../components/seo"
 
 import Logo from '../../images/gatsby-icon.png'
@@ -38,6 +39,8 @@ export default class HomePage extends React.Component {
 
       <Navbar urlImg={Logo}/>
 
+      <MouseIcon/>
+
       <ReactPageScroller ref={c => this.reactPageScroller = c}>
         <div id="home" className="page-content">
           <img src={Logoanimado} alt=""/>
@@ -54,42 +57,42 @@ export default class HomePage extends React.Component {
 
         <div id="portifolio1" className="page-content">
           <img src={Starbucks} alt=""/>
-          <div className="content">
-            <div className="title col-12 col-md-4">
-              <h1>Portifólio</h1>
-              <a>Saiba mais sobre o projeto</a>
-            </div>
-            <div className="col-md-4"></div>
-            <div className="col-md-4"></div>
-          </div>
+          {/*<div className="content">*/}
+          {/*  <div className="title col-12 col-md-4">*/}
+          {/*    <h1>Portifólio</h1>*/}
+          {/*    <a>Saiba mais sobre o projeto</a>*/}
+          {/*  </div>*/}
+          {/*  <div className="col-md-4"></div>*/}
+          {/*  <div className="col-md-4"></div>*/}
+          {/*</div>*/}
         </div>
 
         <div id="portifolio2" className="page-content">
           <img src={Faxe} alt=""/>
-          <div className="content">
-            <div className="title col-12 col-md-4">
-              <h1>Portifólio</h1>
-              <a>Saiba mais sobre o projeto</a>
-            </div>
-            <div className="col-md-4"></div>
-            <div className="col-md-4"></div>
-          </div>
+          {/*<div className="content">*/}
+          {/*  <div className="title col-12 col-md-4">*/}
+          {/*    <h1>Portifólio</h1>*/}
+          {/*    <a>Saiba mais sobre o projeto</a>*/}
+          {/*  </div>*/}
+          {/*  <div className="col-md-4"></div>*/}
+          {/*  <div className="col-md-4"></div>*/}
+          {/*</div>*/}
         </div>
 
         <div id="portifolio2" className="page-content">
           <img src={Lolla} alt=""/>
-          <div className="content">
-            <div className="title col-12 col-md-4">
-              <h1>Portifólio</h1>
-              <a>Saiba mais sobre o projeto</a>
-            </div>
-            <div className="col-md-4"></div>
-            <div className="col-md-4"></div>
-          </div>
+          {/*<div className="content">*/}
+          {/*  <div className="title col-12 col-md-4">*/}
+          {/*    <h1>Portifólio</h1>*/}
+          {/*    <a>Saiba mais sobre o projeto</a>*/}
+          {/*  </div>*/}
+          {/*  <div className="col-md-4"></div>*/}
+          {/*  <div className="col-md-4"></div>*/}
+          {/*</div>*/}
         </div>
-        <div id="contato" className="page-content">
-          <h1>Contato</h1>
-        </div>
+        {/*<div id="contato" className="page-content">*/}
+        {/*  <h1>Contato</h1>*/}
+        {/*</div>*/}
       </ReactPageScroller>
     </Layout>
   }
