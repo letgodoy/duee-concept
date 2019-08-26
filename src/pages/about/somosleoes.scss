@@ -44,8 +44,10 @@
 }
 
 #gentefaz {
-    background-color   : black;
-    color              : $claro;
+    // background-color   : black;
+    background-color   : white;
+    // color              : $claro;
+    color              : $escuro-drk;
     padding            : 1% 5% 1% 3%;
     min-height         : 100%;
     // align-self      : stretch;
@@ -65,7 +67,8 @@
         #manifesto {
             // position: relative;
             padding    : 3% 5%;
-            border     : 8px solid $claro;
+            border     : 8px solid $claro-drk;
+            // border     : 8px solid $escuro-drk;
             z-index    : 0;
         }
 
@@ -75,7 +78,8 @@
             align-self      : center;
             z-index         : 1;
             right           : -50px;
-            background-color: black;
+            // background-color: black;
+            background-color: white;
             height          : 100%;
             justify-items   : flex-end;
             width           : 100%;
@@ -265,36 +269,27 @@
 }
 
 #versinho {
-    // background-image           : url('../../images/Leão-1900x9002.jpg');
-    // background-position        : center center;
-    // background-size            : cover;
-    // height                     : 100vh;
+    // background-image           : url('../../images/Leão-Duee-Color.png');
+    background-color: black;
+    // background-position        : right center;
+    // background-size            : contain;
+    height                     : 100vh;
     // background-attachment      : fixed;
-    // display                    : flex;
-    // position                   : relative;
-    // display                    : block;
-    // position                   :  relative;
+    // background-repeat:  no-repeat;
+    // background-clip:  padding-box;
 
-    // >div {
+    .text {
+        font-size: 1em;
+        margin:0;
+        padding-left: 3%;
+        padding-right: 1%;
 
-    // color        : white;
-    // align-self   : center;
+    }
 
-    // position: relative;
-    // top     : 40%;
-    // left    : 50%;
-
-    // transform      : translate(-30%, -30%) perspective(100px) rotateY(10deg) rotateX(5deg);
-    // transform-style: preserve-3d;
-
-    // >h3 {
-    // text-align    : center;
-    // font-size     : 2em;
-    // font-weight   : 900;
-    // font-family   : 'Raleway', sans-serif;
-    // }
-
-    // }
+    .lion {
+        // width: 100%;
+        height: 120vh;
+    }
 
 }
 
@@ -304,6 +299,7 @@
     padding: 2% 0%;
     margin: auto;
     justify-self: center;
+    background-color: black;
 
     > div > button {
         background-color: transparent;
@@ -338,8 +334,21 @@
         margin: 0;
         margin-top: 3%;
         width: 100%;
-        padding: 5%;
-    }
+        padding: 5% 5% 0 5%;
 
+        > div {
+            padding: 1% 20%;
+        }
+
+        .depo {
+    
+            > p {
+                text-align:  left;
+                padding-left: 10%; 
+            }
+        }
+    }
+    
+    
 
 }
