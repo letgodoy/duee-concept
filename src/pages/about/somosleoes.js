@@ -81,7 +81,7 @@ export default class SomosLeoes extends React.Component {
 
                 <div id='news' className="row" >
                     <div className="row center-xs">
-                    <button type='button' onClick={() => this.setState({ openNews: !this.state.openNews })}>ver mais</button>
+                    <button type='button' onClick={() => this.setState({ openNews: !this.state.openNews })}>Ver Mais</button>
                     </div>
                     
                     <div  className="col-xs-12 row vermais center-xs">

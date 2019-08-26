@@ -305,6 +305,15 @@
     margin: auto;
     justify-self: center;
 
+    > div > button {
+        background-color: transparent;
+        border: 2px solid #ffffff;
+        color: white;
+        padding: 1% 3%;
+        font-size: 1em;
+        cursor: pointer;
+    }
+
     > div {
         width: 100%;
     }
