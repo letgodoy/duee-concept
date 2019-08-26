@@ -26,34 +26,45 @@
 }
 
 .headervideo {
-    background-image   : url('../../images/home/TOPO_SEM_LETRA.gif');
-    background-position: center right;
-    background-size    : cover;
-    height             : 100%;
-    margin             : 0;
-    padding            : 0;
+    background-image      : url('../../images/home/TOPO_SEM_LETRA.gif');
+    background-position   : center right;
+    background-size       : cover;
+    min-height            : fit-content;
+    // max-height         : 100vh;
+    height                : 100vh;
+    margin                : 0;
+    padding               : 0;
+
+    >img {
+        max-width   : 100%;
+        max-height  : 100vh;
+        margin-right: 0;
+        display     : none;
+    }
 
     >div {
-        background-image   : url('../../images/SOMOSLEOES.png');
-        background-position: center right;
-        background-size    : cover;
-        height             : 100%;
-        margin             : 0;
-        padding            : 0;
+        background-image          : url('../../images/SOMOSLEOES.png');
+        background-position       : center right;
+        background-size           : cover;
+        //     min-height         : 25%;
+        // max-height             : 100vh;
+        height                    : 100%;
+        margin                    : 0;
+        padding                   : 0;
     }
 }
 
 #gentefaz {
     // background-color   : black;
-    background-color   : white;
+    background-color      : white;
     // color              : $claro;
-    color              : $escuro-drk;
-    padding            : 1% 5% 1% 3%;
-    min-height         : 100%;
-    // align-self      : stretch;
-    // vertical-align  :  middle;
-    height             : 100%;
-    display            : flex;
+    color                 : $escuro-drk;
+    padding               : 1% 5% 1% 3%;
+    min-height            : 100%;
+    // align-self         : stretch;
+    // vertical-align     :  middle;
+    height                : 100%;
+    display               : flex;
 
 
     >div {
@@ -65,24 +76,24 @@
 
 
         #manifesto {
-            // position: relative;
-            padding    : 3% 5%;
-            border     : 8px solid $claro-drk;
+            // position   : relative;
+            padding       : 3% 5%;
+            border        : 8px solid $claro-drk;
             // border     : 8px solid $escuro-drk;
-            z-index    : 0;
+            z-index       : 0;
         }
 
         #resumo {
-            position        : relative;
-            text-align      : right;
-            align-self      : center;
-            z-index         : 1;
-            right           : -50px;
+            position           : relative;
+            text-align         : right;
+            align-self         : center;
+            z-index            : 1;
+            right              : -50px;
             // background-color: black;
-            background-color: white;
-            height          : 100%;
-            justify-items   : flex-end;
-            width           : 100%;
+            background-color   : white;
+            height             : 100%;
+            justify-items      : flex-end;
+            width              : 100%;
 
             h2 {
                 position         : relative;
@@ -270,86 +281,215 @@
 
 #versinho {
     // background-image           : url('../../images/Leão-Duee-Color.png');
-    background-color: black;
+    background-color              : black;
     // background-position        : right center;
     // background-size            : contain;
-    height                     : 100vh;
+    height                        : 100vh;
     // background-attachment      : fixed;
-    // background-repeat:  no-repeat;
-    // background-clip:  padding-box;
+    // background-repeat          :  no-repeat;
+    // background-clip            :  padding-box;
 
     .text {
-        font-size: 1em;
-        margin:0;
-        padding-left: 3%;
+        font-size    : 1em;
+        margin       : 0;
+        padding-left : 3%;
         padding-right: 1%;
 
     }
 
     .lion {
         // width: 100%;
-        height: 120vh;
-        overflow:  hidden;
+        height  : 115vh;
+        overflow: hidden;
     }
 
 }
 
 #news {
-    // max-width: 1320px;
-    width: 100%;
-    padding: 2% 0%;
-    margin: auto;
-    justify-self: center;
+    // max-width    : 1320px;
+    width           : 100%;
+    padding         : 2% 0%;
+    margin          : auto;
+    justify-self    : center;
     background-color: black;
 
-    > div > button {
+    >div>button {
         background-color: transparent;
-        border: 2px solid #ffffff;
-        color: white;
-        padding: 1% 3%;
-        font-size: 1em;
-        cursor: pointer;
+        border          : 2px solid #ffffff;
+        color           : white;
+        padding         : 1% 3%;
+        font-size       : 1em;
+        cursor          : pointer;
     }
 
-    > div {
+    >div {
         width: 100%;
     }
 
     .vermais {
-        width: 100%;
-        margin: 0;
+        width  : 100%;
+        margin : 0;
         padding: 0;
     }
 
     .midia {
         background-color: white;
-        color: $escuro-drk;
-        width: 100%;
-        padding: 5%;
-        margin: 0;
+        color           : $escuro-drk;
+        width           : 100%;
+        padding         : 5%;
+        margin          : 0;
     }
 
     .depoimentos {
         background-color: white;
-        color: $escuro-drk;
-        margin: 0;
-        margin-top: 3%;
-        width: 100%;
-        padding: 5% 5% 0 5%;
+        color           : $escuro-drk;
+        margin          : 0;
+        margin-top      : 3%;
+        width           : 100%;
+        padding         : 5% 5% 0 5%;
 
-        > div {
+        >div {
             padding: 1% 20%;
         }
 
         .depo {
-    
-            > p {
-                text-align:  left;
-                padding-left: 10%; 
+
+            >p {
+                text-align  : left;
+                padding-left: 10%;
             }
         }
     }
-    
-    
+}
 
+@media screen and (max-width: 980px) {
+    .headervideo {
+        background-image   : url('../../images/home/TOPO_SEM_LETRA.gif');
+        background-position: center right;
+        background-size    : cover;
+        min-height         : fit-content;
+        max-height         : 100vh;
+        height             : fit-content;
+        margin             : 0;
+        padding            : 0;
+
+        >img {
+            max-width   : 100%;
+            max-height  : 100vh;
+            margin-right: 0;
+            display     : block;
+        }
+
+        >div {
+            background-image             : url('../../images/SOMOSLEOES.png');
+            background-position          : center right;
+            background-size              : cover;
+            min-height                   : 25%;
+            // max-height                : 100vh;
+            // height                    : 100%;
+            margin                       : 0;
+            padding                      : 0;
+            display                      : none;
+        }
+    }
+
+    .video {
+        width     : 100%;
+        margin    : 0 auto;
+        max-height: fit-content;
+
+        >iframe {
+            max-height: fit-content;
+        }
+    }
+
+    #gentefaz {
+        height  : fit-content;
+        // width: 100%;
+
+        >div {
+            width        : 100%;
+            margin-bottom: 4%;
+
+            #resumo {
+                text-align: center;
+                margin    : auto;
+                right     : 0;
+                width     : 100%;
+                font-size : 0.5em;
+
+            }
+
+            #manifesto {
+                width: 100%;
+            }
+        }
+    }
+
+    #versinho {
+        background-color: black;
+        height          : fit-content;
+
+        .text {
+            font-size    : 1.1em;
+            margin       : 0;
+            padding-left : 3%;
+            padding-right: 1%;
+            text-align   : center;
+
+        }
+
+        .lion {
+            width      : 100%;
+            height     : 100%;
+            // overflow: hidden;
+        }
+
+    }
+
+    #news {
+        // max-width    : 1320px;
+        width           : 100%;
+        
+        .vermais {
+            margin: 0;
+
+            .midia {
+                width: 100%;
+            }
+
+            >div {
+                margin: 0;
+
+                .depoimentos {
+                    width  : 100%;
+                    padding: 0;
+                    margin: 0;
+
+                    > h4 {
+                        padding: 0;
+                        width  : 100%;
+                        margin: 0;
+                    }
+
+                    .row {
+                        padding: 0;
+                        width  : 100%;
+                        margin: 0;
+                    }
+
+                    .depo {
+                        width  : 100%;
+                        padding: 0;
+                        margin: 0;
+
+                        >p {
+                            text-align  : left;
+                            padding-left: 10%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -40,10 +40,10 @@ const Contato = () => (
                         <p><a href="mailto:monalisa@dueebrasil.com.br">monalisa@dueebrasil.com.br</a></p>
                     </div>
                     <div className="col-md-3 col-xs-12 col-sm-6 social slideUp middle-xs">
-                        <h4><a href="https://www.facebook.com/agenciadueebrasil"><i className="fab fa-facebook-f"></i></a></h4>
-                        <h4><a href="https://www.instagram.com/dueebrasil"><i className="fab fa-instagram"></i></a></h4>
-                        <h4><a href="https://www.linkedin.com/company/duee-brasil"><i class="fab fa-linkedin-in"></i></a></h4>
-                        <h4><a href="https://dueetando.com.br"><i class="fas fa-blog"></i></a></h4>
+                        <h4><a href="https://www.facebook.com/agenciadueebrasil" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></h4>
+                        <h4><a href="https://www.instagram.com/dueebrasil" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></h4>
+                        <h4><a href="https://www.linkedin.com/company/duee-brasil" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></h4>
+                        <h4><a href="https://dueetando.com.br" target="_blank" rel="noopener noreferrer"><i class="fas fa-blog"></i></a></h4>
                     </div>
                     <div className="col-md-8 col-xs-12 col-sm-6 slideLeft middle-xs">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0351629017696!2d-46.65470238447564!3d-23.56718056769357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7420ee309%3A0x31541a74223471bb!2sDUEE+BRASIL!5e0!3m2!1spt-BR!2sbr!4v1565909031974!5m2!1spt-BR!2sbr" frameborder="0" allowfullscreen title="mapa" className="pullDown mapa"></iframe>
