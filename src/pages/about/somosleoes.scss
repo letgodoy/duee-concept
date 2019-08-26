@@ -256,13 +256,6 @@
                 }
             }
 
-
-
-
-
-
-
-
         }
     }
 }
@@ -303,202 +296,41 @@
 
     // }
 
+}
 
-    //     .parallax {
-    // // display            : block;
-    //         perspective   : 200px;
-    //         height        : 100vh;
-    //         overflow-x    : hidden;
-    //         overflow-y    : auto;
-    //         position      : absolute;
-    //         top           : 0;
-    //         // left       : 0;
-    //         // right      : 0;
-    //         bottom        : 0;
-    //         width         : 100%;
-    //         // margin-left: -1500px;
-    //       }
+#news {
+    // max-width: 1320px;
+    width: 100%;
+    padding: 2% 0%;
+    margin: auto;
+    justify-self: center;
 
-    //       .parallax__layer{
-    //         position: relative;
-    //         // top  : 0;
-    //         // right: 0;
-    //         bottom  : 0;
-    //         // left : 0;
-
-    //         img{
-    //           display : block;
-    //           position: absolute;
-    //           bottom  : 0;
-    //           width   : 100%;
-    //         }
-
-    //         div {
-    //             // display : block;
-    //         //   position  : absolute;
-    //           bottom       : 0;
-    //         //   text-align: center;
-    //         width          : 100%;
-    //         padding        : 5%;
-    //         // height      : 100%;
-
-    //           h3 {
-    //               color     : black;
-    //               text-align:  center;
-    //             font-family : 'Raleway', sans-serif;
-    //             // font-size: 0.5em;
-    //           }
-    //         }
-    //       }
-
-    //       .parallax__cover{
-    //         background: #2D112B;
-    //         display   : block;
-    //         position  : absolute;
-    //         width     : 100%;
-    //         bottom    : 0;
-    //         // top    : 0;
-    //         // left   : 0;
-    //         // right  : 0;
-    //         height    : 50vh;
-    //         z-index   : 2;
-    //       }
-
-    //       $parallax__layers:5;
-
-    //       @for $i from 0 through $parallax__layers {
-    //         $x: ($parallax__layers - $i) / 2;
-    //         .parallax__layer__#{$i}{
-    //            transform: translateZ(-100 * $x#{px}) scale($x + 1);
-    //         }
-    //       }
-
-    .wrapper {
-        /* O elemento precisa ter uma altura definida para o efeito
-        funcionar.
-           100vh significa 100% da altura da view.
-        */
-        height: 120vh;
-
-        /* O tamanho das imagens irá criar uma barra de rolagem 
-        horizontal. Iremos desativar isso */
-        overflow-x: hidden;
-        overflow-y: hidden;
-
-        /* A propriedade perspective indica a "distância" entre o 
-        usuário e o plano Z.
-        Quanto maior o valor, mais perto o elemento estará do usuário.
-        Se for um valor negativo,
-        mais distante esse elemento estará.
-        */
-        perspective: 100px;
-
-        /* O transform-style indica se os elementos filhos devem ser 
-        transformados em um plano 2D ou 3D.
-        O valor preserve-3d indica que os elementos devem seguir o 
-        espaço 3D indicado.
-        */
-        transform-style: preserve-3d;
+    > div {
+        width: 100%;
     }
 
-
-
-    .section {
-        /* Indicamos "relative" para depois podermos
-        posicionar os elementos filhos com "absolute" */
-        position: relative;
-
-        /* Indicamos uma altura para a nossa seção. O valor não 
-        importa muito.
-        Para garantir um bom efeito, coloquei também uma altura 
-        mínima de 700px;
-        */
-        height       : 100vh;
-        // min-height: 500px;
-
-        /* Para manter a transformação em espaço 3D, indicamos o mesmo 
-        valor do elemento pai (preserve-3d).
-        Para não precisar repetir o valor "preserve-3d", você pode usar 
-        o valor "inherit", que fará
-        com que ele pegue o valor do elemento pai.
-        */
-        transform-style: inherit;
+    .vermais {
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
-    .section::before {
-        /* Aqui nós iremos configurar a imagem que irá aparecer no fundo
-        da seção.
-        Como vimos, o Parallax precisa de elementos diferentes, então 
-        não daria certo se colocássemos o fundo diretamente na 
-        <section>. Então criaremos um pseudo-elemento para isso.
-        */
-
-        /* Isso servirá para que o pseudo-elemento possua as mesmas
-        dimensões do elemento <section> */
-        content  : " ";
-        position : absolute;
-        top      : 0;
-        right    : 0;
-        bottom   : 0;
-        left     : 0;
-        // height: 100%;
-        /* O z-index negativo irá garantir que a imagem não fique por 
-        cima de outros elementos */
-        z-index: -1;
-
-        /* Aqui estamos fazendo com que a imagem de fundo cubra todo o
-        elemento */
-        background-image   : url('../../images/paralax/Ilustração_Prancheta 1 cópia 4.svg');
-        background-size    : cover;
-        background-repeat  : no-repeat;
-        background-position: center bottom;
-
-        /* Aqui está a brincadeira. Lembra que o nosso "wrapper" está
-        mais próximo do usuário?
-        Aqui nós faremos com que o nosso pseudo-elemento, que está com
-        a imagem de fundo, fique mais longe do usuário. Para isso, 
-        basta passar um valor negativo para "translateZ()".
-        
-        Como a imagem irá para longe do usuário, ela parecerá menor. 
-        Então usamos o "scale()" para aumentar o tamanho da imagem.
-        
-        Como o elemento estará mais longe do usuário, ele irá se mover
-        mais lentamente do que os elementos mais próximos conforme 
-        a gente role a página.
-        */
-        transform: translateZ(-1px) scale(1.5);
+    .midia {
+        background-color: white;
+        color: $escuro-drk;
+        width: 100%;
+        padding: 5%;
+        margin: 0;
     }
 
-    .text {
-        /* Essa classe, como dito antes, é só para o nosso conteúdo.
-        Sinta-se livre para criar o que quiser.
-        */
-        position: absolute;
-
-        width              : 100%;
-        padding            : 0 0;
-        // background-color: rgba(255, 255, 255,0.5);
-
-
-        // text-shadow: 0 0 5px #000;
-        // font-size  : 20px;
-
-
-
-        >h3 {
-            top        : 0;
-            text-align : center;
-            color      : black;
-            font-family: 'Raleway', sans-serif;
-            font-size  : 2em;
-            font-weight: 900;
-        }
-
-        >img {
-            bottom: 0;
-        }
+    .depoimentos {
+        background-color: white;
+        color: $escuro-drk;
+        margin: 0;
+        margin-top: 3%;
+        width: 100%;
+        padding: 5%;
     }
-
 
 
 }
