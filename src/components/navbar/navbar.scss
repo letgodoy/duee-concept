@@ -15,7 +15,7 @@
   width: 100vw;
   height: 82px;
   background-color: transparent;
-  z-index: 100;
+  z-index: 200;
   padding: 10px 30px;
   display: flex;
   flex-wrap: nowrap;
@@ -42,6 +42,7 @@
     justify-content: flex-end;
     align-items: center;
     padding-right: 60px;
+    z-index: 180;
   }
 
   >.logo >img{
@@ -53,6 +54,7 @@
     color: white;
     font-size: xx-large;
     mix-blend-mode: difference;
+    
 
     &:hover{
       cursor: pointer;
@@ -63,6 +65,7 @@
   >.menuButton >.area-menu-btn{
     width: 60px;
     height: 60px;
+    
   }
 }
 
@@ -71,11 +74,12 @@
   top: 0;
   left: 0;
   position: absolute;
-  z-index: 90;
+  z-index: 190;
   width: 100%;
   height: 100vh;
-  background-color: $color-black;
+  background-color: black;
   box-shadow: 0 10px 15px black;
+  opacity: 0.96;
 
   >.links{
     margin-top: 100px;
@@ -115,6 +119,6 @@
   }
 
   #dropdown{
-    height: 90vh;
+    height: 100vh;
   }
 }

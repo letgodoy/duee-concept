@@ -5,6 +5,10 @@ import { Helmet } from 'react-helmet'
 import ScrollOut from "scroll-out";
 // import { useStaticQuery, graphql } from "gatsby"
 
+import Logo from '../../images/duee.svg'
+import Navbar from '../../components/navbar/navbar'
+import MouseIcon from '../../components/mouseIcon/mouseIcon'
+
 // import Header from "./header"
 import './sass/main.scss'
 
@@ -38,10 +42,12 @@ export default class Layout extends React.Component {
             <script src="https://kit.fontawesome.com/67a84c91e8.js"></script>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" ></link>
             <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
           </Helmet>
           {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-          <div>
+          <Navbar urlImg={Logo}/>
 
+          <div>
             <main data-scroll>{this.props.children}</main>
             {/*<footer>*/}
             {/*  © {new Date().getFullYear()}, Built with*/}

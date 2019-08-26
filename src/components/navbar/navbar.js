@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import './navbar.scss'
 
 import HamburgerMenu from 'react-hamburger-menu';
@@ -57,22 +58,22 @@ export default class Navbar extends React.Component {
         <div className="links">
           <ul>
             <li>
-              <a href="">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="">Somos Leões</a>
+              <Link to="/leoes">Somos Leões</Link>
             </li>
             <li>
-              <a href="">Nosso Trabalho</a>
+              <Link to="/fazemos">Nosso Trabalho</Link>
             </li>
             <li>
-              <a href="">Portifólio</a>
+              <a href="https://dueebrasil.com.br">Portifólio</a>
             </li>
             <li>
-              <a href="">Dueetando</a>
+              <a href="https://dueetando.com.br">Dueetando</a>
             </li>
             <li>
-              <a href="">Contato</a>
+              <Link to="/contato">Contato</Link>
             </li>
           </ul>
         </div>
