@@ -47,19 +47,19 @@ export default class HomePage extends React.Component {
 
       <ReactPageScroller ref={c => this.reactPageScroller = c}>
         <div id="home" className="page-content">
-        <Link to="/leoes">
-          <img src={Logoanimado} alt="#somosleoes"/>
-          <div className="content">
+          <Link to="/leoes">
+            <img src={Logoanimado} alt="#somosleoes"/>
+            {/*<div className="content">*/}
 
-              <div className="title col-12 col-md-4">
-              {/* <h1>Duee</h1>
-              <h1>Brasil</h1>
-              <a>Saiba mais sobre nós</a> */}
-            </div>
-            <div className="col-md-4"></div>
-            <div className="col-md-4"></div>
+            {/*  <div className="title col-12 col-md-4">*/}
+            {/*    /!* <h1>Duee</h1>*/}
+            {/*  <h1>Brasil</h1>*/}
+            {/*  <a>Saiba mais sobre nós</a> *!/*/}
+            {/*  </div>*/}
+            {/*  <div className="col-md-4"></div>*/}
+            {/*  <div className="col-md-4"></div>*/}
 
-          </div>
+            {/*</div>*/}
           </Link>
         </div>
 
