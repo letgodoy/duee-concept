@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#424242`,
         theme_color: `#424242`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.ico`, // This path is relative to the root of the site.
+        icon: `src/images/Logo_Claro-leao.png`, // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-sass',
