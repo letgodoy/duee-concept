@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import './navbar.scss'
 
-import HamburgerMenu from 'react-hamburger-menu';
 // import MenuIcon from '../menuIcon/menuIcon'
 
 export default class Navbar extends React.Component {
@@ -34,20 +33,9 @@ export default class Navbar extends React.Component {
       {/*{this.state.dropdownActive ? null : <i className="fas fa-bars icon-menu" onClick={this.activeDropdown}></i>}*/}
       <div id="topbar">
         <div className="logo">
-          <img src={this.props.urlImg} alt=""/>
+          <Link to={"/"}><img src={this.props.urlImg} alt=""/></Link>
         </div>
         <div className="menuButton">
-          {/*<HamburgerMenu*/}
-          {/*  isOpen={this.state.dropdownActive}*/}
-          {/*  menuClicked={this.handleClick.bind(this)}*/}
-          {/*  width={18}*/}
-          {/*  height={15}*/}
-          {/*  strokeWidth={1}*/}
-          {/*  rotate={0}*/}
-          {/*  color='white'*/}
-          {/*  borderRadius={0}*/}
-          {/*  animationDuration={0.5}*/}
-          {/*/>*/}
           {this.state.dropdownActive ?
           <i className="fas fa-times" onClick={this.activeDropdown}></i> :
           <i className="fas fa-bars " onClick={this.activeDropdown}></i>}

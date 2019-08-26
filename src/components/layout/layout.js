@@ -5,9 +5,9 @@ import { Helmet } from 'react-helmet'
 import ScrollOut from "scroll-out";
 // import { useStaticQuery, graphql } from "gatsby"
 
-import Logo from '../../images/duee.svg'
+import Logo from '../../images/logo_white.svg'
 import Navbar from '../../components/navbar/navbar'
-import MouseIcon from '../../components/mouseIcon/mouseIcon'
+// import MouseIcon from '../../components/mouseIcon/mouseIcon'
 
 // import Header from "./header"
 import './sass/main.scss'

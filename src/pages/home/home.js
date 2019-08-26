@@ -41,13 +41,13 @@ export default class HomePage extends React.Component {
       <SEO title="Home"/>
       <script src="https://kit.fontawesome.com/67a84c91e8.js"></script>
 
-      <Navbar urlImg={Logo}/>
+      {/*<Navbar urlImg={Logo}/>*/}
 
       <MouseIcon/>
 
       <ReactPageScroller ref={c => this.reactPageScroller = c}>
         <div id="home" className="page-content">
-          <img src={Logoanimado} alt=""/>
+          <img src={Logoanimado} alt="Logo Animado"/>
           <div className="content">
             <Link to="/leoes">
               <div className="title col-12 col-md-4">
@@ -62,10 +62,10 @@ export default class HomePage extends React.Component {
         </div>
 
         <div id="portifolio1" className="page-content">
-          <img src={Starbucks} alt=""/>
+          <img src={Starbucks} alt="Starbucks Background"/>
           <div className="BgOpacity"></div>
           <div className="LogoContainer">
-            <img className="starbucks" src={StarbucksLogo} alt=""/>
+            <img className="starbucks" src={StarbucksLogo} alt="Starbucks Logo"/>
           </div>
           {/*<div className="content">*/}
           {/*  <div className="title col-12 col-md-4">*/}
@@ -78,10 +78,10 @@ export default class HomePage extends React.Component {
         </div>
 
         <div id="portifolio2" className="page-content">
-          <img src={FaxeBg} alt=""/>
+          <img src={FaxeBg} alt="Faxe Background"/>
           <div className="BgOpacity"></div>
           <div className="LogoContainer">
-            <img src={FaxeLogo} alt=""/>
+            <img src={FaxeLogo} alt="Faxe Logo"/>
           </div>
           {/*<div className="content">*/}
           {/*  <div className="title col-12 col-md-4">*/}
@@ -94,10 +94,10 @@ export default class HomePage extends React.Component {
         </div>
 
         <div id="portifolio2" className="page-content">
-          <img src={LollaBg} alt=""/>
+          <img src={LollaBg} alt="Lolla Background"/>
           <div></div>
           <div className="LogoContainer">
-            <img src={LollaLogo} alt=""/>
+            <img src={LollaLogo} alt="Lolla Logo"/>
           </div>
           {/*<div className="content">*/}
           {/*  <div className="title col-12 col-md-4">*/}
