@@ -1,0 +1,52 @@
+@import '../layout/sass/libs/vars';
+
+.news {
+    text-decoration:  none;
+    // margin: 2%;
+    padding: 2%;
+    // border: 1px solid red;
+    text-align: center;
+    color: $escuro-drk;
+
+        > img {
+            width: 100%;
+            // border: 1px solid red;
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+        }
+}
+
+.news:hover {
+    > img {
+        -webkit-animation: coloring 1s;
+            /* Chrome, Safari, Opera */
+            animation     : coloring 1s;
+            filter        : grayscale(0%);
+            -webkit-filter: grayscale(0%);
+    }
+}
+
+@-webkit-keyframes coloring {
+    from {
+        filter        : grayscale(100%);
+        -webkit-filter: grayscale(100%);
+    }
+
+    to {
+        filter        : grayscale(0%);
+        -webkit-filter: grayscale(0%);
+    }
+}
+
+/* Standard syntax */
+@keyframes coloring {
+    from {
+        filter        : grayscale(100%);
+        -webkit-filter: grayscale(100%);
+    }
+
+    to {
+        filter        : grayscale(0%);
+        -webkit-filter: grayscale(0%);
+    }
+}
