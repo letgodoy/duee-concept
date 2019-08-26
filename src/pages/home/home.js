@@ -16,7 +16,7 @@ import FaxeBg from '../../images/home/1920x1080-Faxe_V2.png'
 import FaxeLogo from '../../images/home/FAXE-LOGO.svg'
 import LollaBg from '../../images/home/1920x1080-Lolla_V2.png'
 import LollaLogo from '../../images/home/MadeNoLolla.svg'
-import Logoanimado from '../../images/home/VIDEO-DUEE.gif'
+import Logoanimado from '../../images/home/VIDEO-DUEE-5-SEGUNDOS.gif'
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -47,9 +47,10 @@ export default class HomePage extends React.Component {
 
       <ReactPageScroller ref={c => this.reactPageScroller = c}>
         <div id="home" className="page-content">
-          <img src={Logoanimado} alt="Logo Animado"/>
+        <Link to="/leoes">
+          <img src={Logoanimado} alt="#somosleoes"/>
           <div className="content">
-            <Link to="/leoes">
+
               <div className="title col-12 col-md-4">
               {/* <h1>Duee</h1>
               <h1>Brasil</h1>
@@ -57,8 +58,9 @@ export default class HomePage extends React.Component {
             </div>
             <div className="col-md-4"></div>
             <div className="col-md-4"></div>
-            </Link>
+
           </div>
+          </Link>
         </div>
 
         <div id="portifolio1" className="page-content">

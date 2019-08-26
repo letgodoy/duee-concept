@@ -55,10 +55,10 @@ export default class Navbar extends React.Component {
               <Link to="/fazemos">Nosso Trabalho</Link>
             </li>
             <li>
-              <a href="https://dueebrasil.com.br">Portifólio</a>
+              <a href="https://dueebrasil.com.br/portfolio" target="_blank" rel="noopener noreferrer">Portfólio</a>
             </li>
             <li>
-              <a href="https://dueetando.com.br">Dueetando</a>
+              <a href="https://dueetando.com.br" target="_blank" rel="noopener noreferrer">Dueetando</a>
             </li>
             <li>
               <Link to="/contato">Contato</Link>
