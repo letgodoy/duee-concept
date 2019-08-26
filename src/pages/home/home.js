@@ -11,8 +11,11 @@ import SEO from "../../components/seo"
 import Logo from '../../images/duee.svg'
 // import Lion from '../../images/home/Leao_DUEE2.jpg'
 import Starbucks from '../../images/home/1920x1080-Starbucks.png'
-import Faxe from '../../images/home/1920x1080-Faxe.png'
-import Lolla from '../../images/home/1920x1080-Lolla.png'
+import StarbucksLogo from '../../images/home/starbucks_logo.svg'
+import FaxeBg from '../../images/home/1920x1080-Faxe_V2.png'
+import FaxeLogo from '../../images/home/FAXE-LOGO.svg'
+import LollaBg from '../../images/home/1920x1080-Lolla_V2.png'
+import LollaLogo from '../../images/home/MadeNoLolla.svg'
 import Logoanimado from '../../images/home/VIDEO-DUEE.gif'
 
 export default class HomePage extends React.Component {
@@ -60,6 +63,10 @@ export default class HomePage extends React.Component {
 
         <div id="portifolio1" className="page-content">
           <img src={Starbucks} alt=""/>
+          <div className="BgOpacity"></div>
+          <div className="LogoContainer">
+            <img className="starbucks" src={StarbucksLogo} alt=""/>
+          </div>
           {/*<div className="content">*/}
           {/*  <div className="title col-12 col-md-4">*/}
           {/*    <h1>Portifólio</h1>*/}
@@ -71,7 +78,11 @@ export default class HomePage extends React.Component {
         </div>
 
         <div id="portifolio2" className="page-content">
-          <img src={Faxe} alt=""/>
+          <img src={FaxeBg} alt=""/>
+          <div className="BgOpacity"></div>
+          <div className="LogoContainer">
+            <img src={FaxeLogo} alt=""/>
+          </div>
           {/*<div className="content">*/}
           {/*  <div className="title col-12 col-md-4">*/}
           {/*    <h1>Portifólio</h1>*/}
@@ -83,7 +94,11 @@ export default class HomePage extends React.Component {
         </div>
 
         <div id="portifolio2" className="page-content">
-          <img src={Lolla} alt=""/>
+          <img src={LollaBg} alt=""/>
+          <div></div>
+          <div className="LogoContainer">
+            <img src={LollaLogo} alt=""/>
+          </div>
           {/*<div className="content">*/}
           {/*  <div className="title col-12 col-md-4">*/}
           {/*    <h1>Portifólio</h1>*/}
