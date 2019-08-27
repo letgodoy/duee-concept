@@ -31,7 +31,8 @@ export default class HomePage extends React.Component {
 
   pageOnChange = (number) => {
     this.setState({currentPage: number});
-  };
+    console.log("pagina mudou " + this.state.currentPage)
+  }
 
   render() {
 
@@ -45,7 +46,7 @@ export default class HomePage extends React.Component {
 
       <MouseIcon/>
 
-      <ReactPageScroller ref={c => this.reactPageScroller = c}>
+      <ReactPageScroller ref={c => this.reactPageScroller = c} pageOnChange={this.pageOnChange}>
         <div id="home" className="page-content">
           <Link to="/leoes">
             <img src={Logoanimado} alt="#somosleoes"/>
@@ -67,7 +68,7 @@ export default class HomePage extends React.Component {
           <img src={Starbucks} alt="Starbucks Background"/>
           <div className="BgOpacity"></div>
           <div className="LogoContainer">
-            <img className="starbucks" src={StarbucksLogo} alt="Starbucks Logo"/>
+            <img className="starbucks" src={StarbucksLogo} style={{maxWidth: "300px"}} alt="Starbucks Logo"/>
           </div>
           {/*<div className="content">*/}
           {/*  <div className="title col-12 col-md-4">*/}
@@ -97,7 +98,7 @@ export default class HomePage extends React.Component {
 
         <div id="portifolio2" className="page-content">
           <img src={LollaBg} alt="Lolla Background"/>
-          <div></div>
+          <div className="BgOpacity" style={{opacity: "0"}}></div>
           <div className="LogoContainer">
             <img src={LollaLogo} alt="Lolla Logo"/>
           </div>
