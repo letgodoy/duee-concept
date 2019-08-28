@@ -13,7 +13,7 @@ const Contato = () => (
         {/* <!-- First --> */}
             <div className="row background middle-xs" id="contato">
                 <header className="col-xs-12">
-                    <h1 className="stretchRight">VAMOS CONVERSAR?</h1>
+                    <h1>VAMOS CONVERSAR?</h1>
                 </header>
                 <div className="col-xs-12 row center-xs" style={{ alignSelf: 'stretch' }}>
                     <div className="col-md-3 col-xs-12 col-sm-6 local middle-xs">
