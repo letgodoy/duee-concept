@@ -3,11 +3,11 @@ import React from "react"
 import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import './nossotrabalho.scss'
-import Brand from '../../images/branding.svg'
-import Dev from '../../images/desenvolvimento.svg'
-import Digital from '../../images/digital.svg'
-import Eventos from '../../images/eventospromo.svg'
-import Live from '../../images/livemarketing.svg'
+import Brand from '../../images/brandingR.svg'
+import Dev from '../../images/desenvolvimentoR.svg'
+import Digital from '../../images/digitalR.svg'
+import Eventos from '../../images/eventospromoR.svg'
+import Live from '../../images/livemarketingR.svg'
 import Logo from '../../images/Logo_duee_Claro.svg'
 
 

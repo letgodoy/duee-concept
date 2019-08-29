@@ -21,6 +21,8 @@ import Proxxima from '../../images/noticias/logo_proxxima.jpg'
 import Leaocolor from '../../images/Leão-Duee-color.png'
 import Hashtag from '../../images/SOMOSLEOES.png'
 
+import Trabalho from '../nosso-trabalho/nossotrabalho'
+
 
 import { Collapse } from 'react-collapse';
 
@@ -102,6 +104,8 @@ export default class SomosLeoes extends React.Component {
                         <img src={Leaocolor} alt="Roar" className="lion" />
                     </div>
                 </div>
+
+                <Trabalho />
 
                 <div id='news' className="row" >
                     <div className="col-xs-12 center-xs">

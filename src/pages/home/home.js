@@ -19,7 +19,9 @@ import FaxeLogo from '../../images/home/FAXE-LOGO.svg'
 import LollaBg from '../../images/home/HOME_MADE.mp4'
 import LollaLogo from '../../images/home/MadeNoLolla.svg'
 // import Logoanimado from '../../images/home/VIDEO-DUEE-5-SEGUNDOS.gif'
-import Logoanimado from '../../images/home/TOPO SITE_V4.mp4'
+// import Logoanimado from '../../images/home/TOPO SITE_V4.mp4'
+import Logoanimado from '../../images/home/VIDEO_SEM_LETRAS.mp4'
+import Digital from '../../images/home/1DIGITAL.gif'
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -54,6 +56,15 @@ export default class HomePage extends React.Component {
           <Link to="/leoes">
             {/* <img src={Logoanimado} alt="#somosleoes" /> */}
             <video src={Logoanimado}  autoplay="true" muted="true" loop id="videologo" />
+
+            <div className="Segmentos">
+                            <h2 className="LIVEh">LIVE MKT</h2>
+                            <h2 className="PROMOh">PROMOÇÕES</h2>
+                            <h2 className="BRANDh">BRANDING</h2>
+                            <h2 className="DIGITALh">DIGITAL</h2>
+                            <h2 className="DEVh">DESENVOLVIMENTO</h2>
+                    </div>
+
             {/*<div className="content">*/}
 
             {/*  <div className="title col-12 col-md-4">*/}
