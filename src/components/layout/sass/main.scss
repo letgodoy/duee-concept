@@ -22,7 +22,8 @@ body {
 	background     : black;
 	font-family: 'Raleway', sans-serif;
 	min-height: 100%;
-	
+	overflow-scrolling: touch;
+	-webkit-overflow-scrolling: touch;
 }
 
 a {
