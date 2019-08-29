@@ -15,7 +15,8 @@ import FaxeBg from '../../images/home/HOME_FAXE.mp4'
 import FaxeLogo from '../../images/home/FAXE-LOGO.svg'
 import LollaBg from '../../images/home/HOME_MADE.mp4'
 import LollaLogo from '../../images/home/MadeNoLolla.svg'
-import Logoanimado from '../../images/home/LETRAS_FINALIZADOS.mp4'
+import LogoVideoPc from '../../images/home/LETRAS_FINALIZADOS.mp4'
+import LogoVideoMobile from '../../images/home/MOBILE_LETRAS.mp4'
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -52,19 +53,9 @@ export default class HomePage extends React.Component {
         <div id="home" className="page-content">
           <Link to="/leoes">
             {/* <img src={Logoanimado} alt="#somosleoes" /> */}
-            <video src={Logoanimado}  autoplay="true" muted="true" loop id="videologo" />
-
-            {/*<div className="content">*/}
-
-            {/*  <div className="title col-12 col-md-4">*/}
-            {/*    /!* <h1>Duee</h1>*/}
-            {/*  <h1>Brasil</h1>*/}
-            {/*  <a>Saiba mais sobre nós</a> *!/*/}
-            {/*  </div>*/}
-            {/*  <div className="col-md-4"></div>*/}
-            {/*  <div className="col-md-4"></div>*/}
-
-            {/*</div>*/}
+            { window.screen.width > 768 ?
+              <video src={LogoVideoPc}  autoplay="true" muted="true" loop id="videologo" /> :
+              <video src={LogoVideoMobile} autoPlay="true" muted="true" loop id="videologo"/>}
           </Link>
         </div>
 

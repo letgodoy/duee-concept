@@ -125,6 +125,13 @@ a {
     width: 100%;
   }
 }
+.videoDesktop{
+  display: none;
+}
+
+.videoMobile{
+  display: block;
+}
 
 .BgOpacity {
   position        : absolute;
