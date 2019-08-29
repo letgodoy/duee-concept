@@ -6,6 +6,7 @@
     text-align:  right;
     height:  auto;
     // margin: auto;
+    fill: $rosa;
 }
 
 .logo {
@@ -16,7 +17,8 @@
 }
 
 .custom-accordion {
-    background: linear-gradient(139deg, #000000, #303030);
+    // background: linear-gradient(139deg, #000000, #303030);
+    // background: black;
     color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
     padding-bottom: 2rem;
@@ -27,7 +29,8 @@
         max-width: 30rem;
 
         &:last-of-type {
-            background: $escuro-drk;
+            // background: $escuro-drk;
+            // background: black;
             text-align: center;
             border-radius: .5rem;
 
@@ -44,6 +47,7 @@
 
     > .item > .icon {
         color: $escuro-drk;
+        // color: black;
         font-size: 2rem;
     }
 
@@ -72,15 +76,16 @@
             display: table-cell;
             position: relative;
             height: 100%;
-            padding: 2rem 1rem;
+            padding: 4rem 1rem;
             text-align: center;
             transform-origin: 0 50%;
             transition: all .3s cubic-bezier(.8,.16,.42,.89);
+            fill: $rosa;
 
             &:hover:not(:last-of-type) {
                 transform: scaleX(2) translateX(-1px);
                 box-shadow: 0 0 3rem black;
-                background: linear-gradient(45deg, #000000, #303030);
+                background: linear-gradient(45deg, #000000, #202020);
                 border-color: transparent;
             }
 
@@ -90,7 +95,7 @@
 
             &:hover + .item:last-of-type {
                 opacity: .02;
-                background: $escuro-drk;
+                // background: $escuro-drk;
             }
 
             &:not(:last-of-type) {
@@ -98,7 +103,7 @@
             }
 
             &:last-of-type {
-                background: $escuro-drk;
+                // background: $escuro-drk;
                 width: 25%;
                 border-radius: 0;
                 z-index:150;
@@ -132,7 +137,8 @@
 
             &:hover:not(:last-of-type) > .title {
                 transform: scaleX(.5) translateX(-50%);
-                background: #8c7347;
+                // background: #8c7347;
+                background: $rosa;
                 text-align: center;
                 
                 
