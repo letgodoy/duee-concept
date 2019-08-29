@@ -9,19 +9,13 @@ import MouseIcon from '../../components/mouseIcon/mouseIcon'
 import SEO from "../../components/seo"
 
 // import Logo from '../../images/duee.svg'
-// import Lion from '../../images/home/Leao_DUEE2.jpg'
-import Starbucks from '../../images/home/1920x1080-Starbucks.png'
+import Starbucks from '../../images/home/HOME_STARBUCKS.mp4'
 import StarbucksLogo from '../../images/home/starbucks_logo.svg'
-// import FaxeBg from '../../images/home/1920x1080-Faxe_V2.png'
 import FaxeBg from '../../images/home/HOME_FAXE.mp4'
 import FaxeLogo from '../../images/home/FAXE-LOGO.svg'
-// import LollaBg from '../../images/home/1920x1080-Lolla_V2.png'
 import LollaBg from '../../images/home/HOME_MADE.mp4'
 import LollaLogo from '../../images/home/MadeNoLolla.svg'
-// import Logoanimado from '../../images/home/VIDEO-DUEE-5-SEGUNDOS.gif'
-// import Logoanimado from '../../images/home/TOPO SITE_V4.mp4'
-import Logoanimado from '../../images/home/VIDEO_SEM_LETRAS.mp4'
-import Digital from '../../images/home/1DIGITAL.gif'
+import Logoanimado from '../../images/home/LETRAS_FINALIZADOS.mp4'
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -60,14 +54,6 @@ export default class HomePage extends React.Component {
             {/* <img src={Logoanimado} alt="#somosleoes" /> */}
             <video src={Logoanimado}  autoplay="true" muted="true" loop id="videologo" />
 
-            <div className="Segmentos">
-                            <h2 className="LIVEh">LIVE MKT</h2>
-                            <h2 className="PROMOh">PROMOÇÕES</h2>
-                            <h2 className="BRANDh">BRANDING</h2>
-                            <h2 className="DIGITALh">DIGITAL</h2>
-                            <h2 className="DEVh">DESENVOLVIMENTO</h2>
-                    </div>
-
             {/*<div className="content">*/}
 
             {/*  <div className="title col-12 col-md-4">*/}
@@ -83,7 +69,10 @@ export default class HomePage extends React.Component {
         </div>
 
         <div id="portifolio1" className="page-content">
-          <img src={Starbucks} alt="Starbucks Background" />
+        <video src={Starbucks}  autoplay="true" muted="true" loop id="videoport">
+            Your browser does not support the video tag.
+</video>
+          {/* <img src= alt=" BackgroStarbucksund" /> */}
           <div className="BgOpacity"></div>
           <div className="LogoContainer">
             <img className="starbucks" src={StarbucksLogo} style={{ maxWidth: "300px" }} alt="Starbucks Logo" />
