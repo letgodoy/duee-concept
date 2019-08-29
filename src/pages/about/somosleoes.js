@@ -93,7 +93,7 @@ export default class SomosLeoes extends React.Component {
 
                 <div className="row end-xs middle-xs" id="versinho">
                     <div className="text slideDown col-xs-12 col-md-5">
-                        <h3>SOMOS LEÕES</h3>
+                        <h2>SOMOS LEÕES</h2>
                         <h3>Rugimos bem alto para que todos possam nos ouvir.</h3>
                         <h3>Defendemos nossas ideias, não temos medo de nos aventurar.</h3>
                         <h3>Somos ágeis, valentes, estrategistas e inquietos.</h3>
