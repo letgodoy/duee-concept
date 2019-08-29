@@ -38,6 +38,9 @@ export default class HomePage extends React.Component {
     this.setState({ currentPage: number });
     console.log("pagina mudou " + this.state.currentPage)
   }
+  componentDidMount() {
+    this.pageOnChange(1)
+  }
 
   render() {
 
