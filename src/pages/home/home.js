@@ -6,6 +6,7 @@ import './home.scss'
 import Layout from "../../components/layout/layout"
 // import Navbar from '../../components/navbar/navbar'
 import MouseIcon from '../../components/mouseIcon/mouseIcon'
+import SlideCounter from '../../components/slideCounter/slideCounter'
 import SEO from "../../components/seo"
 
 // import Logo from '../../images/duee.svg'
@@ -21,7 +22,10 @@ import LogoVideoMobile from '../../images/home/MOBILE_LETRAS.mp4'
 export default class HomePage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { currentPage: 1 };
+    this.state = {
+      currentPage: 0,
+      width: 0
+    };
     this._pageScroller = null;
   }
 
@@ -31,10 +35,12 @@ export default class HomePage extends React.Component {
 
   pageOnChange = (number) => {
     this.setState({ currentPage: number });
-    console.log("pagina mudou " + this.state.currentPage)
+    // console.log("pagina mudou " + this.state.currentPage)
   }
+
   componentDidMount() {
     this.pageOnChange(1)
+    this.setState({width: window.screen.width})
   }
 
   render() {
@@ -48,12 +54,13 @@ export default class HomePage extends React.Component {
       {/*<Navbar urlImg={Logo}/>*/}
 
       <MouseIcon />
+      <SlideCounter page={this.state.currentPage} />
 
       <ReactPageScroller ref={c => this.reactPageScroller = c} pageOnChange={this.pageOnChange}>
         <div id="home" className="page-content">
           <Link to="/leoes">
             {/* <img src={Logoanimado} alt="#somosleoes" /> */}
-            { window.screen.width > 768 ?
+            { this.state.width > 768 ?
               <video src={LogoVideoPc}  autoplay="true" muted="true" loop id="videologo" /> :
               <video src={LogoVideoMobile} autoPlay="true" muted="true" loop id="videologo"/>}
           </Link>
