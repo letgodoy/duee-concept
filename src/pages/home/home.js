@@ -121,7 +121,7 @@ export default class HomePage extends React.Component {
           <video src={LollaBg}  autoplay="true" muted="true" loop id="videoport">
             Your browser does not support the video tag.
 </video>
-          <div className="BgOpacity" style={{ opacity: "0" }}></div>
+          <div className="BgOpacity"></div>
           <div className="LogoContainer">
             <img src={LollaLogo} alt="Lolla Logo" />
           </div>
