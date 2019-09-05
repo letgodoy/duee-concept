@@ -1,0 +1,194 @@
+$greensbk   : #006241;
+$accentgreen: #00754a;
+$lightgreen : #d4e9e2;
+$housegreen : #1e3932;
+$warmneutral: #f2f0eb;
+$coolneutral: #f9f9f9;
+
+
+#starbuckspage {
+    background-color: $warmneutral;
+    color           : $housegreen;
+    display         : flex;
+    margin          : 0;
+    padding         : 0;
+    width           : 100%;
+
+    #headstarbucks {
+        min-height     : fit-content;
+        perspective    : 3px;
+        transform-style: preserve-3d;
+        overflow       : hidden;
+        position       : relative;
+        width          : 100%;
+        margin         : 0;
+        padding        : 0;
+
+        .fixo {
+            align-items          : center;
+            position             : relative;
+            width                : 100%;
+            height               : 100%;
+            background-attachment: fixed;
+            background-image     : url('../../images/starbucks/Starbucks-logo.svg');
+            background-position  : center center;
+            background-size      : contain;
+            background-repeat    : no-repeat;
+
+            img {
+                position: relative;
+                width   : 80%;
+                height  : 90%;
+                top     : 10%;
+                right   : -40%;
+                z-index : -1;
+                opacity : 0.6;
+                margin  : auto;
+            }
+
+            // img {
+            //     width: 50%;
+            // }
+
+        }
+
+        .move {
+            // position : absolute;
+            width       : 100%;
+
+            // height: 120vh;
+            // right : -40%;
+            // bottom: 30%;
+
+
+
+        }
+
+    }
+
+    #rappi {
+        height: 100vh;
+    }
+
+    #emailMkt {
+        height: 100vh;
+    }
+
+    #postInsta {
+        // height    : 100vh;
+        width        : 100%;
+        margin       : 0;
+        padding      : 0;
+        margin-bottom: 30px;
+
+        .headInsta {
+            width           : 100%;
+            background-color: white;
+            height          : 80px;
+            vertical-align  : middle;
+            border          : 1px solid lightgrey;
+            margin          : 0;
+            padding         : 0;
+            margin-bottom   : 40px;
+
+            div {
+                max-width: 800px;
+                font-size: 32px;
+                height   : 100%;
+                margin   : auto;
+                padding  : 0;
+
+                span {
+                    display    : flex;
+                    align-items: center;
+                    height     : 100%;
+
+                    i {
+                        font-size: 32px;
+                        margin   : 5px;
+                    }
+
+                    img {
+                        height: 36px;
+                        width : auto;
+                        margin: 5px;
+                    }
+                }
+
+            }
+        }
+
+        .feedInsta {
+            width  : 100%;
+            margin : auto;
+            padding: 0;
+        }
+
+
+    }
+
+    #storiesInsta {
+
+        /* The device with borders */
+        .smartphone {
+            position              : relative;
+            // width              : 1080px;
+            // height             : 1920px;
+            width                 : 360px;
+            height                : 640px;
+            margin                : auto;
+            border                : 16px black solid;
+            border-top-width      : 60px;
+            border-bottom-width   : 60px;
+            border-radius         : 36px;
+            margin-bottom         : 30px;
+        }
+
+        /* The horizontal line on the top of the device */
+        .smartphone:before {
+            content      : '';
+            display      : block;
+            width        : 60px;
+            height       : 5px;
+            position     : absolute;
+            top          : -30px;
+            left         : 50%;
+            transform    : translate(-50%, -50%);
+            background   : #333;
+            border-radius: 10px;
+        }
+
+        /* The circle on the bottom of the device */
+        .smartphone:after {
+            content      : '';
+            display      : block;
+            width        : 35px;
+            height       : 35px;
+            position     : absolute;
+            left         : 50%;
+            bottom       : -65px;
+            transform    : translate(-50%, -50%);
+            background   : #333;
+            border-radius: 50%;
+        }
+
+        /* The screen (or content) of the device */
+        .smartphone .content {
+            // width     : 360px;
+            // height    : 640px;
+            height       : 100%;
+            margin       : 0;
+            padding      : 0;
+        }
+
+        .display {
+            width : 100%;
+            border: none;
+            height: 100%;
+        }
+    }
+
+    #pdv {
+        height: 100vh;
+    }
+}

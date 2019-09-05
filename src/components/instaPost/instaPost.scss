@@ -1,0 +1,64 @@
+.post {
+    max-width: 800px;
+    width    : 100%;
+    height   : fit-content;
+    border   : 1px solid lightgrey;
+    margin   : auto;
+    margin-bottom: 50px;
+
+    .headpost {
+        background-color: white;
+        border          : 1px solid lightgrey;
+        height          : 60px;
+        text-align      : left;
+        padding         : 0.5em;
+        font-weight     : bold;
+        display         : flex;
+        align-items     : center;
+
+        span {
+            padding: 1em;
+        }
+
+        img {
+            width : auto;
+            height: 100%;
+        }
+    }
+
+    .imgpost {
+        width: 100%;
+        height: fit-content;
+        margin:0;
+        padding: 0;
+
+         img {
+             width: 100%;
+             height: auto;
+         }
+    }
+
+    .legendpost {
+        background-color: white;
+        border          : 1px solid lightgrey;
+        height          : fit-content;
+        text-align      : left;
+        padding         : 0.5em;
+
+        p {
+
+            i {
+                font-size: 30px;
+                margin   : 5px;
+            }
+
+            i:last-child {
+                float: right;
+            }
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -19,12 +19,14 @@
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
+    "react-awesome-slider": "^1.0.1",
     "react-collapse": "^4.0.3",
     "react-dom": "^16.9.0",
     "react-hamburger-menu": "^1.1.1",
     "react-helmet": "^5.2.1",
     "react-motion": "^0.5.2",
     "react-page-scroller": "^1.5.1",
+    "react-scroll-horizontal": "^1.6.2",
     "react-swipeable-views": "^0.13.3"
   },
   "devDependencies": {

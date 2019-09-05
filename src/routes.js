@@ -17,7 +17,7 @@ module.exports = [
     component: path.resolve(`src/pages/contact/contact.js`)
   },
   {
-    path: '/fazemos',
-    component: path.resolve(`src/pages/nosso-trabalho/nossotrabalho.js`)
+    path: '/starbucks',
+    component: path.resolve(`src/pages/starbucks/starbucks.js`)
   },
 ];
