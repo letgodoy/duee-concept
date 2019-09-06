@@ -18,6 +18,8 @@ import Post3 from '../../images/starbucks/Post_V2.mp4'
 import Post4 from '../../images/starbucks/SBUX_FRAP_MORANGO_V4.mp4'
 import Post5 from '../../images/starbucks/DarkPost.png'
 import Post6 from '../../images/starbucks/TEASER_V2_10.gif'
+import envelopeup from '../../images/starbucks/envelope-up.svg'
+import envelope from '../../images/starbucks/envelope.svg'
 
 
 
@@ -37,17 +39,22 @@ const Contato = () => (
             </div>
             <div className="col-xs-12 row center-xs" id="rappi">
                 <div className="col-xs-12">
-                <HorizontalScroll>
-               
-        </HorizontalScroll>
-                    </div>
+                    <HorizontalScroll>
+
+                    </HorizontalScroll>
+                </div>
             </div>
-            <div className="col-xs-12 row center-xs" id="emailMkt">
-                <div className="col-xs-12">
-                <HorizontalScroll>
-               
-               </HorizontalScroll>
-                    </div>
+            <div className="col-xs-12 row" id="emailMkt">
+                    <img src={envelope} alt="email marketing" className="envelope" />
+                    
+                    <HorizontalScroll pageLock={true} animValues={1} className="hscroll">
+                    <img src={Post1} alt="email marketing" className="mails" />
+                    <img src={Post1} alt="email marketing" className="mails" />
+                    <img src={Post1} alt="email marketing" className="mails" />
+                    <img src={Post1} alt="email marketing" className="mails" />
+                    <img src={Post1} alt="email marketing" className="mails" />
+                    </HorizontalScroll>
+                    <img src={envelopeup} alt="email marketing" className="envelope" />
             </div>
             <div className="col-xs-12 row center-xs" id="postInsta">
                 <div className="headInsta">
@@ -57,14 +64,14 @@ const Contato = () => (
                         </span>
                     </div>
                 </div>
-                    <div className="feedInsta middle-xs center-xs">
-                        <InstaPost foto={Post1} legenda="dghjshaghjsaghjasgdjs" />
-                        {/* <InstaPost foto={Post2} legenda="dghjshaghjsaghjasgdjs" /> */}
-                        {/* <InstaPost foto={Post3} legenda="dghjshaghjsaghjasgdjs" /> */}
-                        {/* <InstaPost foto={Post4} legenda="dghjshaghjsaghjasgdjs" /> */}
-                        <InstaPost foto={Post5} legenda="dghjshaghjsaghjasgdjs" />
-                        <InstaPost foto={Post6} legenda="dghjshaghjsaghjasgdjs" />
-                    </div>
+                <div className="feedInsta middle-xs center-xs">
+                    <InstaPost foto={Post1} legenda="dghjshaghjsaghjasgdjs" />
+                    {/* <InstaPost foto={Post2} legenda="dghjshaghjsaghjasgdjs" /> */}
+                    {/* <InstaPost foto={Post3} legenda="dghjshaghjsaghjasgdjs" /> */}
+                    {/* <InstaPost foto={Post4} legenda="dghjshaghjsaghjasgdjs" /> */}
+                    <InstaPost foto={Post5} legenda="dghjshaghjsaghjasgdjs" />
+                    <InstaPost foto={Post6} legenda="dghjshaghjsaghjasgdjs" />
+                </div>
             </div>
             <div className="col-xs-12 row center-xs" id="storiesInsta">
                 <div className="col-xs-12">

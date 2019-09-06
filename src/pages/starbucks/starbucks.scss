@@ -72,6 +72,29 @@ $coolneutral: #f9f9f9;
 
     #emailMkt {
         height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+        position:  relative;
+
+        .mails {
+            height: 75%;
+            margin: auto 10px;
+        }
+
+        .hscroll {
+            width: 90%;
+            right: 0;
+        }
+
+
+        .envelope {
+            height: 100%;
+            position:  absolute;
+            left: -100px;
+            top: 0;
+        }
     }
 
     #postInsta {
