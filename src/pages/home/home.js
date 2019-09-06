@@ -76,7 +76,7 @@ export default class HomePage extends React.Component {
         </div>
 
         <div id="portifolio1" className="page-content">
-        <a href="https://portfolio.duee.com.br/project/starbucks-dia-dos-namorados/" target="_blank" rel="noopener noreferrer">
+        <Link to="/starbucks">
         <video src={Starbucks}  autoplay="true" muted="true" loop id="videoport">
             Your browser does not support the video tag.
 </video>
@@ -93,7 +93,7 @@ export default class HomePage extends React.Component {
           {/*  <div className="col-md-4"></div>*/}
           {/*  <div className="col-md-4"></div>*/}
           {/*</div>*/}
-          </a>
+          </Link>
         </div>
 
         <div id="portifolio2" className="page-content">

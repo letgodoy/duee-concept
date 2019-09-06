@@ -67,33 +67,61 @@ $coolneutral: #f9f9f9;
     }
 
     #rappi {
-        height: 100vh;
+        height       : 50vh;
+        // height          : fit-content;
+        width           : 100%;
+        margin          : 0;
+        padding         : 0;
+        margin-bottom   : 30px;
+        // display      : inline-flex;
+        // flex-wrap    : nowrap;
+        // //   overflow: auto;
+        // overflow-x   : scroll;
+        // overflow-y   : hidden;
+        float        : right;
+        right: 0;
+
+        img {
+            width: auto;
+            height: 100%;
+            margin: 10px;
+        }
+
+
+       
     }
 
     #emailMkt {
-        height: 100vh;
-        width: 100%;
-        margin: 0;
-        padding: 0;
+        height       : 100vh;
+        width        : 50%;
+        margin       : 0;
+        padding      : 0;
         margin-bottom: 30px;
-        position:  relative;
+        position     : relative;
 
         .mails {
             height: 75%;
-            margin: auto 10px;
+            margin: auto 15px;
         }
 
         .hscroll {
-            width: 90%;
-            right: 0;
+            width: 30%;
+            margin-left: 15%;
+            height: 100%;
+            display: flex;
+            z-index: 1;
         }
 
 
         .envelope {
-            height: 100%;
-            position:  absolute;
-            left: -100px;
-            top: 0;
+            height  : 100%;
+            position: absolute;
+            left    : -100px;
+            top     : 0;
+        }
+
+        .envelope:last-child {
+            z-index: 2;
         }
     }
 
@@ -165,6 +193,16 @@ $coolneutral: #f9f9f9;
             border-bottom-width   : 60px;
             border-radius         : 36px;
             margin-bottom         : 30px;
+
+            .content {
+                // width     : 360px;
+                // height    : 640px;
+                width: 100%;
+                height       : 100%;
+                margin       : 0;
+                padding      : 0;
+            }
+    
         }
 
         /* The horizontal line on the top of the device */
@@ -196,18 +234,11 @@ $coolneutral: #f9f9f9;
         }
 
         /* The screen (or content) of the device */
-        .smartphone .content {
-            // width     : 360px;
-            // height    : 640px;
-            height       : 100%;
-            margin       : 0;
-            padding      : 0;
-        }
-
+        .smartphone 
         .display {
-            width : 100%;
+            width : 90%;
             border: none;
-            height: 100%;
+            height: 90%;
         }
     }
 
