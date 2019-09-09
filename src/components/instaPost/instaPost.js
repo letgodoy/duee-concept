@@ -13,7 +13,7 @@ const instaPost = ({ foto, legenda, video }) => (
         </div>
         <div className="legendpost">
             <p><i class="far fa-heart"></i><i class="far fa-comment"></i><i class="far fa-bookmark"></i></p>
-            <p><span>Strabucks</span> {legenda}</p>
+            <p><span>Starbucks</span> {legenda}</p>
         </div>
     </div>
 )

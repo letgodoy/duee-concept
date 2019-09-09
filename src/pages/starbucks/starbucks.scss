@@ -185,7 +185,7 @@ $coolneutral: #f9f9f9;
             position              : relative;
             // width              : 1080px;
             // height             : 1920px;
-            width                 : 360px;
+            width                 : 324px;
             height                : 640px;
             margin                : auto;
             border                : 16px black solid;
@@ -194,9 +194,9 @@ $coolneutral: #f9f9f9;
             border-radius         : 36px;
             margin-bottom         : 30px;
 
-            .content {
-                // width     : 360px;
-                // height    : 640px;
+            .contentphone {
+                // width     : 337px;
+                // height    : 590px;
                 width: 100%;
                 height       : 100%;
                 margin       : 0;
@@ -234,11 +234,10 @@ $coolneutral: #f9f9f9;
         }
 
         /* The screen (or content) of the device */
-        .smartphone 
         .display {
-            width : 90%;
+            width : 100%;
             border: none;
-            height: 90%;
+            height: 100%;
         }
     }
 
@@ -246,3 +245,11 @@ $coolneutral: #f9f9f9;
         height: 100vh;
     }
 }
+
+    .videoslider {
+        margin: 0;
+        width                 : 292px;
+            height                : 520px;
+        // width: 100%;
+        // height: 100%;
+    }

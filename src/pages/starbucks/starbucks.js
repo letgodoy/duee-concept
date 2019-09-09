@@ -5,9 +5,12 @@ import Layout from "../../components/layout/layout"
 import SEO from "../../components/seo"
 import './starbucks.scss'
 import InstaPost from '../../components/instaPost/instaPost'
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
+// import AwesomeSlider from 'react-awesome-slider';
+// import 'react-awesome-slider/dist/styles.css';
 import HorizontalScroll from 'react-scroll-horizontal'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 
 import Sereia from '../../images/starbucks/starbucks-coffee-logo-vector.svg'
@@ -42,7 +45,16 @@ import Story4 from '../../images/starbucks/Stories/Stories-Chai-V1.gif'
 import Story5 from '../../images/starbucks/Stories/Stories-Dia-das-Maes.gif'
 import Story6 from '../../images/starbucks/Stories/Stories-Starbucks-Berinjela-5.png'
 
-
+var settings = {
+    dots: false,
+    infinite: true,
+    // speed: 900,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // autoplay: true,
+    accessibility: true,
+    mobileFirst: true
+};
 
 
 const Contato = () => (
@@ -60,7 +72,7 @@ const Contato = () => (
                 </div>
             </div>
             <div className="col-xs-12 row" id="rappi">
-            <HorizontalScroll pageLock="true" reverseScroll="true">
+                <HorizontalScroll pageLock="true" reverseScroll="true">
                     <img src={Rappi1} alt="anuncio Rappi" />
                     <img src={Rappi2} alt="anuncio Rappi" />
                     <img src={Rappi3} alt="anuncio Rappi" />
@@ -69,55 +81,72 @@ const Contato = () => (
                     <img src={moto} alt="anuncio Rappi" />
                 </HorizontalScroll>
                 {/* <img src={moto} alt="email marketing" className="mails" /> */}
-        </div>
-        <div className="col-xs-12 row" id="emailMkt">
-            <img src={envelope} alt="email marketing" className="envelope" />
-            <div className="hscroll">
-            {/* <HorizontalScroll pageLock="true" className="hscroll"> */}
-                <img src={Mail1} alt="email marketing" className="mails" />
-                <img src={Mail2} alt="email marketing" className="mails" />
-                <img src={Mail3} alt="email marketing" className="mails" />
-                <img src={Mail4} alt="email marketing" className="mails" />
-                <img src={Mail5} alt="email marketing" className="mails" />
-            {/* </HorizontalScroll> */}
             </div>
-            <img src={envelopeup} alt="email marketing" className="envelope" />
-        </div>
-        <div className="col-xs-12 row center-xs" id="postInsta">
-            <div className="headInsta">
-                <div>
-                    <span>
-                        <i class="fab fa-instagram"></i> | <img src={Instagram} alt="instagram" />
-                    </span>
+            <div className="col-xs-12 row" id="emailMkt">
+                <img src={envelope} alt="email marketing" className="envelope" />
+                <div className="hscroll">
+                    {/* <HorizontalScroll pageLock="true" className="hscroll"> */}
+                    <img src={Mail1} alt="email marketing" className="mails" />
+                    <img src={Mail2} alt="email marketing" className="mails" />
+                    <img src={Mail3} alt="email marketing" className="mails" />
+                    <img src={Mail4} alt="email marketing" className="mails" />
+                    <img src={Mail5} alt="email marketing" className="mails" />
+                    {/* </HorizontalScroll> */}
+                </div>
+                <img src={envelopeup} alt="email marketing" className="envelope" />
+            </div>
+            <div className="col-xs-12 row center-xs" id="postInsta">
+                <div className="headInsta">
+                    <div>
+                        <span>
+                            <i class="fab fa-instagram"></i> | <img src={Instagram} alt="instagram" />
+                        </span>
+                    </div>
+                </div>
+                <div className="feedInsta middle-xs center-xs">
+                    <InstaPost video={Post1} legenda="É momento mágico que chama? Chegou o Butter Frappuccino® * , inspirado na magia das histórias de mistério e aventura. Nossos magos criaram uma bebida cremosa, com nuts caramelizados e especiarias encantadas. Mas ela é tão secreta que só funciona se você pedir a um dos nossos bruxinhos de avental. Visite uma de nossas lojas e peça o seu! #ButterFrappuccino" />
+                    <InstaPost foto={Post2} legenda="" />
+                    <InstaPost foto={Post3} legenda="O Novo Triple Coffee é preparado com três ingredientes diferentes de café (espresso, chantilly e granulado), e você pode provar nas versões Frappuccino, Latte ou Espresso. Surpreenda-se três vezes com esse sabor ☕" />
+                    <InstaPost video={Post4} legenda="" />
+                    <InstaPost foto={Post5} legenda="" />
+                    <InstaPost video={Post6} legenda="" />
                 </div>
             </div>
-            <div className="feedInsta middle-xs center-xs">
-                <InstaPost video={Post1} legenda="É momento mágico que chama? Chegou o Butter Frappuccino® * , inspirado na magia das histórias de mistério e aventura. Nossos magos criaram uma bebida cremosa, com nuts caramelizados e especiarias encantadas. Mas ela é tão secreta que só funciona se você pedir a um dos nossos bruxinhos de avental. Visite uma de nossas lojas e peça o seu! #ButterFrappuccino" />
-                <InstaPost foto={Post2}  />
-                <InstaPost foto={Post3} legenda="O Novo Triple Coffee é preparado com três ingredientes diferentes de café (espresso, chantilly e granulado), e você pode provar nas versões Frappuccino, Latte ou Espresso. Surpreenda-se três vezes com esse sabor ☕" />
-                <InstaPost video={Post4} legenda="dghjshaghjsaghjasgdjs" />
-                <InstaPost foto={Post5} legenda="dghjshaghjsaghjasgdjs" />
-                <InstaPost video={Post6} legenda="dghjshaghjsaghjasgdjs" />
-            </div>
-        </div>
-        <div className="col-xs-12 row center-xs" id="storiesInsta">
-            <div className="col-xs-12">
-                <div class="smartphone">
-                    <div class="content">
-                        <AwesomeSlider fillParent={true} bullets={false}>
-                            <div data-src={Story1} autoplay={true} />
-                            <div data-src={Story2} autoplay={true} />
-                            <div data-src={Story3} autoplay={true} />
-                            <div data-src={Story4} autoplay={true} />
-                            <div data-src={Story5} autoplay={true} />
-                            <div data-src={Story6} autoplay={true} />
-                        </AwesomeSlider>
-                        {/* <iframe src="/w3css/tryw3css_templates_band.htm" style="width:100%;border:none;height:100%" /> */}
+            <div className="col-xs-12 row center-xs" id="storiesInsta">
+                <div className="col-xs-12">
+                    <div className="smartphone">
+                        <div className="contentphone">
+                            <Slider {...settings}>
+                                <div className="display">
+                                    <video src={Story1} autoplay={true} controls={true} loop={true} className="videoslider"/>
+                                    {/* <h1>1</h1> */}
+                                </div>
+                                <div className="display">
+                                    <video src={Story2} autoplay={true} controls={true} loop={true} className="videoslider" />
+                                    {/* <h1>1</h1> */}
+                                </div>
+                                <div className="display">
+                                    <video src={Story3} autoplay={true} controls={true} loop={true} className="videoslider" />
+                                    {/* <h1>1</h1> */}
+                                </div>
+                                <div className="display">
+                                    <img src={Story4} autoplay={true} className="videoslider" />
+                                    {/* <h1>1</h1> */}
+                                </div>
+                                <div className="display">
+                                    <img src={Story5} autoplay={true} className="videoslider" />
+                                    {/* <h1>1</h1> */}
+                                </div>
+                                <div className="display">
+                                    <img src={Story6} autoplay={true} className="videoslider" />
+                                    {/* <h1>1</h1> */}
+                                </div>
+                            </Slider>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        {/* <div className="col-xs-12 row center-xs" id="pdv">
+            {/* <div className="col-xs-12 row center-xs" id="pdv">
             <div className="col-xs-12">
                 pdv
                     </div>
