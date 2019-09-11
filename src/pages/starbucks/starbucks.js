@@ -57,9 +57,9 @@ var settings = {
 };
 
 
-const Contato = () => (
+const Starbucks = () => (
     <Layout>
-        <SEO title="Contato" />
+        <SEO title="Starbucks" />
         {/* <!-- First --> */}
         <div className="row middle-xs" id="starbuckspage">
             <div className="col-xs-12 row center-xs" id="headstarbucks">
@@ -155,4 +155,4 @@ const Contato = () => (
     </Layout >
 )
 
-export default Contato
+export default Starbucks

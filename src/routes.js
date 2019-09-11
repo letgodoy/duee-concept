@@ -20,4 +20,8 @@ module.exports = [
     path: '/starbucks',
     component: path.resolve(`src/pages/starbucks/starbucks.js`)
   },
+  {
+    path: '/faxe',
+    component: path.resolve(`src/pages/faxe/faxe.js`)
+  },
 ];
