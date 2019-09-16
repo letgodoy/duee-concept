@@ -25,7 +25,8 @@
   >.modal-content{
     padding: 20px;
     z-index: 2110;
-    max-width: 600px;
+    min-width: 50vw;
+    max-width: 70vw;
     //max-height: 500px;
     border-radius: 10px;
     background: transparent;

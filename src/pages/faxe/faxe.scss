@@ -171,8 +171,13 @@
 
     #makingvideo {
         height   : 70vh;
-        margin   : auto;
-        max-width: 100vw;
+        // margin   : auto;
+        width: 100%;
+
+        iframe {
+            height: 100%;
+            width: 100%;
+        }
     }
 
     

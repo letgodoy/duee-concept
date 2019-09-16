@@ -42,6 +42,7 @@ export default class Faxe extends Component {
             centeredSlides: true,
             slidesPerView: 'auto',
             loop: true,
+            lazy: true,
             coverflowEffect: {
                 rotate: 50,
                 stretch: 0,
@@ -53,6 +54,14 @@ export default class Faxe extends Component {
                 el: '.swiper-pagination'
             }
         }
+        const params2 = {
+            lazy: true,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        }
         return (
             <Layout>
                 <SEO title="Made In Brazil" />
@@ -62,18 +71,26 @@ export default class Faxe extends Component {
                         <img src={LogoMade} alt="Logo Made in Brazil" />
                     </header>
                     <Swiper {...params}>
-                        <div className="covers posts" onClick={this.showPost}/>
-                        <div className="covers stories" onClick={this.showMkt} />
+                        <div className="covers posts" onClick={this.showPost} />
+                        <div className="covers emkt" onClick={this.showMkt} />
                         <div className="covers campanhas" onClick={this.showCamp} />
-                        <div className="covers campanhas" onClick={this.showPdv} />
-                        <div className="covers youtube" onClick={this.showBanners} />
+                        <div className="covers pdv" onClick={this.showPdv} />
+                        <div className="covers banners" onClick={this.showBanners} />
                         <div className="covers stories" onClick={this.showStories} />
-                        <div className="covers youtube" onClick={this.showPlaylists} />
+                        <div className="covers playlists" onClick={this.showPlaylists} />
                         <div className="covers youtube" onClick={this.showYT} />
                     </Swiper>
 
                     <Modal show={this.state.showPost} onClose={this.showPost} title='Posts Instagram'>
-                        posts instagram
+                        <Swiper {...params2} className="slidesimg">
+                            {/* <div><img src={} alt="" /></div>
+                        <div><img src={} alt="" /></div>
+                        <div><img src={} alt="" /></div>
+                        <div><img src={} alt="" /></div>
+                        <div><img src={} alt="" /></div>
+                        <div><img src={} alt="" /></div>
+                        <div><img src={} alt="" /></div> */}
+                        </Swiper>
                     </Modal>
 
                     <Modal show={this.state.showMkt} onClose={this.showMkt} title='showMkt'>

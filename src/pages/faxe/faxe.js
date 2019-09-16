@@ -135,8 +135,7 @@ export default class Faxe extends Component {
                             </section>
                         </Modal>
                         <Modal show={this.state.showMO} onClose={this.showModalMO} title='Making Of Happy Hour Viking'>
-                        <iframe src="https://player.vimeo.com/video/296450706" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/296450706">Happy Hour Viking</a> from <a href="https://vimeo.com/dueebrasil">DUEE Brasil</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                        <div id="makingvideo"><iframe src="https://player.vimeo.com/video/296450706" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
                         </Modal>
                         <Modal show={this.state.showDS} onClose={this.showModalDS} title='Dinner in the Sky'>
                             <section className='slides'>

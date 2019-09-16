@@ -1,56 +1,91 @@
-
 #madepage {
-    width: 100vw;
-    height: 100vh;
+    width  : 100vw;
+    height : 100vh;
     display: flex;
-    margin: 0;
+    margin : 0;
     padding: 0;
 
     header {
-        margin: auto;
+        margin       : auto;
         margin-bottom: 0;
-        margin-top: 0;
+        margin-top   : 0;
 
         img {
             // width: 100%;
-            height: 13vh;
-            margin: auto;
+            height  : 13vh;
+            margin  : auto;
         }
     }
 
-    
+
 
     .covers {
         background-color: white;
-        height: 60vh;
-        width: 60vh;
+        height          : 60vh;
+        width           : 60vh;
 
         &.stories {
-            background-image: url('../../images/made/COVERS/stories-nirvana.png');
-            background-position:  center;
-            background-size:  cover;
+            background-image   : url('../../images/made/COVERS/stories-nirvana.png');
+            background-position: center;
+            background-size    : cover;
         }
 
         &.posts {
-            background-image: url('../../images/made/COVERS/posts-acdc.png');
-            background-position:  center;
-            background-size:  cover;
+            background-image   : url('../../images/made/COVERS/posts-acdc.png');
+            background-position: center;
+            background-size    : cover;
         }
 
         &.youtube {
-            background-image: url('../../images/made/COVERS/youtube-pinkfloyd.png');
-            background-position:  center;
-            background-size:  cover;
+            background-image   : url('../../images/made/COVERS/youtube-pinkfloyd.png');
+            background-position: center;
+            background-size    : cover;
         }
 
         &.campanhas {
-            background-image: url('../../images/made/COVERS/campanhas-titas.png');
-            background-position:  center;
-            background-size:  cover;
+            background-image   : url('../../images/made/COVERS/campanhas-titas.png');
+            background-position: center;
+            background-size    : cover;
         }
 
-        &.e {
-            background-image: url('http://lorempixel.com/600/600/nature/5');
+        &.pdv {
+            background-image   : url('../../images/made/COVERS/pdv-beatles.png');
+            background-position: center;
+            background-size    : cover;
+        }
+
+        &.emkt {
+            background-image   : url('../../images/made/COVERS/emailmkt-elvis.png');
+            background-position: center;
+            background-size    : cover;
+        }
+
+        &.banners {
+            background-image   : url('../../images/made/COVERS/banners-cartola.png');
+            background-position: center;
+            background-size    : cover;
+        }
+
+        &.playlists {
+            background-image   : url('../../images/made/COVERS/playlists-sexpistols.png');
+            background-position: center;
+            background-size    : cover;
+        }
+    }
+
+    .slidesimg {
+        height: 75vh;
+        width : auto;
+
+        >div {
+            height: 100%;
+            width : 100%;
+
+            >img {
+                height: 100%;
+                width : 100%;
+                margin: auto;
+            }
         }
     }
 }
