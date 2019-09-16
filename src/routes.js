@@ -24,4 +24,8 @@ module.exports = [
     path: '/faxe',
     component: path.resolve(`src/pages/faxe/faxe.js`)
   },
-];
+  {
+    path: '/madeinbrazil',
+    component: path.resolve(`src/pages/made/made.js`)
+  },
+]

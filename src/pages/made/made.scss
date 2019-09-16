@@ -1,0 +1,56 @@
+
+#madepage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    header {
+        margin: auto;
+        margin-bottom: 0;
+        margin-top: 0;
+
+        img {
+            // width: 100%;
+            height: 13vh;
+            margin: auto;
+        }
+    }
+
+    
+
+    .covers {
+        background-color: white;
+        height: 60vh;
+        width: 60vh;
+
+        &.stories {
+            background-image: url('../../images/made/COVERS/stories-nirvana.png');
+            background-position:  center;
+            background-size:  cover;
+        }
+
+        &.posts {
+            background-image: url('../../images/made/COVERS/posts-acdc.png');
+            background-position:  center;
+            background-size:  cover;
+        }
+
+        &.youtube {
+            background-image: url('../../images/made/COVERS/youtube-pinkfloyd.png');
+            background-position:  center;
+            background-size:  cover;
+        }
+
+        &.campanhas {
+            background-image: url('../../images/made/COVERS/campanhas-titas.png');
+            background-position:  center;
+            background-size:  cover;
+        }
+
+        &.e {
+            background-image: url('http://lorempixel.com/600/600/nature/5');
+        }
+    }
+}

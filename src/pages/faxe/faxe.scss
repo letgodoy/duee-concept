@@ -1,73 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
+
 #faxepage {
-    height: 100vh;
-    min-width: 100vh;
+    height       : 100vh;
+    min-width    : 100vw;
     // overflow-y:  hidden;
-    display: flex;
+    display      : flex;
+    font-size    : 1.5em;
+    font-family  : 'Fondamento', cursive;
+    font-weight  : 500;
 
     #fundo {
-        margin: 0;
-        padding: 0;
+        margin  : 0;
+        padding : 0;
         position: fixed;
 
         img {
-            height: 100vh;
-            min-width: 100vh;
-            left: auto;
-            right: auto;
-            z-index: -10;
+            height   : 100vh;
+            min-width: 100vw;
+            left     : auto;
+            right    : auto;
+            z-index  : -10;
         }
 
         div {
             position: fixed;
-            top: 0;
-            left: auto;
-            right: auto;
+            top     : 0;
+            left    : auto;
+            right   : auto;
 
             &#posts {
-                top: 20vh;
-                left: 30%;
+                top        : 38vh;
+                left       : 40%;
+                cursor     : pointer;
+                text-shadow: 0 0 8px black;
             }
 
             &#stories {
-                top: 30vh;
-                left: 15%;
+                top        : 30vh;
+                left       : 13%;
+                cursor     : pointer;
+                text-shadow: 0 0 8px black;
             }
 
             &#making {
-                top: 15vh;
-                left: 40%;
+                top        : 10vh;
+                left       : 38%;
+                cursor     : pointer;
+                text-shadow: 0 0 8px black;
             }
 
             &#dinner {
-                top: 50vh;
-                left: 35%;
+                top        : 55vh;
+                left       : 35%;
+                cursor     : pointer;
+                text-shadow: 0 0 8px black;
             }
 
             &#embal {
-                top: 60vh;
-                left: 25%;
+                top        : 70vh;
+                left       : 10%;
+                cursor     : pointer;
+                text-shadow: 0 0 8px black;
+            }
+
+            img {
+                width    : auto;
+                height   : 15vh;
+                min-width: 0;
+            }
+
+            &#lata1 {
+                top           : 70vh;
+                left          : 70%;
+                -webkit-filter: drop-shadow(0px 0px 5px #555);
+                filter        : drop-shadow(0px 0px 5px #555);
+            }
+
+            &#lata2 {
+                top : 40vh;
+                left: 65%;
+                -webkit-filter: drop-shadow(0px 0px 5px #555);
+                filter        : drop-shadow(0px 0px 5px #555);
+            }
+
+            &#lata3 {
+                top : 75vh;
+                left: 35%;
+                -webkit-filter: drop-shadow(0px 0px 5px #555);
+                filter        : drop-shadow(0px 0px 5px #555);
+            }
+
+            &#lata4 {
+                top : 20vh;
+                left: 75%;
+                -webkit-filter: drop-shadow(0px 0px 5px #555);
+                filter        : drop-shadow(0px 0px 5px #555);
+            }
+
+            &#lata5 {
+                top : 60vh;
+                left: 80%;
+                -webkit-filter: drop-shadow(0px 0px 5px #555);
+                filter        : drop-shadow(0px 0px 5px #555);
+            }
+
+            &#barco1 {
+                top : 60vh;
+                left: 60%;
+                -webkit-filter: drop-shadow(0px 0px 5px #555);
+                filter        : drop-shadow(0px 0px 5px #555);
+            }
+
+            &#barco2 {
+                top : 30vh;
+                left: 85%;
+                -webkit-filter: drop-shadow(0px 0px 5px #555);
+                filter        : drop-shadow(0px 0px 5px #555);
+            }
+
+            &#logo {
+                right: 3%;
+                top  : 75%;
+                -webkit-filter: drop-shadow(0px 0px 5px #222);
+                filter        : drop-shadow(0px 0px 5px #222);
+                
+
+                img {
+                    height: 20vh;
+                }
+            }
+
+            &#logoS {
+                right: 3%;
+                top  : 75%;
+                // -webkit-filter: drop-shadow(0px 0px 5px #222);
+                // filter        : drop-shadow(0px 0px 5px #222);
+                visibility: hidden;
+
+                img {
+                    height: 20vh;
+                }
             }
         }
 
-        
+        #posts:hover, #stories:hover, 
+    #making:hover, #dinner:hover, #embal:hover >#logoS{
+        visibility:  visible;
+    } 
+
+
     }
 
-    #slidestories {
-        // display: flex;
-        position: relative;
-        top:auto;
-        bottom: auto;
-        height: 100vh;
-        width: 100%;
+    .slides {
+        // display : flex;
+        // position: relative;
+        // top     :auto;
+        // bottom  : auto;
+        // height  : 100vh;
+        width      : 100%;
 
         .storiesfx {
-            height: 80vh;
+            height: 70vh;
 
             video {
-                height: 80vh;
+                height: 70vh;
                 margin: auto;
             }
         }
     }
 
+    #makingvideo {
+        height   : 70vh;
+        margin   : auto;
+        max-width: 100vw;
+    }
+
+    
 }
