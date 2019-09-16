@@ -62,10 +62,19 @@ export default class Faxe extends Component {
                 prevEl: '.swiper-button-prev'
             }
         }
+
+        const paramsList = {
+            slidesPerView: 3,
+            spaceBetween: 200,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        }
         return (
             <Layout>
                 <SEO title="Made In Brazil" />
-                {/* <!-- First --> */}
                 <div className="row middle-xs" id="madepage">
                     <header>
                         <img src={LogoMade} alt="Logo Made in Brazil" />
@@ -93,32 +102,39 @@ export default class Faxe extends Component {
                         </Swiper>
                     </Modal>
 
-                    <Modal show={this.state.showMkt} onClose={this.showMkt} title='showMkt'>
-                        posts instagram
+                    <Modal show={this.state.showMkt} onClose={this.showMkt} title='Email Marketing'>
+                    Email Marketing
                     </Modal>
 
-                    <Modal show={this.state.showCamp} onClose={this.showCamp} title='showCamp'>
-                        posts instagram
+                    <Modal show={this.state.showCamp} onClose={this.showCamp} title='Campanhas'>
+                    Campanhas
                     </Modal>
 
-                    <Modal show={this.state.showPdv} onClose={this.showPdv} title='showPdv'>
-                        posts instagram
+                    <Modal show={this.state.showPdv} onClose={this.showPdv} title='PDV'>
+                    PDV
                     </Modal>
 
-                    <Modal show={this.state.showBanners} onClose={this.showBanners} title='showBanners'>
-                        posts instagram
+                    <Modal show={this.state.showBanners} onClose={this.showBanners} title='Banners'>
+                    Banners
                     </Modal>
 
-                    <Modal show={this.state.showStories} onClose={this.showStories} title='showStories'>
-                        posts instagram
+                    <Modal show={this.state.showStories} onClose={this.showStories} title='Stories Instagram'>
+                    Stories Instagram
                     </Modal>
 
-                    <Modal show={this.state.showPlaylists} onClose={this.showPlaylists} title='showPlaylists'>
-                        posts instagram
+                    <Modal show={this.state.showPlaylists} onClose={this.showPlaylists} title='Playlists'>
+                        <Swiper {...paramsList} id="PlaylistsModal">
+                            {/* <div><iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:e4andqtcxjiik8wlcyns8sbue&size=detail&theme=dark" width="300" height="56" frameborder="0" style="border:none;" allowtransparency="true"></iframe></div> */}
+                            <div><iframe src="https://open.spotify.com/embed/playlist/68LglzhL6afHlY0D877XXw" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+                            <div><iframe src="https://open.spotify.com/embed/playlist/6euNX0DQ8V0iyJxMuqQZn5" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+                            <div><iframe src="https://open.spotify.com/embed/playlist/3AXlUoMZPdQBHcBQG8J9ut" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+                            <div><iframe src="https://open.spotify.com/embed/playlist/4OjqDsSaQRQQyqozzD7Csw" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+                            <div><iframe src="https://open.spotify.com/embed/playlist/3AD3DKHsILTPXpbkDGtVmp" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+                        </Swiper>
                     </Modal>
 
                     <Modal show={this.state.showYT} onClose={this.showYT} title='YouTube'>
-                        posts instagram
+                    YouTube
                     </Modal>
                 </div>
             </Layout >
