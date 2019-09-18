@@ -1,45 +1,148 @@
-#faxepage2 {
-  width     : 100vw;
-  height    : auto;
-  overflow-y: auto;
+$layers : 7;
 
-  .header {
-    position: relative;
-    height  : 90vh;
-    top: 10vh;
+.faxepage2 {
+  margin: 0;
+  position       : relative;
+  height         : 100vh;
+  // top         : 10vh;    
+  transform-style: preserve-3d;
+  overflow-y     : scroll;
+  overflow-x     : hidden;
+  perspective    : 1px;
+  text-align     : center;
+  will-change    : scroll-position;
+  width          : 100vw;
+  background-color: #ddcca2; 
 
-    .scene {
-      position   : absolute;
-      width      : 100%;
-      transform  : translateY(var(--translateY));
-      will-change: transform;
+  img {
+    width: 100%;
+  }
 
-      &.sky {
-        top: -10vh;
+  .scene {
+    position: absolute;
+    top     : 0;
+    left    : 0;
+    width   : 100vw;
+
+    &.sky {
+      width: 100vw;
+      // height: 100vh;
+      // top: -30vh;
+      transform: scale(1) !important;
+    }
+
+    &.logo {
+      position  : relative;
+      width        : 27%;
+      // height: 50vh;
+      margin    : auto;
+      margin-top: -15vh;
+    }
+
+    &.conteudo {
+      display            : flex;
+      position           : absolute;
+      z-index            : 100;
+      width              : 100vw;
+      top                : 90%;
+      background-color: black;
+      padding-top: 30px !important; 
+
+      div {
+        margin: auto;
+        
+        .makingof {
+          width : 100vw;
+          height: 70vh;
+          margin: auto;
+        }
+  
+        .material {
+          width  : 100%;
+          height : auto;
+          padding: 20px;
+        }
+
       }
+    }
 
-      &.logo {
-        position: relative;
-        width  : 27%;
-        margin : auto;
-        margin-top: -5vh;
+    @for $i from 1 through $layers {
+      &:nth-child(#{$i}) {
+        transform: translateZ(#{-$i*0.5px}) scale($i);
       }
+    }
+
+    &:last-child {
+      transform: scale(1);
     }
   }
 
-  .content {
-    z-index   : 100;
-    // width  : 100%;
+  &.portrait {
+    background-color: #456072;
+    width   : 100vw;
+    text-align     : center;
+    justify-content:  center;
 
-    .makingof {
-      width : 100vw;
-      height: 80vh;
-    }
+    .scene {
+      position: absolute;
+      top     : 0;
+      left    : 0;
+      width   : 100vw;
+      margin: 0;
+      padding: 0;
 
-    .material {
-      width  : 100%;
-      height : auto;
-      padding: 20px;
+      &.sky {
+        width: 100vw;
+        // height: 80vh;
+        top: -15vh;
+        transform: scale(1) !important;
+      }
+  
+      &.logo {
+        position  : relative;
+        width        : 27%;
+        // height: 50vh;
+        margin    : auto;
+        top: -25vh;
+      }
+  
+      &.conteudo {
+        display: flex;
+          top                : 55% !important;
+          padding-top: 30px !important; 
+          
+
+          div {
+            margin: auto;
+
+            .makingof {
+              max-width : 90vw;
+              height: 30vh;
+              margin: auto;
+            }
+      
+            .material {
+              width  : 100%;
+              height : auto;
+              padding: 20px;
+            }
+
+          }
+
+          
+      }
+
+      @for $i from 1 through $layers {
+        &:nth-child(#{$i}) {
+          transform: translateZ(#{-$i*1px}) scale($i*3) !important;
+        }
+      }
+
+      &:last-child {
+        transform: scale(1);
+      }
     }
   }
 }
+
+

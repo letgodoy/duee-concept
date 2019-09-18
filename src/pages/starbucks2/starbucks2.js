@@ -75,7 +75,6 @@ const Starbucks = () => (
                         <img src={Mail2} alt="email marketing" className="material" />
                         <img src={Story6} autoplay={true} alt="story instagram" className="material" />
                         <img src={Rappi3} alt="anuncio Rappi" className="material" />
-                        <img src={Pdv1} alt="pdv" className="material" />
                     </Masonry>
                 </ResponsiveMasonry>
             </div>
