@@ -1,0 +1,47 @@
+#faxepage2 {
+  width     : 100vw;
+  height    : auto;
+  overflow-y: auto;
+
+  .header {
+    position: relative;
+    height  : 90vh;
+    top: 10vh;
+
+    .scene {
+      position   : absolute;
+      width      : 100%;
+      transform  : translateY(var(--translateY));
+      will-change: transform;
+
+      &.sky {
+        top: -10vh;
+      }
+
+      &.logo {
+        position: relative;
+        width  : 27%;
+        margin : auto;
+        margin-top: -5vh;
+      }
+    }
+  }
+
+  .content {
+    z-index   : 100;
+    // width  : 100%;
+
+    .makingof {
+      width : 100vw;
+      height: 80vh;
+    }
+
+    .material {
+      width  : 100%;
+      height : auto;
+      padding: 20px;
+    }
+  }
+
+  
+}

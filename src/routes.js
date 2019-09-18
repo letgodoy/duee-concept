@@ -22,7 +22,7 @@ module.exports = [
   },
   {
     path: '/faxe',
-    component: path.resolve(`src/pages/faxe/faxe.js`)
+    component: path.resolve(`src/pages/faxe2/faxe2.js`)
   },
   {
     path: '/madeinbrazil',
