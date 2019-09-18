@@ -6,6 +6,7 @@ import SEO from "../../components/seo"
 import './faxe2.scss'
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import Logofaxe from '../../images/home/FAXE-LOGO.svg'
+import { window } from 'browser-monads';
 
 import Story1 from '../../images/faxe/stories/STORIE_FINAL.mp4'
 import Story2 from '../../images/faxe/stories/Storie.mp4'
