@@ -125,11 +125,11 @@ export default class Faxe extends Component {
                     <Modal show={this.state.showPlaylists} onClose={this.showPlaylists} title='Playlists'>
                         <Swiper {...paramsList} id="PlaylistsModal">
                             {/* <div><iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:e4andqtcxjiik8wlcyns8sbue&size=detail&theme=dark" width="300" height="56" frameborder="0" style="border:none;" allowtransparency="true"></iframe></div> */}
-                            <div><iframe src="https://open.spotify.com/embed/playlist/68LglzhL6afHlY0D877XXw" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-                            <div><iframe src="https://open.spotify.com/embed/playlist/6euNX0DQ8V0iyJxMuqQZn5" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-                            <div><iframe src="https://open.spotify.com/embed/playlist/3AXlUoMZPdQBHcBQG8J9ut" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-                            <div><iframe src="https://open.spotify.com/embed/playlist/4OjqDsSaQRQQyqozzD7Csw" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-                            <div><iframe src="https://open.spotify.com/embed/playlist/3AD3DKHsILTPXpbkDGtVmp" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+                            <div><iframe src="https://open.spotify.com/embed/playlist/68LglzhL6afHlY0D877XXw" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" title="playlist1"></iframe></div>
+                            <div><iframe src="https://open.spotify.com/embed/playlist/6euNX0DQ8V0iyJxMuqQZn5" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" title="playlist2"></iframe></div>
+                            <div><iframe src="https://open.spotify.com/embed/playlist/3AXlUoMZPdQBHcBQG8J9ut" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" title="playlist3"></iframe></div>
+                            <div><iframe src="https://open.spotify.com/embed/playlist/4OjqDsSaQRQQyqozzD7Csw" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" title="playlist4"></iframe></div>
+                            <div><iframe src="https://open.spotify.com/embed/playlist/3AD3DKHsILTPXpbkDGtVmp" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" title="playlist5"></iframe></div>
                         </Swiper>
                     </Modal>
 

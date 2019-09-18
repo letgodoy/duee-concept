@@ -130,15 +130,15 @@ const Starbucks = () => (
                                     {/* <h1>1</h1> */}
                                 </div>
                                 <div className="display">
-                                    <img src={Story4} autoplay={true} className="videoslider" />
+                                    <img src={Story4} autoplay={true} alt="story instagram" className="videoslider" />
                                     {/* <h1>1</h1> */}
                                 </div>
                                 <div className="display">
-                                    <img src={Story5} autoplay={true} className="videoslider" />
+                                    <img src={Story5} autoplay={true} alt="story instagram" className="videoslider" />
                                     {/* <h1>1</h1> */}
                                 </div>
                                 <div className="display">
-                                    <img src={Story6} autoplay={true} className="videoslider" />
+                                    <img src={Story6} autoplay={true} alt="story instagram" className="videoslider" />
                                     {/* <h1>1</h1> */}
                                 </div>
                             </Slider>

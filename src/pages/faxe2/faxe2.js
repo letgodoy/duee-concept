@@ -7,7 +7,6 @@ import './faxe2.scss'
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import Logofaxe from '../../images/home/FAXE-LOGO.svg'
 import * as basicScroll from 'basicscroll'
-// import 'https://cdnjs.cloudflare.com/ajax/libs/react/16.9.0/umd/react.production.min.js'
 
 import Story1 from '../../images/faxe/stories/STORIE_FINAL.mp4'
 import Story2 from '../../images/faxe/stories/Storie.mp4'
@@ -51,9 +50,6 @@ import Img36 from '../../images/faxe/img/post3 3.png'
 
 
 export default class Faxe extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     componentDidMount() {
         document.querySelectorAll('.scene').forEach(elem => {
@@ -136,16 +132,9 @@ export default class Faxe extends Component {
                                 <video src={Story2} autoplay={true} controls={true} className="material" />
                                 <img src={Img16} alt="conteudo faxe" className="material" />
                                 <img src={Img14} alt="conteudo faxe" className="material" />
-                                
-                                
-                                
-                                
-                                
-                                
                             </Masonry>
                         </ResponsiveMasonry>
                     </div>
-
                 </div>
             </Layout >
         )
