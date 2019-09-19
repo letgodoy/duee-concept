@@ -10,7 +10,7 @@ import Modal from '../../components/Modal/modal'
 
 import LogoMade from '../../images/made/MADE-IN-BRAZIL-logo_-branco.svg'
 
-export default class Faxe extends Component {
+export default class Made extends Component {
     constructor(props) {
         super(props);
         this.state = {

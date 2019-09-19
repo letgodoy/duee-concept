@@ -97,7 +97,7 @@ export default class HomePage extends React.Component {
         </div>
 
         <div id="portifolio2" className="page-content">
-        <a href="https://portfolio.duee.com.br/project/faxe-dinner-in-the-sky/" target="_blank" rel="noopener noreferrer">
+        <Link to="/faxe">
           {/* <img src={FaxeBg} alt="Faxe Background" /> */}
           <video src={FaxeBg} autoplay="true" muted="true" loop id="videoport"/>
           <div className="BgOpacity"></div>
@@ -112,11 +112,11 @@ export default class HomePage extends React.Component {
           {/*  <div className="col-md-4"></div>*/}
           {/*  <div className="col-md-4"></div>*/}
           {/*</div>*/}
-          </a>
+          </Link>
         </div>
 
         <div id="portifolio2" className="page-content">
-        <a href="https://portfolio.duee.com.br/project/made-no-lolla/" target="_blank" rel="noopener noreferrer">
+        <Link to="/madeinbrazil">
           {/* <img src={LollaBg} alt="Lolla Background"/> */}
           <video src={LollaBg}  autoplay="true" muted="true" loop id="videoport">
             Your browser does not support the video tag.
@@ -133,7 +133,7 @@ export default class HomePage extends React.Component {
           {/*  <div className="col-md-4"></div>*/}
           {/*  <div className="col-md-4"></div>*/}
           {/*</div>*/}
-          </a>
+          </Link>
         </div>
       </ReactPageScroller>
     </Layout>

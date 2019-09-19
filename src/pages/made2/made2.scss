@@ -1,0 +1,51 @@
+#madepage2 {
+    width : 100vw;
+    margin: 0;
+
+    header {
+        width : 100%;
+        margin: 0;
+
+        img {
+            width : 100%;
+            margin: auto;
+        }
+
+        iframe {
+            margin: 20px auto;
+        }
+    }
+
+    .playlistas {
+        width: 100vw;
+        height: 70vh;
+        overflow-x:  auto;
+        display:  inline-flex;
+        flex-direction:  row;
+        overflow-y:  hidden;
+        flex-wrap:  nowrap;
+
+        iframe {
+            height: 60vh;
+            margin: 1vw;
+            width: 17vw;
+            min-width: 230px;
+        }
+    }
+
+    .makingof {
+        width: 100vw;
+
+        iframe {
+            height: 85vh;
+            width: 100vw;
+            margin: 20px auto;
+        }
+    }
+
+    .material {
+        width  : 100%;
+        height : auto;
+        padding: 20px;
+    }
+}
