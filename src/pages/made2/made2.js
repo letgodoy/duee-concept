@@ -65,38 +65,38 @@ export default class Made extends Component {
                         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4, 1700: 5 }}>
                             <Masonry>
                                 {/* <video src={Post1} autoPlay={true} mute={true} controls={true} className="material" /> */}
+                                <img src={Img12} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img1} alt="conteudo madeinbrazil" className="material" />
-                                <img src={Img2} alt="conteudo madeinbrazil" className="material" />
+                                <img src={Img29} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img3} alt="conteudo madeinbrazil" className="material" />
+                                <img src={Img35} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img5} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img6} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img7} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img8} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img10} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img11} alt="conteudo madeinbrazil" className="material" />
-                                <img src={Img12} alt="conteudo madeinbrazil" className="material" />
+                                <img src={Img19} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img13} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img14} alt="conteudo madeinbrazil" className="material" />
-                                <img src={Img15} alt="conteudo madeinbrazil" className="material" />
-                                <img src={Img16} alt="conteudo madeinbrazil" className="material" />
-                                <img src={Img17} alt="conteudo madeinbrazil" className="material" />
+                                <img src={Img33} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img18} alt="conteudo madeinbrazil" className="material" />
-                                <img src={Img19} alt="conteudo madeinbrazil" className="material" />
+                                <img src={Img26} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img20} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img21} alt="conteudo madeinbrazil" className="material" />
-                                <img src={Img22} alt="conteudo madeinbrazil" className="material" />
+                                <img src={Img2} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img23} alt="conteudo madeinbrazil" className="material" />
-                                <img src={Img24} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img25} alt="conteudo madeinbrazil" className="material" />
-                                <img src={Img26} alt="conteudo madeinbrazil" className="material" />
-                                <img src={Img27} alt="conteudo madeinbrazil" className="material" />
-                                <img src={Img28} alt="conteudo madeinbrazil" className="material" />
-                                <img src={Img29} alt="conteudo madeinbrazil" className="material" />
+                                <img src={Img15} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img31} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img32} alt="conteudo madeinbrazil" className="material" />
-                                <img src={Img33} alt="conteudo madeinbrazil" className="material" />
+                                <img src={Img22} alt="conteudo madeinbrazil" className="material" />
+                                <img src={Img16} alt="conteudo madeinbrazil" className="material" />
+                                <img src={Img27} alt="conteudo madeinbrazil" className="material" />
+                                <img src={Img17} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img34} alt="conteudo madeinbrazil" className="material" />
-                                <img src={Img35} alt="conteudo madeinbrazil" className="material" />
+                                <img src={Img24} alt="conteudo madeinbrazil" className="material" />
+                                <img src={Img28} alt="conteudo madeinbrazil" className="material" />
 
 
                             </Masonry>
