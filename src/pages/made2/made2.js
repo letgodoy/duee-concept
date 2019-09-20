@@ -49,7 +49,7 @@ export default class Made extends Component {
                 <div className="middle-xs center-xs" id="madepage2">
                     <header>
                         <img src={LogoMade} alt="Logo Made in Brazil" />
-                        <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:e4andqtcxjiik8wlcyns8sbue&size=detail&theme=dark" width="240" height="56" frameborder="0" allowtransparency="true"></iframe>
+                        <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:e4andqtcxjiik8wlcyns8sbue&size=detail&theme=dark" width="240" height="56" frameborder="0" allowtransparency="true" title="follow"></iframe>
                     </header>
                     <div className="row col-xs-12 center-xs playlistas">
                     <iframe src="https://open.spotify.com/embed/playlist/68LglzhL6afHlY0D877XXw" frameborder="0" allowtransparency="true" allow="encrypted-media" title="playlist1"></iframe>
@@ -59,7 +59,7 @@ export default class Made extends Component {
                     <iframe src="https://open.spotify.com/embed/playlist/3AD3DKHsILTPXpbkDGtVmp" frameborder="0" allowtransparency="true" allow="encrypted-media" title="playlist5"></iframe>
                     </div>
                     <div className="row col-xs-12 makingof">
-                    <iframe src="https://player.vimeo.com/video/340465615" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    <iframe src="https://player.vimeo.com/video/340465615" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="makingof"></iframe>
                     </div>
                     <div className="row col-xs-12">
                         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4, 1700: 5 }}>
@@ -97,8 +97,6 @@ export default class Made extends Component {
                                 <img src={Img34} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img24} alt="conteudo madeinbrazil" className="material" />
                                 <img src={Img28} alt="conteudo madeinbrazil" className="material" />
-
-
                             </Masonry>
                         </ResponsiveMasonry>
                     </div>
