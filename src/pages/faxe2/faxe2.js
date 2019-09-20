@@ -9,7 +9,7 @@ import Logofaxe from '../../images/home/FAXE-LOGO.svg'
 import { window } from 'browser-monads';
 
 import Story1 from '../../images/faxe/stories/STORIE_FINAL.mp4'
-import Story2 from '../../images/faxe/stories/Storie.mp4'
+import Story2 from '../../images/faxe/stories/Storie_ 1.png'
 
 import Post1 from '../../images/faxe/post/3_POST_FAXE_V1 2.mp4'
 import Post2 from '../../images/faxe/post/3_POST_FAXE_V1.mp4'
@@ -78,7 +78,7 @@ export default class Faxe extends Component {
                             <div className="row col-xs-12">
                                 <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4, 1700: 5 }}>
                                     <Masonry>
-                                        <video src={Post1} autoPlay={true} mute controls={true} className="material" />
+                                        <video src={Post1} autoPlay={true} mute={true} loop={true} controls={true} className="material" />
                                         <img src={Img19} alt="conteudo faxe" className="material" />
                                         <img src={Img1} alt="conteudo faxe" className="material" />
                                         <video src={Post2} autoPlay={true} mute controls={true} className="material" />
@@ -112,7 +112,7 @@ export default class Faxe extends Component {
                                         <video src={Post8} autoPlay={true} mute controls={true} className="material" />
                                         <img src={Img11} alt="conteudo faxe" className="material" />
                                         <img src={Img21} alt="conteudo faxe" className="material" />
-                                        <video src={Story2} autoPlay={true} mute controls={true} className="material" />
+                                        <img src={Story2} alt="conteudo faxe" className="material" />
                                         <img src={Img16} alt="conteudo faxe" className="material" />
                                         <img src={Img14} alt="conteudo faxe" className="material" />
                                     </Masonry>

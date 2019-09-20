@@ -20,7 +20,7 @@ import Logofaxe from '../../images/home/FAXE-LOGO.svg'
 import LogofaxeS from '../../images/home/FAXE-LOGO-sorrindo.svg'
 
 import Story1 from '../../images/faxe/stories/STORIE_FINAL.mp4'
-import Story2 from '../../images/faxe/stories/Storie.mp4'
+import Story2 from '../../images/faxe/stories/Storie_ 1.png'
 
 import Post1 from '../../images/faxe/post/3_POST_FAXE_V1 2.mp4'
 import Post2 from '../../images/faxe/post/3_POST_FAXE_V1.mp4'
@@ -129,7 +129,7 @@ export default class Faxe extends Component {
                                         <video src={Story1} autoplay={true} controls={true} />
                                     </div>
                                     <div className="storiesfx">
-                                        <video src={Story2} autoplay={true} controls={true} />
+                                        <img src={Story2} alt="story" />
                                     </div>
                                 </Slider>
                             </section>
