@@ -53,6 +53,15 @@ $coolneutral: #f9f9f9;
         }
 
     }
+
+    .description {
+      margin: 30px auto 0 auto;
+      text-align: left;
+      
+      p {
+        margin-top: 0;
+      }
+    }
   
     .content {
       z-index   : 100;

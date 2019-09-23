@@ -6,6 +6,7 @@ import SEO from "../../components/seo"
 import './faxe2.scss'
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import Logofaxe from '../../images/home/FAXE-LOGO.svg'
+import HeaderBG from '../../images/faxe/header.jpg'
 import { window } from 'browser-monads';
 
 import Story1 from '../../images/faxe/stories/STORIE_FINAL.mp4'
@@ -48,12 +49,12 @@ import Img32 from '../../images/faxe/img/post1.png'
 import Img34 from '../../images/faxe/img/post2.png'
 import Img36 from '../../images/faxe/img/post3 3.png'
 
-import P0 from '../../images/faxe/parallax/p0-2.png'
-import P1 from '../../images/faxe/parallax/p1.png'
-import P2 from '../../images/faxe/parallax/p2.png'
-import P3 from '../../images/faxe/parallax/p3.png'
-import P4 from '../../images/faxe/parallax/p4.png'
-import P5 from '../../images/faxe/parallax/p6-2.png'
+// import P0 from '../../images/faxe/parallax/p0-2.png'
+// import P1 from '../../images/faxe/parallax/p1.png'
+// import P2 from '../../images/faxe/parallax/p2.png'
+// import P3 from '../../images/faxe/parallax/p3.png'
+// import P4 from '../../images/faxe/parallax/p4.png'
+// import P5 from '../../images/faxe/parallax/p6-2.png'
 
 
 export default class Faxe extends Component {
@@ -63,63 +64,78 @@ export default class Faxe extends Component {
             <Layout>
                 <SEO title="Faxe" />
                 {/* <!-- First --> */}
-                <div className={`faxepage2 ${window.screen.height > window.screen.width ? 'portrait' : null}`} >
-                        <img className="scene sky" src={P0} alt="landscape" />
+                {/* <div className={`faxepage2 ${window.screen.height > window.screen.width ? 'portrait' : null}`} > */}
+                <div className='faxepage3 middle-xs center-xs' >
+                    {/* <img className="scene sky" src={P0} alt="landscape" />
                         <img className="scene" src={P1} alt="landscape" />
                         <img className="scene" src={P2} alt="landscape" />
                         <img className="scene logo" src={Logofaxe} alt="faxe" />
                         <img className="scene" src={P3} alt="landscape" />
                         <img className="scene" src={P4} alt="landscape" />
-                        <img className="scene" src={P5} alt="landscape" />
-                        <div className='scene conteudo row'>
-                            <div className="row col-xs-12">
-                                <iframe src="https://player.vimeo.com/video/296450706" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen title="making of" className="makingof"></iframe>
-                            </div>
-                            <div className="row col-xs-12">
-                                <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4, 1700: 5 }}>
-                                    <Masonry>
-                                        <video src={Post1} autoPlay={true} mute={true} loop={true} controls={true} className="material" />
-                                        <img src={Img19} alt="conteudo faxe" className="material" />
-                                        <img src={Img1} alt="conteudo faxe" className="material" />
-                                        <video src={Post2} autoPlay={true} mute controls={true} className="material" />
-                                        <img src={Img17} alt="conteudo faxe" className="material" />
-                                        <img src={Img18} alt="conteudo faxe" className="material" />
-                                        <img src={Img2} alt="conteudo faxe" className="material" />
-                                        <video src={Post3} autoPlay={true} mute controls={true} className="material" />
-                                        <img src={Img28} alt="conteudo faxe" className="material" />
-                                        <img src={Img29} alt="conteudo faxe" className="material" />
-                                        <img src={Img3} alt="conteudo faxe" className="material" />
-                                        <video src={Story1} autoPlay={true} mute controls={true} className="material" />
-                                        <img src={Img25} alt="conteudo faxe" className="material" />
-                                        <img src={Img26} alt="conteudo faxe" className="material" />
-                                        <img src={Img4} alt="conteudo faxe" className="material" />
-                                        <video src={Post4} autoPlay={true} mute controls={true} className="material" />
-                                        <img src={Img31} alt="conteudo faxe" className="material" />
-                                        <img src={Img32} alt="conteudo faxe" className="material" />
-                                        <video src={Post5} autoPlay={true} mute controls={true} className="material" />
-                                        <img src={Img12} alt="conteudo faxe" className="material" />
-                                        <img src={Img13} alt="conteudo faxe" className="material" />
-                                        <video src={Post9} autoPlay={true} mute controls={true} className="material" />
-                                        <img src={Img30} alt="conteudo faxe" className="material" />
-                                        <img src={Img6} alt="conteudo faxe" className="material" />
-                                        <video src={Post6} autoPlay={true} mute controls={true} className="material" />
-                                        <img src={Img34} alt="conteudo faxe" className="material" />
-                                        <img src={Img7} alt="conteudo faxe" className="material" />
-                                        <img src={Img5} alt="conteudo faxe" className="material" />
-                                        <video src={Post7} autoPlay={true} mute controls={true} className="material" />
-                                        <img src={Img15} alt="conteudo faxe" className="material" />
-                                        <img src={Img36} alt="conteudo faxe" className="material" />
-                                        <video src={Post8} autoPlay={true} mute controls={true} className="material" />
-                                        <img src={Img11} alt="conteudo faxe" className="material" />
-                                        <img src={Img21} alt="conteudo faxe" className="material" />
-                                        <img src={Story2} alt="conteudo faxe" className="material" />
-                                        <img src={Img16} alt="conteudo faxe" className="material" />
-                                        <img src={Img14} alt="conteudo faxe" className="material" />
-                                    </Masonry>
-                                </ResponsiveMasonry>
-                            </div>
+                        <img className="scene" src={P5} alt="landscape" /> */}
+
+                    <header>
+                        <img src={HeaderBG} alt="background" />
+                        <img className="logo" src={Logofaxe} alt="faxe" />
+                    </header>
+
+                    {/* <div className='scene conteudo row'> */}
+                    <div className='row conteudo'>
+                        <div className="row col-xs-12 col-sm-8 col-md-6 col-lg-5 description">
+                            <p>A cerveja dinamarquesa Faxe Beer é inspirada no universo Viking, conquistando os mais exigentes paladares de guerreiros do happy hour ao redor do mundo.</p>
+                            <p>Aqui no Brasil, foi a DUEE que conquistou a batalha pela comunicação da marca e tem feito um trabalho divino.</p>
+                            <p>Criamos os conteúdos semanais para as redes sociais, Instagram e Facebook, damos suporte em eventos, lançamentos, promoções e relacionamento com clientes e influenciadores.</p>
+                            <p>Confira alguns trabalhos da nossa parceria com a Faxe.</p>
+                        </div>
+
+                        <div className="row col-xs-12 makingof">
+                            <iframe src="https://player.vimeo.com/video/296450706" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen title="making of" />
+                        </div>
+                        <div className="row col-xs-12">
+                            <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4, 1700: 5 }}>
+                                <Masonry>
+                                    <video src={Post1} autoPlay={true} mute={true} loop={true} controls={true} className="material" />
+                                    <img src={Img19} alt="conteudo faxe" className="material" />
+                                    <img src={Img1} alt="conteudo faxe" className="material" />
+                                    <video src={Post2} autoPlay={true} mute controls={true} className="material" />
+                                    <img src={Img17} alt="conteudo faxe" className="material" />
+                                    <img src={Img18} alt="conteudo faxe" className="material" />
+                                    <img src={Img2} alt="conteudo faxe" className="material" />
+                                    <video src={Post3} autoPlay={true} mute controls={true} className="material" />
+                                    <img src={Img28} alt="conteudo faxe" className="material" />
+                                    <img src={Img29} alt="conteudo faxe" className="material" />
+                                    <img src={Img3} alt="conteudo faxe" className="material" />
+                                    <video src={Story1} autoPlay={true} mute controls={true} className="material" />
+                                    <img src={Img25} alt="conteudo faxe" className="material" />
+                                    <img src={Img26} alt="conteudo faxe" className="material" />
+                                    <img src={Img4} alt="conteudo faxe" className="material" />
+                                    <video src={Post4} autoPlay={true} mute controls={true} className="material" />
+                                    <img src={Img31} alt="conteudo faxe" className="material" />
+                                    <img src={Img32} alt="conteudo faxe" className="material" />
+                                    <video src={Post5} autoPlay={true} mute controls={true} className="material" />
+                                    <img src={Img12} alt="conteudo faxe" className="material" />
+                                    <img src={Img13} alt="conteudo faxe" className="material" />
+                                    <video src={Post9} autoPlay={true} mute controls={true} className="material" />
+                                    <img src={Img30} alt="conteudo faxe" className="material" />
+                                    <img src={Img6} alt="conteudo faxe" className="material" />
+                                    <video src={Post6} autoPlay={true} mute controls={true} className="material" />
+                                    <img src={Img34} alt="conteudo faxe" className="material" />
+                                    <img src={Img7} alt="conteudo faxe" className="material" />
+                                    <img src={Img5} alt="conteudo faxe" className="material" />
+                                    <video src={Post7} autoPlay={true} mute controls={true} className="material" />
+                                    <img src={Img15} alt="conteudo faxe" className="material" />
+                                    <img src={Img36} alt="conteudo faxe" className="material" />
+                                    <video src={Post8} autoPlay={true} mute controls={true} className="material" />
+                                    <img src={Img11} alt="conteudo faxe" className="material" />
+                                    <img src={Img21} alt="conteudo faxe" className="material" />
+                                    <img src={Story2} alt="conteudo faxe" className="material" />
+                                    <img src={Img16} alt="conteudo faxe" className="material" />
+                                    <img src={Img14} alt="conteudo faxe" className="material" />
+                                </Masonry>
+                            </ResponsiveMasonry>
                         </div>
                     </div>
+                </div>
             </Layout >
         )
     }
