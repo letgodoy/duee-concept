@@ -49,6 +49,12 @@ const Starbucks = () => (
                     </div>
                 </div>
             </div>
+            <div className="row col-xs-12 col-sm-8 col-md-6 col-lg-5 description">
+                        <p>A Starbucks é a maior franquia de cafeteria do mundo, conhecida pela excelência desde a colheita do café até a sua apresentação.</p>
+                        <p>A sua comunicação deve ser uma extensão dessa excelência e, por isso, a Starbucks Brasil escolheu a DUEE para desenvolver parte dela.</p>
+                        <p>Desenvolvemos a comunicação de PDV, fazemos material de endomarketing, cuidamos de campanhas de lançamentos de produtos, embalagens, conteúdos internos e damos suporte full service.</p>
+                        <p>Aqui estão alguns dos melhores trabalhos em parceria com a Starbucks.</p>
+                    </div>
             <div className="content row col-xs-12">
                 <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 4, 1700: 5 }}>
                     <Masonry>

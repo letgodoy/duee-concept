@@ -1,18 +1,18 @@
 $layers : 7;
 
 .faxepage2 {
-  margin: 0;
-  position       : relative;
-  height         : 100vh;
-  // top         : 10vh;    
-  transform-style: preserve-3d;
-  overflow-y     : scroll;
-  overflow-x     : hidden;
-  perspective    : 1px;
-  text-align     : center;
-  will-change    : scroll-position;
-  width          : 100vw;
-  background-color: #ddcca2; 
+  margin          : 0;
+  position        : relative;
+  height          : 100vh;
+  // top          : 10vh;    
+  transform-style : preserve-3d;
+  overflow-y      : scroll;
+  overflow-x      : hidden;
+  perspective     : 1px;
+  text-align      : center;
+  will-change     : scroll-position;
+  width           : 100vw;
+  background-color: #ddcca2;
 
   img {
     width: 100%;
@@ -25,38 +25,39 @@ $layers : 7;
     width   : 100vw;
 
     &.sky {
-      width: 100vw;
+      width    : 100vw;
       // height: 100vh;
-      // top: -30vh;
+      // top   : -30vh;
       transform: scale(1) !important;
     }
 
     &.logo {
       position  : relative;
-      width        : 27%;
-      // height: 50vh;
+      width     : 27%;
+      // height : 50vh;
       margin    : auto;
       margin-top: -15vh;
     }
 
     &.conteudo {
-      display            : flex;
-      position           : absolute;
-      z-index            : 100;
-      width              : 100vw;
-      top                : 90%;
+      display         : flex;
+      position        : absolute;
+      z-index         : 100;
+      width           : 100vw;
+      top             : 90%;
       background-color: black;
-      padding-top: 30px !important; 
+      padding-top     : 30px !important;
 
       div {
         margin: auto;
-        
+
         .makingof {
           width : 100vw;
           height: 70vh;
           margin: auto;
+          margin-top     : 30px;
         }
-  
+
         .material {
           width  : 100%;
           height : auto;
@@ -79,57 +80,57 @@ $layers : 7;
 
   &.portrait {
     background-color: #456072;
-    width   : 100vw;
-    text-align     : center;
-    justify-content:  center;
+    width           : 100vw;
+    text-align      : center;
+    justify-content : center;
 
     .scene {
       position: absolute;
       top     : 0;
       left    : 0;
       width   : 100vw;
-      margin: 0;
-      padding: 0;
+      margin  : 0;
+      padding : 0;
 
       &.sky {
-        width: 100vw;
+        width    : 100vw;
         // height: 80vh;
-        top: -15vh;
+        top      : -15vh;
         transform: scale(1) !important;
       }
-  
+
       &.logo {
-        position  : relative;
-        width        : 27%;
+        position : relative;
+        width    : 27%;
         // height: 50vh;
-        margin    : auto;
-        top: -25vh;
+        margin   : auto;
+        top      : -25vh;
       }
-  
+
       &.conteudo {
-        display: flex;
-          top                : 55% !important;
-          padding-top: 30px !important; 
-          
+        display    : flex;
+        top        : 55% !important;
+        padding-top: 30px !important;
 
-          div {
-            margin: auto;
 
-            .makingof {
-              max-width : 90vw;
-              height: 30vh;
-              margin: auto;
-            }
-      
-            .material {
-              width  : 100%;
-              height : auto;
-              padding: 20px;
-            }
+        div {
+          margin: auto;
 
+          .makingof {
+            max-width: 90vw;
+            height   : 30vh;
+            margin   : auto;
           }
 
-          
+          .material {
+            width  : 100%;
+            height : auto;
+            padding: 20px;
+          }
+
+        }
+
+
       }
 
       @for $i from 1 through $layers {
@@ -145,4 +146,71 @@ $layers : 7;
   }
 }
 
+.faxepage3 {
+  margin: 0;
+  height: 100vh;
+  width : 100vw;
 
+  header {
+    // position: absolute;
+    width      : 100%;
+    margin     : 0;
+    position:  relative;
+    max-height: 95vh;
+
+    img {
+      width: 100%;
+      max-height: 95vh;
+      filter: opacity(0.8);
+
+      &.logo {
+        position: absolute;
+        width   : 30%;
+        margin  : auto;
+        top     : 20%;
+        left    : 35%;
+        filter: none;
+      }
+    }
+  }
+
+  .conteudo {
+    width      : 100vw;
+    padding-top: 30px !important;
+    margin: 0;
+
+    div {
+      margin: auto;
+
+      &.makingof {
+        padding: 0;
+        width : 100vw;
+        height: (80vw*9/16);
+        max-height: 90vh;
+        justify-content:  center;
+        padding-top: 30px;
+
+        iframe {
+          width: 80vw;
+          // height: 60vh;
+        }
+        
+      }
+
+      &.description {
+        margin: auto;
+        text-align: left;
+      }
+
+      .material {
+        width  : 100%;
+        height : auto;
+        padding: 20px;
+      }
+
+    }
+
+  }
+
+
+}
